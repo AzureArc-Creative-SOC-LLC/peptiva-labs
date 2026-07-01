@@ -1,0 +1,156 @@
+- generic [ref=e2]:
+  - status "Important notice" [ref=e3]:
+    - generic [ref=e4]:
+      - generic [ref=e5]: "SOCIAL MEDIA WARNING: Alluvi has never operated on any social media platforms. Please don't make any payments or fall victim to anything claiming to be Alluvi on social media platforms. | OFFICIAL SITE: Our official site is www.alluvi.org — we are only handling this site. Please Beware of other scam sites. | RESEARCH USE ONLY – NOT FOR HUMAN CONSUMPTION: All products are for laboratory research and in vitro studies only. Not for human or veterinary use."
+      - generic [ref=e6]: "SOCIAL MEDIA WARNING: Alluvi has never operated on any social media platforms. Please don't make any payments or fall victim to anything claiming to be Alluvi on social media platforms. | OFFICIAL SITE: Our official site is www.alluvi.org — we are only handling this site. Please Beware of other scam sites. | RESEARCH USE ONLY – NOT FOR HUMAN CONSUMPTION: All products are for laboratory research and in vitro studies only. Not for human or veterinary use."
+  - generic [ref=e8]:
+    - banner [ref=e9]:
+      - generic [ref=e11]:
+        - link "Alluvi home" [ref=e12] [cursor=pointer]:
+          - /url: /
+          - img "Alluvi" [ref=e13]
+        - link "Shop" [ref=e15] [cursor=pointer]:
+          - /url: /shop
+          - generic [ref=e17]: Shop
+        - link "Track" [ref=e19] [cursor=pointer]:
+          - /url: /track-order
+          - generic [ref=e21]: Track
+        - link "Wholesale" [ref=e23] [cursor=pointer]:
+          - /url: /wholesale
+          - generic [ref=e25]: Wholesale
+        - link "Verify" [ref=e27] [cursor=pointer]:
+          - /url: https://spotafakealluvi.com/
+          - generic [ref=e29]: Verify
+        - link "Alluvi Brazil" [ref=e31] [cursor=pointer]:
+          - /url: https://alluvibrazil.org/
+          - generic [ref=e33]: Alluvi Brazil
+    - generic [ref=e36]:
+      - generic [ref=e39]:
+        - heading "Advancing discovery through Alluvi research" [level=1] [ref=e41]:
+          - strong [ref=e42]: Advancing discovery through
+          - text: Alluvi research
+        - paragraph [ref=e44]:
+          - text: Alluvi Labs develops and evaluates
+          - text: premium peptides and supplements
+          - text: ‍
+          - text: All products are produced exclusively
+          - text: for controlled research and development purposes, guided by science.
+          - text: Not for human or veterinary consumption.
+          - generic [ref=e45]:
+            - link "Browse Research Peptides" [ref=e46] [cursor=pointer]:
+              - /url: /shop
+            - text: "|"
+            - link "Learn About Alluvi" [ref=e47] [cursor=pointer]:
+              - /url: /about
+      - generic [ref=e49]:
+        - generic [ref=e50]:
+          - heading "Alluvi" [level=1] [ref=e52]
+          - heading "Labs" [level=1] [ref=e54]
+        - img "Alluvi research app on iPhone" [ref=e60]
+  - generic [ref=e66]:
+    - generic [ref=e68]:
+      - heading "Alluvi Retatrutide 40mg Long Term Stability Test" [level=1] [ref=e70]:
+        - strong [ref=e71]: Alluvi Retatrutide 40mg Long Term Stability Test
+      - paragraph [ref=e73]:
+        - strong [ref=e74]: 56 Day Room Temperature, Purity and Degradation Test
+        - text: Tracking the purity & stability of a 40 mg Retatrutide filled Alluvi pen across a full 56 day hold, with independent Janoshik verification at each checkpoint.
+        - text: For laboratory research and development use only. Not for human or veterinary consumption.
+    - generic [ref=e75]:
+      - generic [ref=e76]:
+        - heading "Stage 1" [level=2] [ref=e78]
+        - paragraph [ref=e80]:
+          - text: Exactly 40 mg Retatrutide 2.4ml filled into an Alluvi pen, held at room temperature for 22 days.
+          - strong [ref=e81]: Sent to Janoshik for independent testing on day 28.
+          - strong [ref=e82]: "Purity:"
+          - text: 99.65%
+          - strong [ref=e83]: "Verified content:"
+          - text: 38.40 mg
+          - strong [ref=e84]: "Measured difference:"
+          - text: 1.6 mg / 4% change
+          - link "View Test Result" [ref=e85] [cursor=pointer]:
+            - /url: https://verify.janoshik.com/tests/147173_KS3YGHPP2AJ1
+      - generic [ref=e86]:
+        - heading "Stage 2" [level=2] [ref=e88]
+        - paragraph [ref=e90]:
+          - text: Further 33 day room temperature hold in Janoshik custody.
+          - strong [ref=e91]: "Result:"
+          - strong [ref=e92]: "Purity:"
+          - text: 98.32% / 38.37 mg Retatrutide
+          - strong [ref=e93]: "pH:"
+          - text: "7.66"
+          - strong [ref=e94]: "Total change:"
+          - text: 0.03 mg / 0.07% change
+          - strong [ref=e95]: "Purity change:"
+          - text: 1.33%
+          - strong [ref=e96]: "Total days room temp storage:"
+          - text: 56 days
+          - strong [ref=e97]: 40mg>38.37mg>1.63mg/4.07%
+          - link "Link to Degradation test" [ref=e98] [cursor=pointer]:
+            - /url: https://verify.janoshik.com/tests/165632_3JXHCZ6NJHGX
+          - link "Link to pH test" [ref=e99] [cursor=pointer]:
+            - /url: https://verify.janoshik.com/tests/165637_1XWECMUZPLPE
+  - generic [ref=e100]:
+    - generic [ref=e103]:
+      - generic [ref=e105]:
+        - generic [ref=e107]:
+          - heading "The Alluvi research and development App is Coming Soon" [level=1] [ref=e109]
+          - paragraph [ref=e112]: Start your free trial soon and see how easy it is to track, manage, and optimize your time.
+        - generic [ref=e114]:
+          - link "Download on the App Store" [ref=e115] [cursor=pointer]:
+            - /url: https://applestore.com
+            - img "Download on the App Store"
+          - link "Get it on Google Play" [ref=e116] [cursor=pointer]:
+            - /url: https://googleplay.com
+            - img "Get it on Google Play"
+      - generic [ref=e119]:
+        - generic [ref=e121]:
+          - generic:
+            - img "iPhone in hand"
+            - generic [ref=e122]:
+              - img "Home screen dark"
+        - generic [ref=e123]:
+          - generic:
+            - img "iPhone in hand"
+            - generic [ref=e124]:
+              - img "Home screen light"
+    - region "The Alluvi research platform" [ref=e126]:
+      - generic [ref=e127]:
+        - generic [ref=e128]:
+          - generic [ref=e129]:
+            - generic [ref=e130]: More than peptides.
+            - heading "A Complete Research Platform." [level=2] [ref=e132]
+            - paragraph [ref=e133]:
+              - text: From research-grade compounds to structured data collection and nutritional analysis – Alluvi provides an integrated system designed for controlled research and development programs.
+              - text: Not for human or veterinary consumption.
+          - article [ref=e134]:
+            - generic [ref=e135]:
+              - heading "Smart Tracking" [level=3] [ref=e136]
+              - paragraph [ref=e137]: Log every research observation with structured data capture built for controlled R&D programs.
+            - generic [ref=e138]:
+              - generic:
+                - img "Alluvi research dashboard"
+            - generic [ref=e139]: Smart Tracking
+          - article [ref=e141]:
+            - generic [ref=e142]:
+              - heading "Consistency Is Key" [level=3] [ref=e143]
+              - paragraph [ref=e144]: Stay on track with monthly research supply boxes.
+            - generic [ref=e145]:
+              - img "Alluvi monthly research supply box"
+            - generic [ref=e146]: Scheduled Supply
+          - article [ref=e148]:
+            - generic [ref=e149]:
+              - heading "Precision Pens" [level=3] [ref=e150]
+              - paragraph [ref=e151]: Pre-filled Retatrutide systems – sleek, pre-measured, and designed for evaluation in controlled research settings only.
+            - generic [ref=e152]:
+              - img "Alluvi precision dosing pen"
+            - generic [ref=e153]: Precision Pens
+          - generic [ref=e155]:
+            - paragraph [ref=e156]:
+              - text: From compound
+              - text: to data.
+            - paragraph [ref=e157]: Research-grade compounds, structured data capture, scheduled supply, and precision dosing devices — one connected system for controlled R&D programs.
+            - link "Shop research peptides" [ref=e158] [cursor=pointer]:
+              - /url: /shop
+              - text: Shop research peptides
+              - img [ref=e159]
+        - paragraph [ref=e161]: For laboratory research and development use only — not for human or veterinary consumption.

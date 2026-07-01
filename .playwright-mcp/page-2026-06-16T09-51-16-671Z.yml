@@ -1,0 +1,385 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e4]:
+      - link "Luma home" [ref=e5] [cursor=pointer]:
+        - /url: "#home"
+        - generic [ref=e6]:
+          - img [ref=e7]
+          - generic [ref=e11]: Luma
+      - navigation [ref=e12]:
+        - link "Home" [ref=e13] [cursor=pointer]:
+          - /url: "#home"
+        - link "About" [ref=e14] [cursor=pointer]:
+          - /url: "#about"
+        - link "Products" [ref=e15] [cursor=pointer]:
+          - /url: "#products"
+        - link "Why Us" [ref=e16] [cursor=pointer]:
+          - /url: "#why"
+        - link "Testimonial" [ref=e17] [cursor=pointer]:
+          - /url: "#testimonial"
+        - link "Contact" [ref=e18] [cursor=pointer]:
+          - /url: "#contact"
+      - link "Shop now" [ref=e20] [cursor=pointer]:
+        - /url: "#contact"
+  - main [ref=e21]:
+    - generic [ref=e23]:
+      - paragraph [ref=e24]: Research Peptides · Dubai
+      - heading "L u m a" [level=1] [ref=e25]:
+        - generic [ref=e26]: L
+        - generic [ref=e27]: u
+        - generic [ref=e28]: m
+        - generic [ref=e29]: a
+      - generic [ref=e35]:
+        - paragraph [ref=e36]: Verified research peptides, packed and dispatched from Dubai. Honest sourcing, careful handling, and a real person on WhatsApp when you need one.
+        - generic [ref=e37]:
+          - link "Browse catalogue" [ref=e38] [cursor=pointer]:
+            - /url: "#products"
+          - link "Chat on WhatsApp" [ref=e39] [cursor=pointer]:
+            - /url: "#contact"
+            - text: Chat on WhatsApp
+            - img [ref=e40]
+    - generic [ref=e45]:
+      - generic [ref=e46]:
+        - generic [ref=e47]:
+          - generic [ref=e48]: Verified Sourcing
+          - img [ref=e49]
+        - generic [ref=e51]:
+          - generic [ref=e52]: Lab-Tested Purity
+          - img [ref=e53]
+        - generic [ref=e55]:
+          - generic [ref=e56]: Sealed Cold Packaging
+          - img [ref=e57]
+        - generic [ref=e59]:
+          - generic [ref=e60]: WhatsApp Support
+          - img [ref=e61]
+        - generic [ref=e63]:
+          - generic [ref=e64]: Verified Sourcing
+          - img [ref=e65]
+        - generic [ref=e67]:
+          - generic [ref=e68]: Lab-Tested Purity
+          - img [ref=e69]
+        - generic [ref=e71]:
+          - generic [ref=e72]: Sealed Cold Packaging
+          - img [ref=e73]
+        - generic [ref=e75]:
+          - generic [ref=e76]: WhatsApp Support
+          - img [ref=e77]
+        - generic [ref=e79]:
+          - generic [ref=e80]: Verified Sourcing
+          - img [ref=e81]
+        - generic [ref=e83]:
+          - generic [ref=e84]: Lab-Tested Purity
+          - img [ref=e85]
+        - generic [ref=e87]:
+          - generic [ref=e88]: Sealed Cold Packaging
+          - img [ref=e89]
+        - generic [ref=e91]:
+          - generic [ref=e92]: WhatsApp Support
+          - img [ref=e93]
+        - generic [ref=e95]:
+          - generic [ref=e96]: Verified Sourcing
+          - img [ref=e97]
+        - generic [ref=e99]:
+          - generic [ref=e100]: Lab-Tested Purity
+          - img [ref=e101]
+        - generic [ref=e103]:
+          - generic [ref=e104]: Sealed Cold Packaging
+          - img [ref=e105]
+        - generic [ref=e107]:
+          - generic [ref=e108]: WhatsApp Support
+          - img [ref=e109]
+      - generic [ref=e111]:
+        - generic [ref=e112]:
+          - generic [ref=e113]: Verified Sourcing
+          - img [ref=e114]
+        - generic [ref=e116]:
+          - generic [ref=e117]: Lab-Tested Purity
+          - img [ref=e118]
+        - generic [ref=e120]:
+          - generic [ref=e121]: Sealed Cold Packaging
+          - img [ref=e122]
+        - generic [ref=e124]:
+          - generic [ref=e125]: WhatsApp Support
+          - img [ref=e126]
+        - generic [ref=e128]:
+          - generic [ref=e129]: Verified Sourcing
+          - img [ref=e130]
+        - generic [ref=e132]:
+          - generic [ref=e133]: Lab-Tested Purity
+          - img [ref=e134]
+        - generic [ref=e136]:
+          - generic [ref=e137]: Sealed Cold Packaging
+          - img [ref=e138]
+        - generic [ref=e140]:
+          - generic [ref=e141]: WhatsApp Support
+          - img [ref=e142]
+        - generic [ref=e144]:
+          - generic [ref=e145]: Verified Sourcing
+          - img [ref=e146]
+        - generic [ref=e148]:
+          - generic [ref=e149]: Lab-Tested Purity
+          - img [ref=e150]
+        - generic [ref=e152]:
+          - generic [ref=e153]: Sealed Cold Packaging
+          - img [ref=e154]
+        - generic [ref=e156]:
+          - generic [ref=e157]: WhatsApp Support
+          - img [ref=e158]
+        - generic [ref=e160]:
+          - generic [ref=e161]: Verified Sourcing
+          - img [ref=e162]
+        - generic [ref=e164]:
+          - generic [ref=e165]: Lab-Tested Purity
+          - img [ref=e166]
+        - generic [ref=e168]:
+          - generic [ref=e169]: Sealed Cold Packaging
+          - img [ref=e170]
+        - generic [ref=e172]:
+          - generic [ref=e173]: WhatsApp Support
+          - img [ref=e174]
+    - generic [ref=e177]:
+      - generic [ref=e178]:
+        - generic [ref=e180]:
+          - img "Researchers working together in a Dubai lab" [ref=e182]
+          - img "Cellular research microscopy imagery" [ref=e184]
+          - generic [ref=e185]:
+            - paragraph [ref=e186]: 99.4%
+            - paragraph [ref=e187]: Average Verified Purity
+        - generic [ref=e188]:
+          - paragraph [ref=e189]: Company About
+          - heading "The fastest way to source peptides you can actually trust." [level=2] [ref=e190]
+          - paragraph [ref=e191]: We started Luma because the research peptide market needed a brand willing to be boring about the basics — transparent sourcing, real lab testing, and people you can actually message. Every batch is checked before it reaches our shelves.
+          - paragraph [ref=e192]: "Our Special Services:"
+          - list [ref=e193]:
+            - listitem [ref=e194]:
+              - img [ref=e196]
+              - generic [ref=e198]: Third-party tested for identity & purity
+            - listitem [ref=e199]:
+              - img [ref=e201]
+              - generic [ref=e203]: Sourced direct from verified suppliers
+            - listitem [ref=e204]:
+              - img [ref=e206]
+              - generic [ref=e208]: Accurate labelling & cold-chain dispatch
+          - link "Browse Catalogue" [ref=e210] [cursor=pointer]:
+            - /url: "#products"
+            - text: Browse Catalogue
+            - img [ref=e211]
+      - generic [ref=e214]:
+        - generic [ref=e215]:
+          - img [ref=e217]
+          - generic [ref=e220]:
+            - paragraph [ref=e221]: 99.4%
+            - paragraph [ref=e222]: Verified Peptide Purity
+        - generic [ref=e223]:
+          - img [ref=e225]
+          - generic [ref=e230]:
+            - paragraph [ref=e231]: 5,000+
+            - paragraph [ref=e232]: Vials Shipped UAE-Wide
+        - generic [ref=e233]:
+          - img [ref=e235]
+          - generic [ref=e237]:
+            - paragraph [ref=e238]: 8+
+            - paragraph [ref=e239]: Curated Peptide Lines
+        - generic [ref=e240]:
+          - img [ref=e242]
+          - generic [ref=e245]:
+            - paragraph [ref=e246]: 4,000+
+            - paragraph [ref=e247]: Researchers Served
+    - generic [ref=e249]:
+      - generic [ref=e250]:
+        - heading "The Range" [level=2] [ref=e251]
+        - paragraph [ref=e252]: Four core peptide lines, each available in the concentrations researchers actually ask for. Every batch is verified, sealed, and cold-shipped from our Dubai facility.
+        - link "Order on WhatsApp" [ref=e253] [cursor=pointer]:
+          - /url: "#contact"
+      - generic [ref=e254]:
+        - generic [ref=e255]:
+          - img "BPC-157 + TB-500" [ref=e256]
+          - generic [ref=e257]: BPC-157 + TB-500
+          - generic [ref=e258]:
+            - paragraph [ref=e259]: 40 mg dual blend
+            - heading "BPC-157 + TB-500" [level=3] [ref=e260]
+            - paragraph [ref=e261]: Two of the most studied recovery peptides, paired in one research-grade vial for streamlined protocols.
+            - generic [ref=e262]:
+              - generic [ref=e263]: AED 999
+              - img [ref=e265]
+        - generic [ref=e268]:
+          - img "Glow" [ref=e269]
+          - generic [ref=e270]: Glow
+          - generic [ref=e271]:
+            - paragraph [ref=e272]: 5 mg · 70 mg options
+            - heading "Glow" [level=3] [ref=e273]
+            - paragraph [ref=e274]: Our skin and tissue blend, formulated for studies focused on appearance, texture, and recovery markers.
+            - generic [ref=e275]:
+              - generic [ref=e276]: from AED 1,199
+              - img [ref=e278]
+        - generic [ref=e281]:
+          - img "Retatrutide" [ref=e282]
+          - generic [ref=e283]: Retatrutide
+          - generic [ref=e284]:
+            - paragraph [ref=e285]: 20 mg · 40 mg
+            - heading "Retatrutide" [level=3] [ref=e286]
+            - paragraph [ref=e287]: A next-generation triple-agonist peptide for advanced metabolic research, batch-tested before dispatch.
+            - generic [ref=e288]:
+              - generic [ref=e289]: from AED 1,990
+              - img [ref=e291]
+        - generic [ref=e294]:
+          - img "Tirzepatide" [ref=e295]
+          - generic [ref=e296]: Tirzepatide
+          - generic [ref=e297]:
+            - paragraph [ref=e298]: 5 / 20 / 40 mg
+            - heading "Tirzepatide" [level=3] [ref=e299]
+            - paragraph [ref=e300]: Dual-agonist GLP-1 / GIP peptide stocked in three concentrations to suit different study designs.
+            - generic [ref=e301]:
+              - generic [ref=e302]: from AED 750
+              - img [ref=e304]
+    - generic [ref=e309]:
+      - generic [ref=e310]:
+        - heading "Why customers choose Luma" [level=2] [ref=e311]
+        - paragraph [ref=e312]: Buying research peptides shouldn't feel like a gamble. We built Luma so that purity, paperwork, and customer service all sit on the same side of the table.
+        - link "Talk to the team" [ref=e313] [cursor=pointer]:
+          - /url: "#contact"
+      - list [ref=e316]:
+        - listitem [ref=e317]:
+          - img [ref=e319]
+          - generic [ref=e321]:
+            - heading "Tested before it leaves the lab" [level=3] [ref=e322]
+            - paragraph [ref=e323]: Every batch is screened for purity and concentration. If a vial doesn't meet spec, it doesn't ship — simple as that.
+        - listitem [ref=e324]:
+          - img [ref=e326]
+          - generic [ref=e329]:
+            - heading "Sourcing you can actually trace" [level=3] [ref=e330]
+            - paragraph [ref=e331]: We work directly with a short list of certified manufacturers. No grey-market middlemen, no relabelled stock.
+        - listitem [ref=e332]:
+          - img [ref=e334]
+          - generic [ref=e339]:
+            - heading "UAE stock, AED pricing" [level=3] [ref=e340]
+            - paragraph [ref=e341]: Vials live in our temperature-controlled Dubai facility and ship the same or next working day across the Emirates.
+        - listitem [ref=e342]:
+          - img [ref=e344]
+          - generic [ref=e347]:
+            - heading "A human on WhatsApp" [level=3] [ref=e348]
+            - paragraph [ref=e349]: Questions on a product, an order, or a protocol? Message us — you'll get a real reply from our team, fast.
+    - generic [ref=e351]:
+      - generic [ref=e352]:
+        - heading "How a vial gets to you" [level=2] [ref=e353]
+        - paragraph [ref=e354]: Three deliberate steps between the lab bench and your doorstep — so nothing about the product is left to chance.
+      - generic [ref=e355]:
+        - article [ref=e356]:
+          - generic [ref=e358]:
+            - paragraph [ref=e359]: 01 · Source
+            - paragraph [ref=e360]: Direct contracts with certified manufacturers. No grey-market resellers in the chain.
+        - article [ref=e361]:
+          - generic [ref=e363]:
+            - paragraph [ref=e364]: 02 · Verify
+            - paragraph [ref=e365]: Independent purity and concentration checks on every batch before it touches a customer order.
+        - article [ref=e366]:
+          - generic [ref=e368]:
+            - paragraph [ref=e369]: 03 · Ship
+            - paragraph [ref=e370]: Cold-packed, tamper-sealed, and dispatched same or next day from our Dubai warehouse.
+    - generic [ref=e378]:
+      - heading "Ready to order? Message us on WhatsApp" [level=2] [ref=e379]:
+        - text: Ready to order?
+        - text: Message us on WhatsApp
+      - link "Start your order" [ref=e380] [cursor=pointer]:
+        - /url: https://wa.me/971543800625
+    - generic [ref=e382]:
+      - heading "What our customers say" [level=2] [ref=e383]
+      - generic [ref=e384]:
+        - img "Hassan Al Marri" [ref=e386]
+        - figure "Hassan Al Marri Independent researcher, Abu Dhabi" [ref=e387]:
+          - img [ref=e389]
+          - blockquote [ref=e391]: Ordered late afternoon, dispatched the next morning, and the packaging was easily the cleanest I've seen from a UAE supplier. Replies on WhatsApp arrived in minutes.
+          - generic [ref=e392]:
+            - generic [ref=e393]: Hassan Al Marri
+            - generic [ref=e394]: Independent researcher, Abu Dhabi
+      - generic [ref=e395]:
+        - button "Testimonial 1" [ref=e396] [cursor=pointer]
+        - button "Testimonial 2" [ref=e397] [cursor=pointer]
+        - button "Testimonial 3" [ref=e398] [cursor=pointer]
+  - contentinfo [ref=e399]:
+    - generic [ref=e400]:
+      - generic [ref=e401]:
+        - generic [ref=e402]:
+          - generic [ref=e403]:
+            - img [ref=e404]
+            - generic [ref=e408]: Luma
+          - paragraph [ref=e409]: Research peptides sourced, verified and dispatched from Dubai. Honest sourcing, sealed handling, and a real person at the other end of every WhatsApp message.
+          - generic [ref=e410]:
+            - paragraph [ref=e411]: Level 5, Business Bay, Dubai, UAE
+            - paragraph [ref=e412]:
+              - link "+971 54 380 0625" [ref=e413] [cursor=pointer]:
+                - /url: https://wa.me/971543800625
+            - paragraph [ref=e414]:
+              - link "sales@lumauae.com" [ref=e415] [cursor=pointer]:
+                - /url: mailto:sales@lumauae.com
+        - generic [ref=e416]:
+          - generic [ref=e417]:
+            - heading "Catalogue" [level=4] [ref=e418]
+            - list [ref=e419]:
+              - listitem [ref=e420]:
+                - link "BPC-157 + TB-500" [ref=e421] [cursor=pointer]:
+                  - /url: "#"
+              - listitem [ref=e422]:
+                - link "Glow" [ref=e423] [cursor=pointer]:
+                  - /url: "#"
+              - listitem [ref=e424]:
+                - link "Retatrutide" [ref=e425] [cursor=pointer]:
+                  - /url: "#"
+              - listitem [ref=e426]:
+                - link "Tirzepatide" [ref=e427] [cursor=pointer]:
+                  - /url: "#"
+          - generic [ref=e428]:
+            - heading "Company" [level=4] [ref=e429]
+            - list [ref=e430]:
+              - listitem [ref=e431]:
+                - link "About Luma" [ref=e432] [cursor=pointer]:
+                  - /url: "#"
+              - listitem [ref=e433]:
+                - link "How we source" [ref=e434] [cursor=pointer]:
+                  - /url: "#"
+              - listitem [ref=e435]:
+                - link "Reviews" [ref=e436] [cursor=pointer]:
+                  - /url: "#"
+              - listitem [ref=e437]:
+                - link "Contact" [ref=e438] [cursor=pointer]:
+                  - /url: "#"
+          - generic [ref=e439]:
+            - heading "Support" [level=4] [ref=e440]
+            - list [ref=e441]:
+              - listitem [ref=e442]:
+                - link "Shipping" [ref=e443] [cursor=pointer]:
+                  - /url: "#"
+              - listitem [ref=e444]:
+                - link "Returns" [ref=e445] [cursor=pointer]:
+                  - /url: "#"
+              - listitem [ref=e446]:
+                - link "Storage guide" [ref=e447] [cursor=pointer]:
+                  - /url: "#"
+              - listitem [ref=e448]:
+                - link "FAQ" [ref=e449] [cursor=pointer]:
+                  - /url: "#"
+          - generic [ref=e450]:
+            - heading "Connect" [level=4] [ref=e451]
+            - list [ref=e452]:
+              - listitem [ref=e453]:
+                - link "WhatsApp" [ref=e454] [cursor=pointer]:
+                  - /url: "#"
+              - listitem [ref=e455]:
+                - link "Instagram" [ref=e456] [cursor=pointer]:
+                  - /url: "#"
+              - listitem [ref=e457]:
+                - link "Facebook" [ref=e458] [cursor=pointer]:
+                  - /url: "#"
+              - listitem [ref=e459]:
+                - link "Email" [ref=e460] [cursor=pointer]:
+                  - /url: "#"
+      - generic [ref=e463]: Luma
+      - generic [ref=e464]:
+        - paragraph [ref=e465]: © 2026 Luma. All rights reserved. For research use only.
+        - generic [ref=e466]:
+          - link "Privacy" [ref=e467] [cursor=pointer]:
+            - /url: "#"
+          - link "Terms" [ref=e468] [cursor=pointer]:
+            - /url: "#"
+          - link "Cookies" [ref=e469] [cursor=pointer]:
+            - /url: "#"

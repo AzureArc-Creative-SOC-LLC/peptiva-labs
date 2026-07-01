@@ -1,0 +1,157 @@
+- generic [active] [ref=f4e1]:
+  - banner [ref=f4e2]:
+    - generic [ref=f4e3]:
+      - link "Lumivex home" [ref=f4e4] [cursor=pointer]:
+        - /url: /
+        - generic [ref=f4e5]:
+          - img [ref=f4e6]
+          - generic [ref=f4e13]: LUMIVEX
+      - navigation [ref=f4e14]:
+        - link "Continue shopping" [ref=f4e15] [cursor=pointer]:
+          - /url: /#products
+        - link "Cart, 1 item" [ref=f4e16] [cursor=pointer]:
+          - /url: /cart
+          - img [ref=f4e17]
+          - generic [ref=f4e20]: "1"
+  - main [ref=f4e21]:
+    - generic [ref=f4e22]:
+      - generic [ref=f4e23]:
+        - button "← Back to cart" [ref=f4e24] [cursor=pointer]
+        - text: Final step
+        - heading "Checkout" [level=1] [ref=f4e25]
+      - generic [ref=f4e26]:
+        - generic [ref=f4e27]:
+          - group "Contact" [ref=f4e28]:
+            - generic [ref=f4e29]: Contact
+            - generic [ref=f4e30]:
+              - generic [ref=f4e31]:
+                - generic [ref=f4e32]: First name
+                - textbox "First name" [ref=f4e33]:
+                  - /placeholder: Jordan
+                  - text: Test
+              - generic [ref=f4e34]:
+                - generic [ref=f4e35]: Last name
+                - textbox "Last name" [ref=f4e36]:
+                  - /placeholder: Avery
+                  - text: User
+              - generic [ref=f4e37]:
+                - generic [ref=f4e38]: Email address
+                - textbox "Email address" [ref=f4e39]:
+                  - /placeholder: jordan@lab.com
+                  - text: test@test.com
+              - generic [ref=f4e40]:
+                - generic [ref=f4e41]: Mobile
+                - textbox "Mobile" [ref=f4e42]:
+                  - /placeholder: +44 7700 900123
+                  - text: "+441234567890"
+          - group "Shipping address" [ref=f4e43]:
+            - generic [ref=f4e44]: Shipping address
+            - generic [ref=f4e45]:
+              - generic [ref=f4e46]:
+                - generic [ref=f4e47]: Address line 1
+                - textbox "Address line 1" [ref=f4e48]:
+                  - /placeholder: 123 Research Park
+                  - text: 123 Test St
+              - generic [ref=f4e49]:
+                - generic [ref=f4e50]: Address line 2(optional)
+                - textbox "Address line 2(optional)" [ref=f4e51]:
+                  - /placeholder: Unit 4B
+              - generic [ref=f4e52]:
+                - generic [ref=f4e53]: City
+                - textbox "City" [ref=f4e54]:
+                  - /placeholder: London
+                  - text: London
+              - generic [ref=f4e55]:
+                - generic [ref=f4e56]: Postcode
+                - textbox "Postcode" [ref=f4e57]:
+                  - /placeholder: SW1A 1AA
+                  - text: SW1A 1AA
+              - generic [ref=f4e58]:
+                - generic [ref=f4e59]: Country
+                - textbox "Country" [ref=f4e60]:
+                  - /placeholder: United Kingdom
+                  - text: United Kingdom
+        - generic [ref=f4e62]:
+          - heading "Order Summary" [level=2] [ref=f4e63]
+          - list [ref=f4e64]:
+            - listitem [ref=f4e65]:
+              - generic [ref=f4e66]:
+                - img "Tirzepatide 40mg" [ref=f4e67]
+                - generic [ref=f4e68]: "1"
+              - generic [ref=f4e69]: Tirzepatide 40mg
+              - generic [ref=f4e70]: £100
+          - generic [ref=f4e72]:
+            - textbox "Promo code" [ref=f4e73]
+            - button "Apply" [ref=f4e74] [cursor=pointer]
+          - generic [ref=f4e75]:
+            - generic [ref=f4e76]:
+              - generic [ref=f4e77]: Subtotal
+              - generic [ref=f4e78]: £100
+            - generic [ref=f4e79]:
+              - generic [ref=f4e80]: Shipping
+              - generic [ref=f4e81]: £12
+            - generic [ref=f4e82]:
+              - generic [ref=f4e83]: Total
+              - generic [ref=f4e84]: £112
+          - button "Place order · £112" [ref=f4e130] [cursor=pointer]
+          - paragraph [ref=f4e86]: Payment by bank transfer. We’ll email you secure payment instructions and a capture link for your screenshot.
+    - dialog "Order placed" [ref=f4e131]:
+      - generic [ref=f4e133]:
+        - img [ref=f4e135]
+        - heading "Order placed" [level=2] [ref=f4e137]
+        - paragraph [ref=f4e138]: Thank you. Check your inbox — we’ve sent payment instructions and a secure capture link for you to upload your bank-transfer screenshot.
+        - generic [ref=f4e139]:
+          - generic [ref=f4e140]:
+            - paragraph [ref=f4e141]: Order reference
+            - paragraph [ref=f4e142]: ORD-20260701-093228890-B90DB0
+          - generic [ref=f4e143]:
+            - paragraph [ref=f4e144]: Total
+            - paragraph [ref=f4e145]: £112
+        - generic [ref=f4e146]:
+          - link "Continue shopping" [ref=f4e147] [cursor=pointer]:
+            - /url: /#products
+          - link "Back to home" [ref=f4e148] [cursor=pointer]:
+            - /url: /
+  - contentinfo [ref=f4e87]:
+    - generic [ref=f4e88]:
+      - generic [ref=f4e89]:
+        - paragraph [ref=f4e91]:
+          - generic [ref=f4e92]: Premium research compounds —
+          - generic [ref=f4e93]: engineered for precision, validated
+          - generic [ref=f4e94]: by science.
+        - generic [ref=f4e95]:
+          - paragraph [ref=f4e96]: Navigate
+          - list [ref=f4e97]:
+            - listitem [ref=f4e98]:
+              - button "About Us" [ref=f4e99] [cursor=pointer]
+            - listitem [ref=f4e100]:
+              - button "Shop" [ref=f4e101] [cursor=pointer]
+            - listitem [ref=f4e102]:
+              - button "Why Us" [ref=f4e103] [cursor=pointer]
+            - listitem [ref=f4e104]:
+              - button "Contact" [ref=f4e105] [cursor=pointer]
+        - generic [ref=f4e106]:
+          - paragraph [ref=f4e107]: Legal
+          - list [ref=f4e108]:
+            - listitem [ref=f4e109]:
+              - link "Press Release" [ref=f4e110] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=f4e111]:
+              - link "Refund Policy" [ref=f4e112] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=f4e113]:
+              - link "Shipping Policy" [ref=f4e114] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=f4e115]:
+              - link "Privacy Policy" [ref=f4e116] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=f4e117]:
+              - link "Terms of Service" [ref=f4e118] [cursor=pointer]:
+                - /url: "#"
+      - heading "LUMIVEX" [level=2] [ref=f4e120]
+      - generic [ref=f4e121]:
+        - paragraph [ref=f4e122]: © 2026 Lumivex. All rights reserved.
+        - paragraph [ref=f4e123]: Research use only — not for human consumption
+  - button "Open assistant" [ref=f4e124] [cursor=pointer]:
+    - img [ref=f4e125]
+  - alert [ref=f4e127]

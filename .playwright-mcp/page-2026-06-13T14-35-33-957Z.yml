@@ -1,0 +1,252 @@
+- generic [ref=e2]:
+  - banner [ref=e3]:
+    - generic [ref=e5]:
+      - link "home":
+        - /url: /
+      - navigation [ref=e7]:
+        - generic [ref=e8]:
+          - link "Home V.1" [ref=e9] [cursor=pointer]:
+            - /url: /home/home-1
+          - link "Blog V.1" [ref=e10] [cursor=pointer]:
+            - /url: /blog/blog-1
+          - link "Contact V.1" [ref=e11] [cursor=pointer]:
+            - /url: /contact/contact-1
+          - button "Pages" [ref=e13] [cursor=pointer]:
+            - generic [ref=e14]: Pages
+            - generic [ref=e15]: 
+      - link "Contact us Contact us" [ref=e18] [cursor=pointer]:
+        - /url: /contact/contact-1
+        - generic [ref=e19]:
+          - generic [ref=e20]: Contact us
+          - generic [ref=e21]: Contact us
+  - generic [ref=e24]:
+    - generic [ref=e28]:
+      - generic [ref=e29]:
+        - generic [ref=e30]: Research
+        - heading "G e n o v a s" [level=1] [ref=e31]:
+          - generic [ref=e32]: G
+          - generic [ref=e33]: e
+          - generic [ref=e34]: "n"
+          - generic [ref=e35]: o
+          - generic [ref=e36]: v
+          - generic [ref=e37]: a
+          - generic [ref=e38]: s
+      - generic [ref=e45]:
+        - generic [ref=e46]: Expert guidance to navigate complex challenges, drive innovation, and achieve breakthrough results.
+        - link "Learn more Learn more" [ref=e48] [cursor=pointer]:
+          - /url: https://www.temlis.com
+          - generic [ref=e49]:
+            - generic [ref=e50]: Learn more
+            - generic [ref=e51]: Learn more
+    - generic [ref=e57]:
+      - generic [ref=e58]:
+        - generic [ref=e59]: Biotech Insights
+        - img [ref=e60]
+        - generic [ref=e62]: Innovate biotech
+        - img [ref=e63]
+        - generic [ref=e65]: Strategic Innovation
+        - img [ref=e66]
+        - generic [ref=e68]: Global Impact
+      - img [ref=e69]
+      - generic [ref=e71]:
+        - generic [ref=e72]: Biotech Insights
+        - img [ref=e73]
+        - generic [ref=e75]: Innovate biotech
+        - img [ref=e76]
+        - generic [ref=e78]: Strategic Innovation
+        - img [ref=e79]
+        - generic [ref=e81]: Global Impact
+      - img [ref=e82]
+      - generic [ref=e84]:
+        - generic [ref=e85]: Biotech Insights
+        - img [ref=e86]
+        - generic [ref=e88]: Innovate biotech
+        - img [ref=e89]
+        - generic [ref=e91]: Strategic Innovation
+        - img [ref=e92]
+        - generic [ref=e94]: Global Impact
+    - generic [ref=e98]:
+      - heading "Your trusted partner in biotech innovation" [level=2] [ref=e100]
+      - generic [ref=e102]:
+        - generic [ref=e103]:
+          - generic [ref=e104]:
+            - text: Years of Experience in
+            - text: Biotechnology Consulting
+          - generic [ref=e105]: 10+
+        - generic [ref=e106]:
+          - generic [ref=e107]:
+            - text: Successful Projects
+            - text: Completed Globally
+          - generic [ref=e108]: 100+
+        - generic [ref=e109]:
+          - generic [ref=e110]:
+            - text: We’ve partnered with more
+            - text: than 50 biotech companies
+          - generic [ref=e111]: 50+
+        - generic [ref=e112]:
+          - generic [ref=e113]:
+            - text: Trusted by Clients
+            - text: Across globe
+          - generic [ref=e114]: 15+
+    - generic [ref=e118]:
+      - generic [ref=e119]:
+        - heading "Our Expertise" [level=2] [ref=e120]
+        - generic [ref=e121]:
+          - generic [ref=e122]: Our services are designed to empower biotech companies at every stage of their journey.
+          - link "Contact us Contact us" [ref=e124] [cursor=pointer]:
+            - /url: /contact/contact-1
+            - generic [ref=e125]:
+              - generic [ref=e126]: Contact us
+              - generic [ref=e127]: Contact us
+      - generic [ref=e130]:
+        - list [ref=e132]:
+          - listitem [ref=e133]:
+            - link "Strategic Planning Crafting actionable plans for long-term growth and success." [ref=e134] [cursor=pointer]:
+              - /url: /services/strategic-planning
+              - generic [ref=e135]: Strategic Planning
+              - generic [ref=e136]:
+                - generic [ref=e137]: Crafting actionable plans for long-term growth and success.
+                - generic [ref=e139]:
+                  - img [ref=e140]
+                  - img [ref=e142]
+        - list [ref=e145]:
+          - listitem [ref=e146]:
+            - link "R&D Advisory Guidance on optimizing research processes and product development." [ref=e147] [cursor=pointer]:
+              - /url: /services/r-d-advisory
+              - generic [ref=e148]: R&D Advisory
+              - generic [ref=e149]:
+                - generic [ref=e150]: Guidance on optimizing research processes and product development.
+                - generic [ref=e152]:
+                  - img [ref=e153]
+                  - img [ref=e155]
+        - list [ref=e158]:
+          - listitem [ref=e159]:
+            - link "Funding Strategies Assistance in securing investments and grants for biotech projects." [ref=e160] [cursor=pointer]:
+              - /url: /services/funding-strategies
+              - generic [ref=e161]: Funding Strategies
+              - generic [ref=e162]:
+                - generic [ref=e163]: Assistance in securing investments and grants for biotech projects.
+                - generic [ref=e165]:
+                  - img [ref=e166]
+                  - img [ref=e168]
+        - list [ref=e171]:
+          - listitem [ref=e172]:
+            - link "Regulatory Support Ensuring compliance with global regulatory standards." [ref=e173] [cursor=pointer]:
+              - /url: /services/regulatory-support
+              - generic [ref=e174]: Regulatory Support
+              - generic [ref=e175]:
+                - generic [ref=e176]: Ensuring compliance with global regulatory standards.
+                - generic [ref=e178]:
+                  - img [ref=e179]
+                  - img [ref=e181]
+    - generic [ref=e186]:
+      - generic [ref=e187]:
+        - heading "What sets us apart" [level=2] [ref=e188]
+        - generic [ref=e190]: Choosing the right consultant can make all the difference. Here’s why biotech companies worldwide trust us to drive their success
+        - link "Work with us Work with us" [ref=e192] [cursor=pointer]:
+          - /url: https://www.temlis.com
+          - generic [ref=e193]:
+            - generic [ref=e194]: Work with us
+            - generic [ref=e195]: Work with us
+      - generic [ref=e200]:
+        - generic [ref=e201]:
+          - generic [ref=e202]:
+            - img [ref=e204]
+            - generic [ref=e206]: Industry Expertise
+          - generic [ref=e207]: Our team comprises seasoned biotech professionals with 10+ years of experience, ensuring you receive cutting-edge solutions
+        - generic [ref=e208]:
+          - generic [ref=e209]:
+            - img [ref=e211]
+            - generic [ref=e213]: Proven Track Record
+          - generic [ref=e214]: With over 100+ successful projects completed, our clients consistently achieve their milestones, from R&D breakthroughs to market launches.
+        - generic [ref=e215]:
+          - generic [ref=e216]:
+            - img [ref=e218]
+            - generic [ref=e220]: Tailored Solutions
+          - generic [ref=e221]: No two biotech companies are the same. We customize every strategy to align with your vision, goals, and resources.
+        - generic [ref=e222]:
+          - generic [ref=e223]:
+            - img [ref=e225]
+            - generic [ref=e229]: Global Reach
+          - generic [ref=e230]: We’ve worked with clients across 15 countries, giving us the insights needed to navigate diverse markets and regulatory landscapes.
+    - generic [ref=e233]:
+      - generic [ref=e235]:
+        - heading "See our expertise in action" [level=2] [ref=e236]
+        - generic [ref=e237]: Explore the milestones, partnerships, and innovations that define our work in biotechnology.
+      - generic [ref=e240]: "Streamlined R&D for BioInnovate: Reduced development timelines by 30%."
+    - generic [ref=e246]:
+      - heading "Take the first step toward biotech success" [level=2] [ref=e247]:
+        - text: Take the first
+        - text: step toward biotech success
+      - link "Get a Free Consultation Get a Free Consultation" [ref=e249] [cursor=pointer]:
+        - /url: https://www.temlis.com
+        - generic [ref=e250]:
+          - generic [ref=e251]: Get a Free Consultation
+          - generic [ref=e252]: Get a Free Consultation
+    - generic [ref=e262]:
+      - heading "Hear from our clients" [level=2] [ref=e264]
+      - region "carousel" [ref=e265]:
+        - group "1 of 3" [ref=e267]:
+          - generic [ref=e269]:
+            - img [ref=e270]
+            - generic [ref=e272]: Genovas provided invaluable support throughout our oncology pipeline development. Their strategic insights made all the difference.
+            - generic [ref=e273]:
+              - generic [ref=e274]: Sarah Nguyen
+              - generic [ref=e275]: Senior Project Manager
+        - text:  
+        - generic [ref=e277]:
+          - button "Show slide 1 of 3" [pressed] [ref=e278] [cursor=pointer]
+          - button "Show slide 2 of 3" [ref=e279] [cursor=pointer]
+          - button "Show slide 3 of 3" [ref=e280] [cursor=pointer]
+    - contentinfo [ref=e281]:
+      - generic [ref=e283]:
+        - generic [ref=e284]:
+          - generic [ref=e285]:
+            - link [ref=e286] [cursor=pointer]:
+              - /url: /
+            - generic [ref=e287]: Expert guidance to navigate complex challenges, drive innovation, and achieve breakthrough results in biotechnology.
+          - generic [ref=e288]:
+            - generic [ref=e289]:
+              - link "Home V.1" [ref=e290] [cursor=pointer]:
+                - /url: /home/home-1
+              - link "Home V.2" [ref=e291] [cursor=pointer]:
+                - /url: /home/home-2
+              - link "Home V.3" [ref=e292] [cursor=pointer]:
+                - /url: /home/home-3
+              - link "About Us" [ref=e293] [cursor=pointer]:
+                - /url: /about-us
+            - generic [ref=e294]:
+              - link "Blog V.1" [ref=e295] [cursor=pointer]:
+                - /url: /blog/blog-1
+              - link "Blog V.2" [ref=e296] [cursor=pointer]:
+                - /url: /blog/blog-2
+              - link "Blog V.3" [ref=e297] [cursor=pointer]:
+                - /url: /blog/blog-3
+              - link "Blog details" [ref=e298] [cursor=pointer]:
+                - /url: https://genovas-template.webflow.io/blogs/how-biotech-startups-can-navigate-regulatory-challenges
+            - generic [ref=e299]:
+              - link "Contact V.1" [ref=e300] [cursor=pointer]:
+                - /url: /contact/contact-1
+              - link "Contact V.2" [ref=e301] [cursor=pointer]:
+                - /url: /contact/contact-2
+              - link "Contact V.3" [ref=e302] [cursor=pointer]:
+                - /url: /contact/contact-3
+            - generic [ref=e303]:
+              - link "Services" [ref=e304] [cursor=pointer]:
+                - /url: /services
+              - link "Service details" [ref=e305] [cursor=pointer]:
+                - /url: https://genovas-template.webflow.io/services/strategic-planning
+        - generic [ref=e307]: Genova
+  - generic [ref=e309]:
+    - generic [ref=e310]:
+      - link:
+        - /url: https://www.temlis.com/?utm_source=organic&utm_medium=widgetspreview
+      - generic [ref=e311]: 130+ Premium Templates
+    - generic [ref=e312]:
+      - link "Join our AI community" [ref=e313] [cursor=pointer]:
+        - /url: https://www.skool.com/temlis/about
+      - link "See all templates" [ref=e314] [cursor=pointer]:
+        - /url: https://www.temlis.com/?utm_source=organic&utm_medium=widgetspreview
+        - generic [ref=e315]: See all templates
+        - img [ref=e316]
+    - generic [ref=e326]: 1,540+ happy designers

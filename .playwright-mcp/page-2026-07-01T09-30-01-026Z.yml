@@ -1,0 +1,64 @@
+- generic [active] [ref=f1e1]:
+  - banner [ref=f1e2]:
+    - generic [ref=f1e3]:
+      - link "Lumivex home" [ref=f1e4] [cursor=pointer]:
+        - /url: /
+        - generic [ref=f1e5]:
+          - img [ref=f1e6]
+          - generic [ref=f1e13]: LUMIVEX
+      - navigation [ref=f1e14]:
+        - link "Continue shopping" [ref=f1e15] [cursor=pointer]:
+          - /url: /#products
+        - link "Cart, 0 items" [ref=f1e16] [cursor=pointer]:
+          - /url: /cart
+          - img [ref=f1e17]
+  - main [ref=f1e20]:
+    - generic [ref=f1e21]:
+      - img [ref=f1e22]
+      - heading "Your cart is empty" [level=1] [ref=f1e25]
+      - paragraph [ref=f1e26]: Explore our catalogue of high-purity research compounds, each shipped with full documentation.
+      - link "Browse the catalogue" [ref=f1e27] [cursor=pointer]:
+        - /url: /#products
+  - contentinfo [ref=f1e28]:
+    - generic [ref=f1e29]:
+      - generic [ref=f1e30]:
+        - paragraph [ref=f1e32]:
+          - generic [ref=f1e33]: Premium research compounds —
+          - generic [ref=f1e34]: engineered for precision, validated
+          - generic [ref=f1e35]: by science.
+        - generic [ref=f1e36]:
+          - paragraph [ref=f1e37]: Navigate
+          - list [ref=f1e38]:
+            - listitem [ref=f1e39]:
+              - button "About Us" [ref=f1e40] [cursor=pointer]
+            - listitem [ref=f1e41]:
+              - button "Shop" [ref=f1e42] [cursor=pointer]
+            - listitem [ref=f1e43]:
+              - button "Why Us" [ref=f1e44] [cursor=pointer]
+            - listitem [ref=f1e45]:
+              - button "Contact" [ref=f1e46] [cursor=pointer]
+        - generic [ref=f1e47]:
+          - paragraph [ref=f1e48]: Legal
+          - list [ref=f1e49]:
+            - listitem [ref=f1e50]:
+              - link "Press Release" [ref=f1e51] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=f1e52]:
+              - link "Refund Policy" [ref=f1e53] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=f1e54]:
+              - link "Shipping Policy" [ref=f1e55] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=f1e56]:
+              - link "Privacy Policy" [ref=f1e57] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=f1e58]:
+              - link "Terms of Service" [ref=f1e59] [cursor=pointer]:
+                - /url: "#"
+      - heading "LUMIVEX" [level=2] [ref=f1e61]
+      - generic [ref=f1e62]:
+        - paragraph [ref=f1e63]: © 2026 Lumivex. All rights reserved.
+        - paragraph [ref=f1e64]: Research use only — not for human consumption
+  - button "Open assistant" [ref=f1e65] [cursor=pointer]:
+    - img [ref=f1e66]
+  - alert [ref=f1e68]

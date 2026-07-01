@@ -1,0 +1,162 @@
+- generic [active] [ref=e1]:
+  - link "Skip to content" [ref=e2] [cursor=pointer]:
+    - /url: "#home"
+  - banner [ref=e3]:
+    - generic [ref=e5]:
+      - link "Lunvera home" [ref=e6] [cursor=pointer]:
+        - /url: /
+        - generic [ref=e7]:
+          - img [ref=e9]
+          - generic [ref=e14]: Lunvera
+      - navigation [ref=e15]:
+        - link "Home" [ref=e16] [cursor=pointer]:
+          - /url: /#home
+        - link "About" [ref=e17] [cursor=pointer]:
+          - /url: /#about
+        - link "Products" [ref=e18] [cursor=pointer]:
+          - /url: /#products
+        - link "Why Us" [ref=e19] [cursor=pointer]:
+          - /url: /#why
+        - link "Testimonial" [ref=e20] [cursor=pointer]:
+          - /url: /#testimonial
+        - link "Contact" [ref=e21] [cursor=pointer]:
+          - /url: /#contact
+      - generic [ref=e22]:
+        - link "Sign in" [ref=e23] [cursor=pointer]:
+          - /url: /login
+        - link "Cart, 0 items" [ref=e24] [cursor=pointer]:
+          - /url: /cart
+          - img [ref=e25]
+        - link "Shop now" [ref=e29] [cursor=pointer]:
+          - /url: /#products
+  - main [ref=e30]:
+    - generic [ref=e32]:
+      - paragraph [ref=e33]: Get started
+      - heading "Create account" [level=1] [ref=e34]
+      - paragraph [ref=e35]: Register to track orders, earn wallet credit, and access the affiliate program.
+      - generic [ref=e36]:
+        - generic [ref=e37]:
+          - generic [ref=e38]: Full name
+          - textbox "Full name" [ref=e39]:
+            - /placeholder: Jane Doe
+        - generic [ref=e40]:
+          - generic [ref=e41]: Email
+          - textbox "Email" [ref=e42]:
+            - /placeholder: you@lab.com
+        - generic [ref=e43]:
+          - generic [ref=e44]: Password
+          - textbox "Password" [ref=e45]:
+            - /placeholder: At least 6 characters
+        - generic [ref=e46]:
+          - generic [ref=e47]: Date of birth
+          - textbox "Date of birth" [ref=e48]
+        - generic [ref=e49]:
+          - generic [ref=e50]: Nationality
+          - textbox "Nationality" [ref=e51]:
+            - /placeholder: Emirati
+        - generic [ref=e52]:
+          - generic [ref=e53]: Country of residence
+          - textbox "Country of residence" [ref=e54]:
+            - /placeholder: United Arab Emirates
+        - button "Create account" [ref=e55] [cursor=pointer]
+      - paragraph [ref=e56]:
+        - text: Already have an account?
+        - link "Sign in →" [ref=e57] [cursor=pointer]:
+          - /url: /login
+  - contentinfo [ref=e58]:
+    - generic [ref=e59]:
+      - generic [ref=e60]:
+        - generic [ref=e61]:
+          - generic [ref=e62]:
+            - img [ref=e64]
+            - generic [ref=e69]: Lunvera
+          - paragraph [ref=e70]: Research peptides sourced, verified and dispatched from Dubai. Honest sourcing, sealed handling, and a real person at the other end of every WhatsApp message.
+          - generic [ref=e71]:
+            - paragraph [ref=e72]: Level 5, Business Bay, Dubai, UAE
+            - paragraph [ref=e73]:
+              - link "+971 54 380 0625" [ref=e74] [cursor=pointer]:
+                - /url: https://wa.me/971543800625
+            - paragraph [ref=e75]:
+              - link "sales@lunvera.com" [ref=e76] [cursor=pointer]:
+                - /url: mailto:sales@lunvera.com
+          - generic [ref=e77]:
+            - paragraph [ref=e78]: Newsletter
+            - paragraph [ref=e79]: Batch drops, storage tips, sourcing notes. No spam.
+            - generic [ref=e80]:
+              - textbox "you@lab.com" [ref=e81]
+              - button "Subscribe" [disabled] [ref=e82]
+            - generic [ref=e83]:
+              - checkbox "I agree to receive research updates." [checked] [ref=e84]
+              - text: I agree to receive research updates.
+        - generic [ref=e85]:
+          - generic [ref=e86]:
+            - heading "Catalogue" [level=4] [ref=e87]
+            - list [ref=e88]:
+              - listitem [ref=e89]:
+                - link "BPC-157 + TB-500" [ref=e90] [cursor=pointer]:
+                  - /url: /products/bpc-157-tb-500
+              - listitem [ref=e91]:
+                - link "Glow" [ref=e92] [cursor=pointer]:
+                  - /url: /products/glow
+              - listitem [ref=e93]:
+                - link "Retatrutide" [ref=e94] [cursor=pointer]:
+                  - /url: /products/retatrutide
+              - listitem [ref=e95]:
+                - link "Tirzepatide" [ref=e96] [cursor=pointer]:
+                  - /url: /products/tirzepatide
+          - generic [ref=e97]:
+            - heading "Company" [level=4] [ref=e98]
+            - list [ref=e99]:
+              - listitem [ref=e100]:
+                - link "About Lunvera" [ref=e101] [cursor=pointer]:
+                  - /url: /#about
+              - listitem [ref=e102]:
+                - link "How we source" [ref=e103] [cursor=pointer]:
+                  - /url: /#why
+              - listitem [ref=e104]:
+                - link "Reviews" [ref=e105] [cursor=pointer]:
+                  - /url: /#testimonial
+              - listitem [ref=e106]:
+                - link "Contact" [ref=e107] [cursor=pointer]:
+                  - /url: /#contact
+          - generic [ref=e108]:
+            - heading "Support" [level=4] [ref=e109]
+            - list [ref=e110]:
+              - listitem [ref=e111]:
+                - link "Track order" [ref=e112] [cursor=pointer]:
+                  - /url: /track-order
+              - listitem [ref=e113]:
+                - link "Cart" [ref=e114] [cursor=pointer]:
+                  - /url: /cart
+              - listitem [ref=e115]:
+                - link "Account" [ref=e116] [cursor=pointer]:
+                  - /url: /account
+              - listitem [ref=e117]:
+                - link "Sign in" [ref=e118] [cursor=pointer]:
+                  - /url: /login
+          - generic [ref=e119]:
+            - heading "Connect" [level=4] [ref=e120]
+            - list [ref=e121]:
+              - listitem [ref=e122]:
+                - link "WhatsApp" [ref=e123] [cursor=pointer]:
+                  - /url: https://wa.me/971543800625
+              - listitem [ref=e124]:
+                - link "Email" [ref=e125] [cursor=pointer]:
+                  - /url: mailto:sales@lunvera.com
+              - listitem [ref=e126]:
+                - link "Shop now" [ref=e127] [cursor=pointer]:
+                  - /url: /#products
+              - listitem [ref=e128]:
+                - link "Register" [ref=e129] [cursor=pointer]:
+                  - /url: /register
+      - generic [ref=e132]: Lunvera
+      - generic [ref=e133]:
+        - paragraph [ref=e134]: © 2026 Lunvera. All rights reserved. For research use only.
+        - generic [ref=e135]:
+          - link "Privacy" [ref=e136] [cursor=pointer]:
+            - /url: /#contact
+          - link "Terms" [ref=e137] [cursor=pointer]:
+            - /url: /#contact
+          - link "Cookies" [ref=e138] [cursor=pointer]:
+            - /url: /#contact
+  - alert [ref=e139]

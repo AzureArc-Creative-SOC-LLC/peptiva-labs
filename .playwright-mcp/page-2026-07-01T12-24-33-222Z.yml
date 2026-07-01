@@ -1,0 +1,325 @@
+- generic [active] [ref=e1]:
+  - link "Skip to content" [ref=e2] [cursor=pointer]:
+    - /url: "#home"
+  - banner [ref=e3]:
+    - generic [ref=e5]:
+      - link "Lunvera home" [ref=e6] [cursor=pointer]:
+        - /url: /
+        - generic [ref=e7]:
+          - img [ref=e9]
+          - generic [ref=e14]: Lunvera
+      - generic [ref=e15]:
+        - link "Cart, 0 items" [ref=e16] [cursor=pointer]:
+          - /url: /cart
+          - img [ref=e17]
+        - button "Open menu" [ref=e21] [cursor=pointer]:
+          - img [ref=e22]
+  - generic:
+    - generic:
+      - link:
+        - /url: /
+        - generic:
+          - generic:
+            - img
+          - generic: Lunvera
+      - button:
+        - img
+    - generic:
+      - navigation:
+        - link:
+          - /url: /#home
+          - text: Home
+        - link:
+          - /url: /#about
+          - text: About
+        - link:
+          - /url: /#products
+          - text: Products
+        - link:
+          - /url: /#why
+          - text: Why Us
+        - link:
+          - /url: /#testimonial
+          - text: Testimonial
+        - link:
+          - /url: /#contact
+          - text: Contact
+      - generic:
+        - paragraph: Account
+        - generic:
+          - link:
+            - /url: /login
+            - text: Sign in
+          - link:
+            - /url: /register
+            - text: Create account
+      - generic:
+        - link:
+          - /url: /#products
+          - text: Shop now
+        - link:
+          - /url: /cart
+          - text: View cart
+  - main [ref=e24]:
+    - generic [ref=e26]:
+      - heading "L u n v e r a" [level=1] [ref=e27]:
+        - generic [ref=e28]: L
+        - generic [ref=e29]: u
+        - generic [ref=e30]: "n"
+        - generic [ref=e31]: v
+        - generic [ref=e32]: e
+        - generic [ref=e33]: r
+        - generic [ref=e34]: a
+      - img "Lunvera research peptide vial" [ref=e37]
+      - generic [ref=e41]:
+        - paragraph [ref=e42]: Verified research peptides, packed and dispatched from Dubai. Honest sourcing, careful handling, and a real person on WhatsApp when you need one.
+        - generic [ref=e43]:
+          - link "Browse catalogue" [ref=e44] [cursor=pointer]:
+            - /url: "#products"
+          - link "Chat on WhatsApp" [ref=e45] [cursor=pointer]:
+            - /url: "#contact"
+            - text: Chat on WhatsApp
+            - img [ref=e46]
+    - generic [ref=e51]:
+      - generic [ref=e52]:
+        - generic [ref=e53]:
+          - generic [ref=e54]: Verified Sourcing
+          - img [ref=e55]
+        - generic [ref=e57]:
+          - generic [ref=e58]: Lab-Tested Purity
+          - img [ref=e59]
+        - generic [ref=e61]:
+          - generic [ref=e62]: Sealed Cold Packaging
+          - img [ref=e63]
+        - generic [ref=e65]:
+          - generic [ref=e66]: WhatsApp Support
+          - img [ref=e67]
+        - generic [ref=e69]:
+          - generic [ref=e70]: Verified Sourcing
+          - img [ref=e71]
+        - generic [ref=e73]:
+          - generic [ref=e74]: Lab-Tested Purity
+          - img [ref=e75]
+        - generic [ref=e77]:
+          - generic [ref=e78]: Sealed Cold Packaging
+          - img [ref=e79]
+        - generic [ref=e81]:
+          - generic [ref=e82]: WhatsApp Support
+          - img [ref=e83]
+        - generic [ref=e85]:
+          - generic [ref=e86]: Verified Sourcing
+          - img [ref=e87]
+        - generic [ref=e89]:
+          - generic [ref=e90]: Lab-Tested Purity
+          - img [ref=e91]
+        - generic [ref=e93]:
+          - generic [ref=e94]: Sealed Cold Packaging
+          - img [ref=e95]
+        - generic [ref=e97]:
+          - generic [ref=e98]: WhatsApp Support
+          - img [ref=e99]
+        - generic [ref=e101]:
+          - generic [ref=e102]: Verified Sourcing
+          - img [ref=e103]
+        - generic [ref=e105]:
+          - generic [ref=e106]: Lab-Tested Purity
+          - img [ref=e107]
+        - generic [ref=e109]:
+          - generic [ref=e110]: Sealed Cold Packaging
+          - img [ref=e111]
+        - generic [ref=e113]:
+          - generic [ref=e114]: WhatsApp Support
+          - img [ref=e115]
+      - generic [ref=e117]:
+        - generic [ref=e118]:
+          - generic [ref=e119]: Verified Sourcing
+          - img [ref=e120]
+        - generic [ref=e122]:
+          - generic [ref=e123]: Lab-Tested Purity
+          - img [ref=e124]
+        - generic [ref=e126]:
+          - generic [ref=e127]: Sealed Cold Packaging
+          - img [ref=e128]
+        - generic [ref=e130]:
+          - generic [ref=e131]: WhatsApp Support
+          - img [ref=e132]
+        - generic [ref=e134]:
+          - generic [ref=e135]: Verified Sourcing
+          - img [ref=e136]
+        - generic [ref=e138]:
+          - generic [ref=e139]: Lab-Tested Purity
+          - img [ref=e140]
+        - generic [ref=e142]:
+          - generic [ref=e143]: Sealed Cold Packaging
+          - img [ref=e144]
+        - generic [ref=e146]:
+          - generic [ref=e147]: WhatsApp Support
+          - img [ref=e148]
+        - generic [ref=e150]:
+          - generic [ref=e151]: Verified Sourcing
+          - img [ref=e152]
+        - generic [ref=e154]:
+          - generic [ref=e155]: Lab-Tested Purity
+          - img [ref=e156]
+        - generic [ref=e158]:
+          - generic [ref=e159]: Sealed Cold Packaging
+          - img [ref=e160]
+        - generic [ref=e162]:
+          - generic [ref=e163]: WhatsApp Support
+          - img [ref=e164]
+        - generic [ref=e166]:
+          - generic [ref=e167]: Verified Sourcing
+          - img [ref=e168]
+        - generic [ref=e170]:
+          - generic [ref=e171]: Lab-Tested Purity
+          - img [ref=e172]
+        - generic [ref=e174]:
+          - generic [ref=e175]: Sealed Cold Packaging
+          - img [ref=e176]
+        - generic [ref=e178]:
+          - generic [ref=e179]: WhatsApp Support
+          - img [ref=e180]
+    - heading "The Range" [level=2] [ref=e188]:
+      - generic [ref=e190]: The Range
+    - generic [ref=e194]:
+      - generic [ref=e195]:
+        - generic [ref=e196]: Why Lunvera
+        - heading "Why ChooseLunvera?" [level=2] [ref=e198]:
+          - generic [ref=e200]: Why Choose
+          - generic [ref=e202]: Lunvera?
+        - paragraph [ref=e203]: Purity, paperwork, and real customer service — all on the same side of the table.
+      - generic:
+        - img "Researcher at work in the Lunvera Dubai lab"
+      - generic [ref=e204]:
+        - img [ref=e206]
+        - heading "Lab-tested vials" [level=3] [ref=e208]
+        - paragraph [ref=e209]: Every batch is screened for purity. Out of spec means it never ships.
+      - generic [ref=e210]:
+        - img [ref=e212]
+        - heading "Traceable sourcing" [level=3] [ref=e215]
+        - link "Talk to the team" [ref=e216] [cursor=pointer]:
+          - /url: "#contact"
+          - img [ref=e217]
+          - text: Talk to the team
+      - generic [ref=e220]:
+        - img [ref=e222]
+        - heading "UAE stock, AED pricing" [level=3] [ref=e227]
+        - paragraph [ref=e228]: Cold-stored in Dubai and dispatched same or next working day.
+      - generic [ref=e229]:
+        - img [ref=e231]
+        - heading "A human on WhatsApp" [level=3] [ref=e234]
+        - generic [ref=e235]:
+          - paragraph [ref=e236]: Real replies, fast.
+          - link "Message us on WhatsApp" [ref=e237] [cursor=pointer]:
+            - /url: "#contact"
+            - img [ref=e238]
+    - heading "How a vial gets to you" [level=2] [ref=e244]:
+      - generic [ref=e246]: How a vial gets to you
+    - heading "Ready to order? Message us on WhatsApp" [level=2] [ref=e253]:
+      - generic [ref=e255]: Ready to order?
+      - generic [ref=e257]: Message us on
+      - generic [ref=e259]: WhatsApp
+    - generic [ref=e261]:
+      - heading "What our customers say" [level=2] [ref=e262]:
+        - generic [ref=e264]: What our customers say
+      - generic [ref=e265]:
+        - button "Testimonial 1" [ref=e266] [cursor=pointer]
+        - button "Testimonial 2" [ref=e267] [cursor=pointer]
+        - button "Testimonial 3" [ref=e268] [cursor=pointer]
+  - contentinfo [ref=e269]:
+    - generic [ref=e270]:
+      - generic [ref=e271]:
+        - generic [ref=e272]:
+          - generic [ref=e273]:
+            - img [ref=e275]
+            - generic [ref=e280]: Lunvera
+          - paragraph [ref=e281]: Research peptides sourced, verified and dispatched from Dubai. Honest sourcing, sealed handling, and a real person at the other end of every WhatsApp message.
+          - generic [ref=e282]:
+            - paragraph [ref=e283]: Level 5, Business Bay, Dubai, UAE
+            - paragraph [ref=e284]:
+              - link "+971 54 380 0625" [ref=e285] [cursor=pointer]:
+                - /url: https://wa.me/971543800625
+            - paragraph [ref=e286]:
+              - link "sales@lunvera.com" [ref=e287] [cursor=pointer]:
+                - /url: mailto:sales@lunvera.com
+          - generic [ref=e288]:
+            - paragraph [ref=e289]: Newsletter
+            - paragraph [ref=e290]: Batch drops, storage tips, sourcing notes. No spam.
+            - generic [ref=e291]:
+              - textbox "you@lab.com" [ref=e292]
+              - button "Subscribe" [disabled] [ref=e293]
+            - generic [ref=e294]:
+              - checkbox "I agree to receive research updates." [checked] [ref=e295]
+              - text: I agree to receive research updates.
+        - generic [ref=e296]:
+          - generic [ref=e297]:
+            - heading "Catalogue" [level=4] [ref=e298]
+            - list [ref=e299]:
+              - listitem [ref=e300]:
+                - link "BPC-157 + TB-500" [ref=e301] [cursor=pointer]:
+                  - /url: /products/bpc-157-tb-500
+              - listitem [ref=e302]:
+                - link "Glow" [ref=e303] [cursor=pointer]:
+                  - /url: /products/glow
+              - listitem [ref=e304]:
+                - link "Retatrutide" [ref=e305] [cursor=pointer]:
+                  - /url: /products/retatrutide
+              - listitem [ref=e306]:
+                - link "Tirzepatide" [ref=e307] [cursor=pointer]:
+                  - /url: /products/tirzepatide
+          - generic [ref=e308]:
+            - heading "Company" [level=4] [ref=e309]
+            - list [ref=e310]:
+              - listitem [ref=e311]:
+                - link "About Lunvera" [ref=e312] [cursor=pointer]:
+                  - /url: /#about
+              - listitem [ref=e313]:
+                - link "How we source" [ref=e314] [cursor=pointer]:
+                  - /url: /#why
+              - listitem [ref=e315]:
+                - link "Reviews" [ref=e316] [cursor=pointer]:
+                  - /url: /#testimonial
+              - listitem [ref=e317]:
+                - link "Contact" [ref=e318] [cursor=pointer]:
+                  - /url: /#contact
+          - generic [ref=e319]:
+            - heading "Support" [level=4] [ref=e320]
+            - list [ref=e321]:
+              - listitem [ref=e322]:
+                - link "Track order" [ref=e323] [cursor=pointer]:
+                  - /url: /track-order
+              - listitem [ref=e324]:
+                - link "Cart" [ref=e325] [cursor=pointer]:
+                  - /url: /cart
+              - listitem [ref=e326]:
+                - link "Account" [ref=e327] [cursor=pointer]:
+                  - /url: /account
+              - listitem [ref=e328]:
+                - link "Sign in" [ref=e329] [cursor=pointer]:
+                  - /url: /login
+          - generic [ref=e330]:
+            - heading "Connect" [level=4] [ref=e331]
+            - list [ref=e332]:
+              - listitem [ref=e333]:
+                - link "WhatsApp" [ref=e334] [cursor=pointer]:
+                  - /url: https://wa.me/971543800625
+              - listitem [ref=e335]:
+                - link "Email" [ref=e336] [cursor=pointer]:
+                  - /url: mailto:sales@lunvera.com
+              - listitem [ref=e337]:
+                - link "Shop now" [ref=e338] [cursor=pointer]:
+                  - /url: /#products
+              - listitem [ref=e339]:
+                - link "Register" [ref=e340] [cursor=pointer]:
+                  - /url: /register
+      - generic [ref=e343]: Lunvera
+      - generic [ref=e344]:
+        - paragraph [ref=e345]: © 2026 Lunvera. All rights reserved. For research use only.
+        - generic [ref=e346]:
+          - link "Privacy" [ref=e347] [cursor=pointer]:
+            - /url: /#contact
+          - link "Terms" [ref=e348] [cursor=pointer]:
+            - /url: /#contact
+          - link "Cookies" [ref=e349] [cursor=pointer]:
+            - /url: /#contact
+  - alert [ref=e350]

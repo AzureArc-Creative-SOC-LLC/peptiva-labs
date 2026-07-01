@@ -1,0 +1,222 @@
+- generic [active] [ref=f1e1]:
+  - link "Skip to content" [ref=f1e2] [cursor=pointer]:
+    - /url: "#home"
+  - banner [ref=f1e3]:
+    - generic [ref=f1e5]:
+      - link "Lunvera home" [ref=f1e6] [cursor=pointer]:
+        - /url: /
+        - generic [ref=f1e7]:
+          - img [ref=f1e9]
+          - generic [ref=f1e14]: Lunvera
+      - navigation [ref=f1e15]:
+        - link "Home" [ref=f1e16] [cursor=pointer]:
+          - /url: /#home
+        - link "About" [ref=f1e17] [cursor=pointer]:
+          - /url: /#about
+        - link "Products" [ref=f1e18] [cursor=pointer]:
+          - /url: /#products
+        - link "Why Us" [ref=f1e19] [cursor=pointer]:
+          - /url: /#why
+        - link "Testimonial" [ref=f1e20] [cursor=pointer]:
+          - /url: /#testimonial
+        - link "Contact" [ref=f1e21] [cursor=pointer]:
+          - /url: /#contact
+      - generic [ref=f1e22]:
+        - link "Sign in" [ref=f1e23] [cursor=pointer]:
+          - /url: /login
+        - link "Cart, 0 items" [ref=f1e24] [cursor=pointer]:
+          - /url: /cart
+          - img [ref=f1e25]
+        - link "Shop now" [ref=f1e29] [cursor=pointer]:
+          - /url: /#products
+  - main [ref=f1e30]:
+    - generic [ref=f1e31]:
+      - navigation "Breadcrumb" [ref=f1e32]:
+        - link "Back to the range" [ref=f1e33] [cursor=pointer]:
+          - /url: /#products
+          - img [ref=f1e34]
+          - text: Back to the range
+      - generic [ref=f1e36]:
+        - generic [ref=f1e37]:
+          - img "Tirzepatide — 5 / 20 / 40 mg" [ref=f1e39]
+          - generic [ref=f1e40]:
+            - button "View image 1 of 4" [ref=f1e41] [cursor=pointer]:
+              - img "Tirzepatide view 1" [ref=f1e42]
+            - button "View image 2 of 4" [ref=f1e43] [cursor=pointer]:
+              - img "Tirzepatide view 2" [ref=f1e44]
+            - button "View image 3 of 4" [ref=f1e45] [cursor=pointer]:
+              - img "Tirzepatide view 3" [ref=f1e46]
+            - button "View image 4 of 4" [ref=f1e47] [cursor=pointer]:
+              - img "Tirzepatide view 4" [ref=f1e48]
+        - generic [ref=f1e49]:
+          - generic [ref=f1e50]: Metabolic
+          - heading "Tirzepatide" [level=1] [ref=f1e51]
+          - paragraph [ref=f1e52]: 5 / 20 / 40 mg
+          - paragraph [ref=f1e53]: from AED 750
+          - paragraph [ref=f1e54]: Tirzepatide is a dual-agonist GLP-1 / GIP research peptide kept in three concentrations so different study designs can order exactly the strength they need.
+          - paragraph [ref=f1e55]: Held in our temperature-controlled Dubai facility and dispatched same or next working day, each vial is verified, sealed and accurately labelled.
+          - generic [ref=f1e56]:
+            - generic [ref=f1e57]:
+              - button "Decrease quantity" [ref=f1e58] [cursor=pointer]:
+                - img [ref=f1e59]
+              - generic [ref=f1e60]: "1"
+              - button "Increase quantity" [ref=f1e61] [cursor=pointer]:
+                - img [ref=f1e62]
+            - button "Add to cart" [ref=f1e64] [cursor=pointer]
+            - link "View cart" [ref=f1e65] [cursor=pointer]:
+              - /url: /cart
+              - text: View cart
+              - img [ref=f1e66]
+          - status [ref=f1e69]
+          - list [ref=f1e70]:
+            - listitem [ref=f1e71]: Available in 5 mg, 20 mg and 40 mg
+            - listitem [ref=f1e73]: Dual-agonist GLP-1 / GIP peptide
+            - listitem [ref=f1e75]: Verified purity, sealed handling
+            - listitem [ref=f1e77]: For laboratory research use only
+      - region "Related products" [ref=f1e79]:
+        - generic [ref=f1e80]:
+          - heading "Related products" [level=2] [ref=f1e81]
+          - link "View all" [ref=f1e82] [cursor=pointer]:
+            - /url: /#products
+        - generic [ref=f1e83]:
+          - link "BPC-157 + TB-500 BPC-157 + TB-500 AED 999" [ref=f1e84] [cursor=pointer]:
+            - /url: /products/bpc-157-tb-500
+            - img "BPC-157 + TB-500" [ref=f1e86]
+            - generic [ref=f1e87]:
+              - generic [ref=f1e88]:
+                - heading "BPC-157 + TB-500" [level=3] [ref=f1e89]
+                - paragraph [ref=f1e90]: AED 999
+              - img [ref=f1e92]
+          - link "Glow Glow from AED 1,199" [ref=f1e95] [cursor=pointer]:
+            - /url: /products/glow
+            - img "Glow" [ref=f1e97]
+            - generic [ref=f1e98]:
+              - generic [ref=f1e99]:
+                - heading "Glow" [level=3] [ref=f1e100]
+                - paragraph [ref=f1e101]: from AED 1,199
+              - img [ref=f1e103]
+          - link "Retatrutide Retatrutide from AED 1,990" [ref=f1e106] [cursor=pointer]:
+            - /url: /products/retatrutide
+            - img "Retatrutide" [ref=f1e108]
+            - generic [ref=f1e109]:
+              - generic [ref=f1e110]:
+                - heading "Retatrutide" [level=3] [ref=f1e111]
+                - paragraph [ref=f1e112]: from AED 1,990
+              - img [ref=f1e114]
+  - contentinfo [ref=f1e117]:
+    - generic [ref=f1e118]:
+      - generic [ref=f1e119]:
+        - generic [ref=f1e120]:
+          - generic [ref=f1e121]:
+            - img [ref=f1e123]
+            - generic [ref=f1e128]: Lunvera
+          - paragraph [ref=f1e129]: Research peptides sourced, verified and dispatched from Dubai. Honest sourcing, sealed handling, and a real person at the other end of every WhatsApp message.
+          - generic [ref=f1e130]:
+            - paragraph [ref=f1e131]: Level 5, Business Bay, Dubai, UAE
+            - paragraph [ref=f1e132]:
+              - link "+971 54 380 0625" [ref=f1e133] [cursor=pointer]:
+                - /url: https://wa.me/971543800625
+            - paragraph [ref=f1e134]:
+              - link "sales@lunvera.com" [ref=f1e135] [cursor=pointer]:
+                - /url: mailto:sales@lunvera.com
+          - generic [ref=f1e136]:
+            - paragraph [ref=f1e137]: Newsletter
+            - paragraph [ref=f1e138]: Batch drops, storage tips, sourcing notes. No spam.
+            - generic [ref=f1e139]:
+              - textbox "you@lab.com" [ref=f1e140]
+              - button "Subscribe" [disabled] [ref=f1e141]
+            - generic [ref=f1e142]:
+              - checkbox "I agree to receive research updates." [checked] [ref=f1e143]
+              - text: I agree to receive research updates.
+        - generic [ref=f1e144]:
+          - generic [ref=f1e145]:
+            - heading "Catalogue" [level=4] [ref=f1e146]
+            - list [ref=f1e147]:
+              - listitem [ref=f1e148]:
+                - link "BPC-157 + TB-500" [ref=f1e149] [cursor=pointer]:
+                  - /url: /products/bpc-157-tb-500
+              - listitem [ref=f1e150]:
+                - link "Glow" [ref=f1e151] [cursor=pointer]:
+                  - /url: /products/glow
+              - listitem [ref=f1e152]:
+                - link "Retatrutide" [ref=f1e153] [cursor=pointer]:
+                  - /url: /products/retatrutide
+              - listitem [ref=f1e154]:
+                - link "Tirzepatide" [ref=f1e155] [cursor=pointer]:
+                  - /url: /products/tirzepatide
+          - generic [ref=f1e156]:
+            - heading "Company" [level=4] [ref=f1e157]
+            - list [ref=f1e158]:
+              - listitem [ref=f1e159]:
+                - link "About Lunvera" [ref=f1e160] [cursor=pointer]:
+                  - /url: /#about
+              - listitem [ref=f1e161]:
+                - link "How we source" [ref=f1e162] [cursor=pointer]:
+                  - /url: /#why
+              - listitem [ref=f1e163]:
+                - link "Reviews" [ref=f1e164] [cursor=pointer]:
+                  - /url: /#testimonial
+              - listitem [ref=f1e165]:
+                - link "Contact" [ref=f1e166] [cursor=pointer]:
+                  - /url: /#contact
+          - generic [ref=f1e167]:
+            - heading "Support" [level=4] [ref=f1e168]
+            - list [ref=f1e169]:
+              - listitem [ref=f1e170]:
+                - link "Track order" [ref=f1e171] [cursor=pointer]:
+                  - /url: /track-order
+              - listitem [ref=f1e172]:
+                - link "Cart" [ref=f1e173] [cursor=pointer]:
+                  - /url: /cart
+              - listitem [ref=f1e174]:
+                - link "Account" [ref=f1e175] [cursor=pointer]:
+                  - /url: /account
+              - listitem [ref=f1e176]:
+                - link "Sign in" [ref=f1e177] [cursor=pointer]:
+                  - /url: /login
+          - generic [ref=f1e178]:
+            - heading "Connect" [level=4] [ref=f1e179]
+            - list [ref=f1e180]:
+              - listitem [ref=f1e181]:
+                - link "WhatsApp" [ref=f1e182] [cursor=pointer]:
+                  - /url: https://wa.me/971543800625
+              - listitem [ref=f1e183]:
+                - link "Email" [ref=f1e184] [cursor=pointer]:
+                  - /url: mailto:sales@lunvera.com
+              - listitem [ref=f1e185]:
+                - link "Shop now" [ref=f1e186] [cursor=pointer]:
+                  - /url: /#products
+              - listitem [ref=f1e187]:
+                - link "Register" [ref=f1e188] [cursor=pointer]:
+                  - /url: /register
+      - generic [ref=f1e191]: Lunvera
+      - generic [ref=f1e192]:
+        - paragraph [ref=f1e193]: © 2026 Lunvera. All rights reserved. For research use only.
+        - generic [ref=f1e194]:
+          - link "Privacy" [ref=f1e195] [cursor=pointer]:
+            - /url: /#contact
+          - link "Terms" [ref=f1e196] [cursor=pointer]:
+            - /url: /#contact
+          - link "Cookies" [ref=f1e197] [cursor=pointer]:
+            - /url: /#contact
+  - button "Open assistant" [ref=f1e198] [cursor=pointer]:
+    - img [ref=f1e199]
+  - dialog:
+    - generic:
+      - generic:
+        - generic:
+          - img
+        - generic:
+          - paragraph: Research assistant
+          - paragraph: Ask about compounds, storage, or sourcing.
+      - button:
+        - img
+    - generic:
+      - generic:
+        - paragraph: Hi. I’m your research assistant — ask me anything about the Lunvera catalogue.
+    - generic:
+      - textbox:
+        - /placeholder: Ask about a compound…
+      - button [disabled]:
+        - img
+  - alert [ref=f1e201]

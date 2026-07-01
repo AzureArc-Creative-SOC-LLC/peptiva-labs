@@ -1,0 +1,176 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e4]:
+      - link "Luma home" [ref=e5] [cursor=pointer]:
+        - /url: /
+        - generic [ref=e6]:
+          - img [ref=e7]
+          - generic [ref=e11]: Luma
+      - navigation [ref=e12]:
+        - link "Home" [ref=e13] [cursor=pointer]:
+          - /url: /#home
+        - link "About" [ref=e14] [cursor=pointer]:
+          - /url: /#about
+        - link "Products" [ref=e15] [cursor=pointer]:
+          - /url: /#products
+        - link "Why Us" [ref=e16] [cursor=pointer]:
+          - /url: /#why
+        - link "Testimonial" [ref=e17] [cursor=pointer]:
+          - /url: /#testimonial
+        - link "Contact" [ref=e18] [cursor=pointer]:
+          - /url: /#contact
+      - generic [ref=e19]:
+        - link "Cart, 0 items" [ref=e20] [cursor=pointer]:
+          - /url: /cart
+          - img [ref=e21]
+        - link "Shop now" [ref=e25] [cursor=pointer]:
+          - /url: /#products
+  - main [ref=e26]:
+    - generic [ref=e27]:
+      - link "Back to the range" [ref=e28] [cursor=pointer]:
+        - /url: /#products
+        - img [ref=e29]
+        - text: Back to the range
+      - generic [ref=e31]:
+        - img "Glow" [ref=e33]
+        - generic [ref=e34]:
+          - generic [ref=e35]: Skin & Tissue
+          - heading "Glow" [level=1] [ref=e36]
+          - paragraph [ref=e37]: 5 mg · 70 mg options
+          - paragraph [ref=e38]: from AED 1,199
+          - paragraph [ref=e39]: Glow is our skin-and-tissue research line, offered in two concentrations so study designs focused on appearance, texture and recovery markers can pick the strength they need.
+          - paragraph [ref=e40]: Every batch is verified for concentration and purity, then sealed and dispatched cold from Dubai with accurate, honest labelling.
+          - generic [ref=e41]:
+            - generic [ref=e42]:
+              - button "Decrease quantity" [ref=e43] [cursor=pointer]:
+                - img [ref=e44]
+              - generic [ref=e45]: "1"
+              - button "Increase quantity" [ref=e46] [cursor=pointer]:
+                - img [ref=e47]
+            - button "Add to cart" [ref=e49] [cursor=pointer]
+            - link "View cart" [ref=e50] [cursor=pointer]:
+              - /url: /cart
+              - text: View cart
+              - img [ref=e51]
+          - list [ref=e54]:
+            - listitem [ref=e55]: Available in 5 mg and 70 mg options
+            - listitem [ref=e57]: Concentration-verified every batch
+            - listitem [ref=e59]: Sealed, tamper-evident vials
+            - listitem [ref=e61]: For laboratory research use only
+      - generic [ref=e63]:
+        - generic [ref=e64]:
+          - heading "Related products" [level=2] [ref=e65]
+          - link "View all" [ref=e66] [cursor=pointer]:
+            - /url: /#products
+        - generic [ref=e67]:
+          - link "BPC-157 + TB-500 BPC-157 + TB-500 AED 999" [ref=e68] [cursor=pointer]:
+            - /url: /products/bpc-157-tb-500
+            - img "BPC-157 + TB-500" [ref=e70]
+            - generic [ref=e71]:
+              - generic [ref=e72]:
+                - heading "BPC-157 + TB-500" [level=3] [ref=e73]
+                - paragraph [ref=e74]: AED 999
+              - img [ref=e76]
+          - link "Retatrutide Retatrutide from AED 1,990" [ref=e79] [cursor=pointer]:
+            - /url: /products/retatrutide
+            - img "Retatrutide" [ref=e81]
+            - generic [ref=e82]:
+              - generic [ref=e83]:
+                - heading "Retatrutide" [level=3] [ref=e84]
+                - paragraph [ref=e85]: from AED 1,990
+              - img [ref=e87]
+          - link "Tirzepatide Tirzepatide from AED 750" [ref=e90] [cursor=pointer]:
+            - /url: /products/tirzepatide
+            - img "Tirzepatide" [ref=e92]
+            - generic [ref=e93]:
+              - generic [ref=e94]:
+                - heading "Tirzepatide" [level=3] [ref=e95]
+                - paragraph [ref=e96]: from AED 750
+              - img [ref=e98]
+  - contentinfo [ref=e101]:
+    - generic [ref=e102]:
+      - generic [ref=e103]:
+        - generic [ref=e104]:
+          - generic [ref=e105]:
+            - img [ref=e106]
+            - generic [ref=e110]: Luma
+          - paragraph [ref=e111]: Research peptides sourced, verified and dispatched from Dubai. Honest sourcing, sealed handling, and a real person at the other end of every WhatsApp message.
+          - generic [ref=e112]:
+            - paragraph [ref=e113]: Level 5, Business Bay, Dubai, UAE
+            - paragraph [ref=e114]:
+              - link "+971 54 380 0625" [ref=e115] [cursor=pointer]:
+                - /url: https://wa.me/971543800625
+            - paragraph [ref=e116]:
+              - link "sales@lumauae.com" [ref=e117] [cursor=pointer]:
+                - /url: mailto:sales@lumauae.com
+        - generic [ref=e118]:
+          - generic [ref=e119]:
+            - heading "Catalogue" [level=4] [ref=e120]
+            - list [ref=e121]:
+              - listitem [ref=e122]:
+                - link "BPC-157 + TB-500" [ref=e123] [cursor=pointer]:
+                  - /url: "#"
+              - listitem [ref=e124]:
+                - link "Glow" [ref=e125] [cursor=pointer]:
+                  - /url: "#"
+              - listitem [ref=e126]:
+                - link "Retatrutide" [ref=e127] [cursor=pointer]:
+                  - /url: "#"
+              - listitem [ref=e128]:
+                - link "Tirzepatide" [ref=e129] [cursor=pointer]:
+                  - /url: "#"
+          - generic [ref=e130]:
+            - heading "Company" [level=4] [ref=e131]
+            - list [ref=e132]:
+              - listitem [ref=e133]:
+                - link "About Luma" [ref=e134] [cursor=pointer]:
+                  - /url: "#"
+              - listitem [ref=e135]:
+                - link "How we source" [ref=e136] [cursor=pointer]:
+                  - /url: "#"
+              - listitem [ref=e137]:
+                - link "Reviews" [ref=e138] [cursor=pointer]:
+                  - /url: "#"
+              - listitem [ref=e139]:
+                - link "Contact" [ref=e140] [cursor=pointer]:
+                  - /url: "#"
+          - generic [ref=e141]:
+            - heading "Support" [level=4] [ref=e142]
+            - list [ref=e143]:
+              - listitem [ref=e144]:
+                - link "Shipping" [ref=e145] [cursor=pointer]:
+                  - /url: "#"
+              - listitem [ref=e146]:
+                - link "Returns" [ref=e147] [cursor=pointer]:
+                  - /url: "#"
+              - listitem [ref=e148]:
+                - link "Storage guide" [ref=e149] [cursor=pointer]:
+                  - /url: "#"
+              - listitem [ref=e150]:
+                - link "FAQ" [ref=e151] [cursor=pointer]:
+                  - /url: "#"
+          - generic [ref=e152]:
+            - heading "Connect" [level=4] [ref=e153]
+            - list [ref=e154]:
+              - listitem [ref=e155]:
+                - link "WhatsApp" [ref=e156] [cursor=pointer]:
+                  - /url: "#"
+              - listitem [ref=e157]:
+                - link "Instagram" [ref=e158] [cursor=pointer]:
+                  - /url: "#"
+              - listitem [ref=e159]:
+                - link "Facebook" [ref=e160] [cursor=pointer]:
+                  - /url: "#"
+              - listitem [ref=e161]:
+                - link "Email" [ref=e162] [cursor=pointer]:
+                  - /url: "#"
+      - generic [ref=e165]: Luma
+      - generic [ref=e166]:
+        - paragraph [ref=e167]: © 2026 Luma. All rights reserved. For research use only.
+        - generic [ref=e168]:
+          - link "Privacy" [ref=e169] [cursor=pointer]:
+            - /url: "#"
+          - link "Terms" [ref=e170] [cursor=pointer]:
+            - /url: "#"
+          - link "Cookies" [ref=e171] [cursor=pointer]:
+            - /url: "#"

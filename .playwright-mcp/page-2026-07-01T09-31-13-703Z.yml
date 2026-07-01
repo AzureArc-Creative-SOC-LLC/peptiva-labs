@@ -1,0 +1,106 @@
+- generic [active] [ref=f3e1]:
+  - banner [ref=f3e2]:
+    - generic [ref=f3e3]:
+      - link "Lumivex home" [ref=f3e4] [cursor=pointer]:
+        - /url: /
+        - generic [ref=f3e5]:
+          - img [ref=f3e6]
+          - generic [ref=f3e13]: LUMIVEX
+      - navigation [ref=f3e14]:
+        - link "Continue shopping" [ref=f3e15] [cursor=pointer]:
+          - /url: /#products
+        - link "Cart, 1 item" [ref=f3e16] [cursor=pointer]:
+          - /url: /cart
+          - img [ref=f3e17]
+          - generic [ref=f3e20]: "1"
+  - main [ref=f3e21]:
+    - generic [ref=f3e22]:
+      - generic [ref=f3e23]:
+        - generic [ref=f3e24]:
+          - text: Your selection
+          - heading "Cart" [level=1] [ref=f3e25]
+        - button "Clear cart" [ref=f3e26] [cursor=pointer]
+      - generic [ref=f3e27]:
+        - generic [ref=f3e28]:
+          - generic [ref=f3e30]:
+            - link "Tirzepatide 40mg" [ref=f3e31] [cursor=pointer]:
+              - /url: /product/tirzepatide-40mg
+              - img "Tirzepatide 40mg" [ref=f3e32]
+            - generic [ref=f3e33]:
+              - generic [ref=f3e34]:
+                - generic [ref=f3e35]:
+                  - text: GIP / GLP-1 Research
+                  - heading "Tirzepatide 40mg" [level=3] [ref=f3e36]:
+                    - link "Tirzepatide 40mg" [ref=f3e37] [cursor=pointer]:
+                      - /url: /product/tirzepatide-40mg
+                - generic [ref=f3e38]: £100
+              - generic [ref=f3e39]:
+                - generic [ref=f3e40]:
+                  - button "Decrease quantity" [ref=f3e41] [cursor=pointer]: −
+                  - generic [ref=f3e42]: "1"
+                  - button "Increase quantity" [ref=f3e43] [cursor=pointer]: +
+                - button "Remove" [ref=f3e44] [cursor=pointer]
+          - link "← Continue shopping" [ref=f3e45] [cursor=pointer]:
+            - /url: /#products
+        - generic [ref=f3e47]:
+          - heading "Order Summary" [level=2] [ref=f3e48]
+          - generic [ref=f3e49]:
+            - generic [ref=f3e50]:
+              - generic [ref=f3e51]: Subtotal (1 item)
+              - generic [ref=f3e52]: £100
+            - generic [ref=f3e53]:
+              - generic [ref=f3e54]: Shipping — cold-chain dispatch
+              - generic [ref=f3e55]: £12
+            - generic [ref=f3e56]:
+              - generic [ref=f3e57]:
+                - generic [ref=f3e58]: Total
+                - generic [ref=f3e59]: £112
+              - paragraph [ref=f3e60]: GBP · tax included
+          - link "Proceed to checkout" [ref=f3e61] [cursor=pointer]:
+            - /url: /checkout
+          - paragraph [ref=f3e62]:
+            - img [ref=f3e63]
+            - text: Secure, encrypted checkout
+  - contentinfo [ref=f3e66]:
+    - generic [ref=f3e67]:
+      - generic [ref=f3e68]:
+        - paragraph [ref=f3e70]:
+          - generic [ref=f3e71]: Premium research compounds —
+          - generic [ref=f3e72]: engineered for precision, validated
+          - generic [ref=f3e73]: by science.
+        - generic [ref=f3e74]:
+          - paragraph [ref=f3e75]: Navigate
+          - list [ref=f3e76]:
+            - listitem [ref=f3e77]:
+              - button "About Us" [ref=f3e78] [cursor=pointer]
+            - listitem [ref=f3e79]:
+              - button "Shop" [ref=f3e80] [cursor=pointer]
+            - listitem [ref=f3e81]:
+              - button "Why Us" [ref=f3e82] [cursor=pointer]
+            - listitem [ref=f3e83]:
+              - button "Contact" [ref=f3e84] [cursor=pointer]
+        - generic [ref=f3e85]:
+          - paragraph [ref=f3e86]: Legal
+          - list [ref=f3e87]:
+            - listitem [ref=f3e88]:
+              - link "Press Release" [ref=f3e89] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=f3e90]:
+              - link "Refund Policy" [ref=f3e91] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=f3e92]:
+              - link "Shipping Policy" [ref=f3e93] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=f3e94]:
+              - link "Privacy Policy" [ref=f3e95] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=f3e96]:
+              - link "Terms of Service" [ref=f3e97] [cursor=pointer]:
+                - /url: "#"
+      - heading "LUMIVEX" [level=2] [ref=f3e99]
+      - generic [ref=f3e100]:
+        - paragraph [ref=f3e101]: © 2026 Lumivex. All rights reserved.
+        - paragraph [ref=f3e102]: Research use only — not for human consumption
+  - button "Open assistant" [ref=f3e103] [cursor=pointer]:
+    - img [ref=f3e104]
+  - alert [ref=f3e106]

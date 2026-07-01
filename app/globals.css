@@ -1,0 +1,159 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --canvas: #F1F1F1;
+  --ink: #312938;
+  --ink-secondary: #515566;
+  --ink-muted: #656776;
+  --line: #E5E4E0;
+}
+
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    background: var(--canvas);
+  }
+
+  body {
+    background-color: var(--canvas);
+    color: var(--ink);
+    font-family: var(--font-dm-sans), "DM Sans", system-ui, sans-serif;
+    font-size: 14px;
+    line-height: 1.42;
+    letter-spacing: -0.02em;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: var(--font-clash), "Clash Display", var(--font-dm-sans), "DM Sans", system-ui, sans-serif;
+    color: var(--ink);
+    font-weight: 400;
+  }
+
+  html.lenis,
+  html.lenis body { height: auto; }
+  .lenis.lenis-smooth { scroll-behavior: auto !important; }
+  .lenis.lenis-smooth [data-lenis-prevent] { overscroll-behavior: contain; }
+  .lenis.lenis-stopped { overflow: hidden; }
+
+  ::selection {
+    background: rgba(49, 41, 56, 0.12);
+    color: var(--ink);
+  }
+
+  /* Visible, consistent keyboard focus without affecting mouse users. */
+  :focus-visible {
+    outline: 2px solid var(--ink);
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
+  /* Elements that manage their own focus ring opt out of the global outline. */
+  [data-no-focus-ring]:focus-visible {
+    outline: none;
+  }
+}
+
+@layer components {
+  /* Skip link — hidden until focused, then pinned top-left above the nav. */
+  .skip-link {
+    @apply sr-only;
+  }
+  .skip-link:focus {
+    @apply not-sr-only fixed left-4 top-4 z-[100] inline-flex items-center rounded-pill bg-ink_btn px-4 py-2 text-[14px] font-medium text-white shadow-card;
+  }
+}
+
+@layer components {
+  /* Section block — full-bleed section with no rounded card framing */
+  .section-block {
+    @apply relative w-full bg-surface overflow-hidden;
+  }
+
+  .container-fluid {
+    @apply mx-auto w-full max-w-container px-4 sm:px-6 lg:px-12;
+  }
+
+  /* Display / wordmark */
+  .display {
+    font-weight: 300;
+    color: var(--ink);
+    letter-spacing: -0.07em;
+    line-height: 1;
+  }
+
+  .display-letter {
+    display: inline-block;
+  }
+
+  /* Pill buttons */
+  .btn-pill {
+    @apply inline-flex items-center justify-center rounded-pill font-medium transition-all duration-300;
+    font-size: 14px;
+    padding: 12px 20px;
+    letter-spacing: -0.02em;
+  }
+  @media (min-width: 640px) {
+    .btn-pill { padding: 14px 24px; }
+  }
+  .btn-dark {
+    @apply btn-pill bg-ink_btn text-white;
+  }
+  .btn-dark:hover {
+    background: #2a2d31;
+    transform: translateY(-1px);
+  }
+  .btn-ghost {
+    @apply btn-pill bg-transparent text-ink border border-ink/15;
+  }
+  .btn-ghost:hover {
+    background: rgba(49, 41, 56, 0.05);
+  }
+
+  /* Nav pill */
+  .nav-pill {
+    @apply rounded-pill bg-white/90 backdrop-blur border border-ink/10;
+  }
+
+  /* Card */
+  .card-soft {
+    @apply rounded-card p-6 sm:p-7 flex flex-col h-full;
+    min-height: 260px;
+  }
+  @media (min-width: 640px) {
+    .card-soft { min-height: 320px; }
+  }
+
+  /* Arrow square button */
+  .arrow-btn {
+    @apply inline-flex h-10 w-10 items-center justify-center rounded-2xl bg-ink_btn text-white;
+  }
+
+  /* Content overlay that hides until parent .group is hovered (hover-capable devices only) */
+  .hover-reveal {
+    transition: transform 500ms ease-out, opacity 500ms ease-out;
+  }
+  @media (hover: hover) {
+    .hover-reveal {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    .group:hover .hover-reveal,
+    .group:focus-within .hover-reveal {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+}
+
+@layer utilities {
+  /* No initial-hidden state: content is visible by default. GSAP animates
+     from a hidden state only when JS is present, so server-rendered content
+     and prefers-reduced-motion users see everything immediately. */
+  .reveal-init { }
+  .clip-init { }
+  .text-balance { text-wrap: balance; }
+  .text-pretty { text-wrap: pretty; }
+}

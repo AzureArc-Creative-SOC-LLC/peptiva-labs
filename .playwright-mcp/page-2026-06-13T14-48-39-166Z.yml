@@ -1,0 +1,310 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e4]:
+      - link "Lumea home" [ref=e5] [cursor=pointer]:
+        - /url: "#home"
+        - generic [ref=e6]:
+          - img [ref=e7]
+          - generic [ref=e11]: Lumea
+      - navigation [ref=e12]:
+        - link "Home" [ref=e13] [cursor=pointer]:
+          - /url: "#home"
+        - link "Program" [ref=e14] [cursor=pointer]:
+          - /url: "#program"
+        - link "Stories" [ref=e15] [cursor=pointer]:
+          - /url: "#stories"
+        - link "Pricing" [ref=e16] [cursor=pointer]:
+          - /url: "#pricing"
+      - link "Get started" [ref=e18] [cursor=pointer]:
+        - /url: "#contact"
+  - main [ref=e19]:
+    - generic [ref=e21]:
+      - paragraph [ref=e22]: Coaching
+      - heading "L u m e a" [level=1] [ref=e23]:
+        - generic [ref=e24]: L
+        - generic [ref=e25]: u
+        - generic [ref=e26]: m
+        - generic [ref=e27]: e
+        - generic [ref=e28]: a
+      - generic [ref=e34]:
+        - paragraph [ref=e35]: Sustainable weight-loss coaching that meets you where you are — kinder habits, smarter nutrition, lasting results.
+        - generic [ref=e36]:
+          - link "Learn more" [ref=e37] [cursor=pointer]:
+            - /url: "#program"
+          - link "See the method" [ref=e38] [cursor=pointer]:
+            - /url: "#program"
+            - text: See the method
+            - img [ref=e39]
+    - generic [ref=e44]:
+      - generic [ref=e45]:
+        - generic [ref=e46]:
+          - generic [ref=e47]: Mindful Eating
+          - img [ref=e48]
+        - generic [ref=e50]:
+          - generic [ref=e51]: Lasting Habits
+          - img [ref=e52]
+        - generic [ref=e54]:
+          - generic [ref=e55]: Smart Nutrition
+          - img [ref=e56]
+        - generic [ref=e58]:
+          - generic [ref=e59]: Move Daily
+          - img [ref=e60]
+        - generic [ref=e62]:
+          - generic [ref=e63]: Mindful Eating
+          - img [ref=e64]
+        - generic [ref=e66]:
+          - generic [ref=e67]: Lasting Habits
+          - img [ref=e68]
+        - generic [ref=e70]:
+          - generic [ref=e71]: Smart Nutrition
+          - img [ref=e72]
+        - generic [ref=e74]:
+          - generic [ref=e75]: Move Daily
+          - img [ref=e76]
+        - generic [ref=e78]:
+          - generic [ref=e79]: Mindful Eating
+          - img [ref=e80]
+        - generic [ref=e82]:
+          - generic [ref=e83]: Lasting Habits
+          - img [ref=e84]
+        - generic [ref=e86]:
+          - generic [ref=e87]: Smart Nutrition
+          - img [ref=e88]
+        - generic [ref=e90]:
+          - generic [ref=e91]: Move Daily
+          - img [ref=e92]
+        - generic [ref=e94]:
+          - generic [ref=e95]: Mindful Eating
+          - img [ref=e96]
+        - generic [ref=e98]:
+          - generic [ref=e99]: Lasting Habits
+          - img [ref=e100]
+        - generic [ref=e102]:
+          - generic [ref=e103]: Smart Nutrition
+          - img [ref=e104]
+        - generic [ref=e106]:
+          - generic [ref=e107]: Move Daily
+          - img [ref=e108]
+      - generic [ref=e110]:
+        - generic [ref=e111]:
+          - generic [ref=e112]: Mindful Eating
+          - img [ref=e113]
+        - generic [ref=e115]:
+          - generic [ref=e116]: Lasting Habits
+          - img [ref=e117]
+        - generic [ref=e119]:
+          - generic [ref=e120]: Smart Nutrition
+          - img [ref=e121]
+        - generic [ref=e123]:
+          - generic [ref=e124]: Move Daily
+          - img [ref=e125]
+        - generic [ref=e127]:
+          - generic [ref=e128]: Mindful Eating
+          - img [ref=e129]
+        - generic [ref=e131]:
+          - generic [ref=e132]: Lasting Habits
+          - img [ref=e133]
+        - generic [ref=e135]:
+          - generic [ref=e136]: Smart Nutrition
+          - img [ref=e137]
+        - generic [ref=e139]:
+          - generic [ref=e140]: Move Daily
+          - img [ref=e141]
+        - generic [ref=e143]:
+          - generic [ref=e144]: Mindful Eating
+          - img [ref=e145]
+        - generic [ref=e147]:
+          - generic [ref=e148]: Lasting Habits
+          - img [ref=e149]
+        - generic [ref=e151]:
+          - generic [ref=e152]: Smart Nutrition
+          - img [ref=e153]
+        - generic [ref=e155]:
+          - generic [ref=e156]: Move Daily
+          - img [ref=e157]
+        - generic [ref=e159]:
+          - generic [ref=e160]: Mindful Eating
+          - img [ref=e161]
+        - generic [ref=e163]:
+          - generic [ref=e164]: Lasting Habits
+          - img [ref=e165]
+        - generic [ref=e167]:
+          - generic [ref=e168]: Smart Nutrition
+          - img [ref=e169]
+        - generic [ref=e171]:
+          - generic [ref=e172]: Move Daily
+          - img [ref=e173]
+    - generic [ref=e176]:
+      - heading "Your partner in a calmer, healthier relationship with food" [level=2] [ref=e177]
+      - generic [ref=e178]:
+        - generic [ref=e179]:
+          - paragraph [ref=e180]: Members coached to a healthier weight
+          - generic [ref=e181]: 12k+
+        - generic [ref=e182]:
+          - paragraph [ref=e183]: Stick with the program past month three
+          - generic [ref=e184]: 94%
+        - generic [ref=e185]:
+          - paragraph [ref=e186]: Average loss in the first six weeks
+          - generic [ref=e187]: 8 lb
+        - generic [ref=e188]:
+          - paragraph [ref=e189]: Years building behaviour-change programs
+          - generic [ref=e190]: 10+
+    - generic [ref=e192]:
+      - generic [ref=e193]:
+        - heading "Our Method" [level=2] [ref=e194]
+        - paragraph [ref=e195]: A four-part program designed to support your weight-loss journey at every stage — without crash diets or impossible rules.
+        - link "Book a free call" [ref=e196] [cursor=pointer]:
+          - /url: "#contact"
+      - generic [ref=e197]:
+        - generic [ref=e198]:
+          - heading "Personal Coaching" [level=3] [ref=e199]
+          - paragraph [ref=e200]: Weekly 1:1 sessions to build a kinder, calmer relationship with food.
+          - img [ref=e203]
+        - generic [ref=e206]:
+          - heading "Nutrition Plans" [level=3] [ref=e207]
+          - paragraph [ref=e208]: Flexible meal frameworks designed around the foods you actually love.
+          - img [ref=e211]
+        - generic [ref=e214]:
+          - heading "Movement Library" [level=3] [ref=e215]
+          - paragraph [ref=e216]: Short, joint-friendly workouts you can do at home in 15 minutes.
+          - img [ref=e219]
+        - generic [ref=e222]:
+          - heading "Habit Tracking" [level=3] [ref=e223]
+          - paragraph [ref=e224]: Gentle accountability and progress reviews — no guilt, just clarity.
+          - img [ref=e227]
+    - generic [ref=e232]:
+      - generic [ref=e233]:
+        - heading "What sets us apart" [level=2] [ref=e234]
+        - paragraph [ref=e235]: Picking the right program changes everything. Here's why thousands of members trust Lumea to help them lose weight — and keep it off.
+        - link "Work with us" [ref=e236] [cursor=pointer]:
+          - /url: "#contact"
+      - list [ref=e239]:
+        - listitem [ref=e240]:
+          - img [ref=e242]
+          - generic [ref=e245]:
+            - heading "Habit science, not willpower" [level=3] [ref=e246]
+            - paragraph [ref=e247]: Our programs are grounded in behavioural science — designed to make the healthy choice the easy one.
+        - listitem [ref=e248]:
+          - img [ref=e250]
+          - generic [ref=e253]:
+            - heading "Coaches who actually listen" [level=3] [ref=e254]
+            - paragraph [ref=e255]: Real humans, not chatbots. Your coach learns your routine, your obstacles, and your wins.
+        - listitem [ref=e256]:
+          - img [ref=e258]
+          - generic [ref=e260]:
+            - heading "Progress beyond the scale" [level=3] [ref=e261]
+            - paragraph [ref=e262]: We track energy, sleep, mood and strength — because lasting loss is about more than a number.
+        - listitem [ref=e263]:
+          - img [ref=e265]
+          - generic [ref=e267]:
+            - heading "Food you'll keep eating" [level=3] [ref=e268]
+            - paragraph [ref=e269]: No banned lists, no shame. Flexible plans built around the meals your family already loves.
+    - generic [ref=e271]:
+      - generic [ref=e272]:
+        - heading "See the change in action" [level=2] [ref=e273]
+        - paragraph [ref=e274]: Real members. Real plates. Real progress — without the crash and the comeback.
+      - generic [ref=e275]:
+        - article [ref=e276]:
+          - paragraph [ref=e278]: Down 22 lb in 4 months — and the cravings finally quieted.
+        - article [ref=e279]:
+          - paragraph [ref=e281]: First time I've lost weight without feeling like I was starving.
+        - article [ref=e282]:
+          - paragraph [ref=e284]: Sleep, energy, mood — all up. The scale was just one of the wins.
+    - generic [ref=e292]:
+      - heading "Take the first step toward a lighter you" [level=2] [ref=e293]:
+        - text: Take the first
+        - text: step toward a lighter you
+      - link "Book a free consultation" [ref=e294] [cursor=pointer]:
+        - /url: "#"
+    - generic [ref=e296]:
+      - heading "Hear from our members" [level=2] [ref=e297]
+      - generic [ref=e298]:
+        - img "Priya Anand" [ref=e300]
+        - figure "Priya Anand Lost 26 lb in 5 months" [ref=e301]:
+          - img [ref=e303]
+          - blockquote [ref=e305]: Lumea changed how I think about food. The coaching kept me grounded on the hard days, and the wins started compounding.
+          - generic [ref=e306]:
+            - generic [ref=e307]: Priya Anand
+            - generic [ref=e308]: Lost 26 lb in 5 months
+      - generic [ref=e309]:
+        - button "Testimonial 1" [ref=e310] [cursor=pointer]
+        - button "Testimonial 2" [ref=e311] [cursor=pointer]
+        - button "Testimonial 3" [ref=e312] [cursor=pointer]
+  - contentinfo [ref=e313]:
+    - generic [ref=e314]:
+      - generic [ref=e315]:
+        - generic [ref=e316]:
+          - generic [ref=e317]:
+            - img [ref=e318]
+            - generic [ref=e322]: Lumea
+          - paragraph [ref=e323]: Sustainable weight-loss coaching that meets you where you are — kinder habits, smarter nutrition, lasting results.
+        - generic [ref=e324]:
+          - heading "Program" [level=4] [ref=e325]
+          - list [ref=e326]:
+            - listitem [ref=e327]:
+              - link "Coaching" [ref=e328] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e329]:
+              - link "Nutrition" [ref=e330] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e331]:
+              - link "Movement" [ref=e332] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e333]:
+              - link "Habits" [ref=e334] [cursor=pointer]:
+                - /url: "#"
+        - generic [ref=e335]:
+          - heading "Company" [level=4] [ref=e336]
+          - list [ref=e337]:
+            - listitem [ref=e338]:
+              - link "About" [ref=e339] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e340]:
+              - link "Stories" [ref=e341] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e342]:
+              - link "Pricing" [ref=e343] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e344]:
+              - link "FAQ" [ref=e345] [cursor=pointer]:
+                - /url: "#"
+        - generic [ref=e346]:
+          - heading "Resources" [level=4] [ref=e347]
+          - list [ref=e348]:
+            - listitem [ref=e349]:
+              - link "Blog" [ref=e350] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e351]:
+              - link "Guides" [ref=e352] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e353]:
+              - link "Recipes" [ref=e354] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e355]:
+              - link "Support" [ref=e356] [cursor=pointer]:
+                - /url: "#"
+        - generic [ref=e357]:
+          - heading "Connect" [level=4] [ref=e358]
+          - list [ref=e359]:
+            - listitem [ref=e360]:
+              - link "Instagram" [ref=e361] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e362]:
+              - link "TikTok" [ref=e363] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e364]:
+              - link "YouTube" [ref=e365] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e366]:
+              - link "Newsletter" [ref=e367] [cursor=pointer]:
+                - /url: "#"
+      - generic [ref=e370]: Lumea
+      - generic [ref=e371]:
+        - paragraph [ref=e372]: © 2026 Lumea Coaching. All rights reserved.
+        - generic [ref=e373]:
+          - link "Privacy" [ref=e374] [cursor=pointer]:
+            - /url: "#"
+          - link "Terms" [ref=e375] [cursor=pointer]:
+            - /url: "#"
+          - link "Cookies" [ref=e376] [cursor=pointer]:
+            - /url: "#"

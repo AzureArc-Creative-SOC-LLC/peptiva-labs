@@ -1,0 +1,116 @@
+- generic [active] [ref=f5e1]:
+  - banner [ref=f5e2]:
+    - generic [ref=f5e4]:
+      - link "Lunvera home" [ref=f5e5] [cursor=pointer]:
+        - /url: /
+        - generic [ref=f5e6]:
+          - img [ref=f5e8]
+          - generic [ref=f5e13]: Lunvera
+      - navigation [ref=f5e14]:
+        - link "Home" [ref=f5e15] [cursor=pointer]:
+          - /url: /#home
+        - link "About" [ref=f5e16] [cursor=pointer]:
+          - /url: /#about
+        - link "Products" [ref=f5e17] [cursor=pointer]:
+          - /url: /#products
+        - link "Why Us" [ref=f5e18] [cursor=pointer]:
+          - /url: /#why
+        - link "Testimonial" [ref=f5e19] [cursor=pointer]:
+          - /url: /#testimonial
+        - link "Contact" [ref=f5e20] [cursor=pointer]:
+          - /url: /#contact
+      - generic [ref=f5e21]:
+        - link "Cart, 0 items" [ref=f5e23] [cursor=pointer]:
+          - /url: /cart
+          - img [ref=f5e24]
+        - link "Shop now" [ref=f5e28] [cursor=pointer]:
+          - /url: /#products
+  - main [ref=f5e29]:
+    - paragraph [ref=f5e31]: Loading…
+  - contentinfo [ref=f5e32]:
+    - generic [ref=f5e33]:
+      - generic [ref=f5e34]:
+        - generic [ref=f5e35]:
+          - generic [ref=f5e36]:
+            - img [ref=f5e38]
+            - generic [ref=f5e43]: Lunvera
+          - paragraph [ref=f5e44]: Research peptides sourced, verified and dispatched from Dubai. Honest sourcing, sealed handling, and a real person at the other end of every WhatsApp message.
+          - generic [ref=f5e45]:
+            - paragraph [ref=f5e46]: Level 5, Business Bay, Dubai, UAE
+            - paragraph [ref=f5e47]:
+              - link "+971 54 380 0625" [ref=f5e48] [cursor=pointer]:
+                - /url: https://wa.me/971543800625
+            - paragraph [ref=f5e49]:
+              - link "sales@lunvera.com" [ref=f5e50] [cursor=pointer]:
+                - /url: mailto:sales@lunvera.com
+        - generic [ref=f5e51]:
+          - generic [ref=f5e52]:
+            - heading "Catalogue" [level=4] [ref=f5e53]
+            - list [ref=f5e54]:
+              - listitem [ref=f5e55]:
+                - link "BPC-157 + TB-500" [ref=f5e56] [cursor=pointer]:
+                  - /url: "#"
+              - listitem [ref=f5e57]:
+                - link "Glow" [ref=f5e58] [cursor=pointer]:
+                  - /url: "#"
+              - listitem [ref=f5e59]:
+                - link "Retatrutide" [ref=f5e60] [cursor=pointer]:
+                  - /url: "#"
+              - listitem [ref=f5e61]:
+                - link "Tirzepatide" [ref=f5e62] [cursor=pointer]:
+                  - /url: "#"
+          - generic [ref=f5e63]:
+            - heading "Company" [level=4] [ref=f5e64]
+            - list [ref=f5e65]:
+              - listitem [ref=f5e66]:
+                - link "About Lunvera" [ref=f5e67] [cursor=pointer]:
+                  - /url: "#"
+              - listitem [ref=f5e68]:
+                - link "How we source" [ref=f5e69] [cursor=pointer]:
+                  - /url: "#"
+              - listitem [ref=f5e70]:
+                - link "Reviews" [ref=f5e71] [cursor=pointer]:
+                  - /url: "#"
+              - listitem [ref=f5e72]:
+                - link "Contact" [ref=f5e73] [cursor=pointer]:
+                  - /url: "#"
+          - generic [ref=f5e74]:
+            - heading "Support" [level=4] [ref=f5e75]
+            - list [ref=f5e76]:
+              - listitem [ref=f5e77]:
+                - link "Shipping" [ref=f5e78] [cursor=pointer]:
+                  - /url: "#"
+              - listitem [ref=f5e79]:
+                - link "Returns" [ref=f5e80] [cursor=pointer]:
+                  - /url: "#"
+              - listitem [ref=f5e81]:
+                - link "Storage guide" [ref=f5e82] [cursor=pointer]:
+                  - /url: "#"
+              - listitem [ref=f5e83]:
+                - link "FAQ" [ref=f5e84] [cursor=pointer]:
+                  - /url: "#"
+          - generic [ref=f5e85]:
+            - heading "Connect" [level=4] [ref=f5e86]
+            - list [ref=f5e87]:
+              - listitem [ref=f5e88]:
+                - link "WhatsApp" [ref=f5e89] [cursor=pointer]:
+                  - /url: "#"
+              - listitem [ref=f5e90]:
+                - link "Instagram" [ref=f5e91] [cursor=pointer]:
+                  - /url: "#"
+              - listitem [ref=f5e92]:
+                - link "Facebook" [ref=f5e93] [cursor=pointer]:
+                  - /url: "#"
+              - listitem [ref=f5e94]:
+                - link "Email" [ref=f5e95] [cursor=pointer]:
+                  - /url: "#"
+      - generic [ref=f5e98]: Lunvera
+      - generic [ref=f5e99]:
+        - paragraph [ref=f5e100]: © 2026 Lunvera. All rights reserved. For research use only.
+        - generic [ref=f5e101]:
+          - link "Privacy" [ref=f5e102] [cursor=pointer]:
+            - /url: "#"
+          - link "Terms" [ref=f5e103] [cursor=pointer]:
+            - /url: "#"
+          - link "Cookies" [ref=f5e104] [cursor=pointer]:
+            - /url: "#"

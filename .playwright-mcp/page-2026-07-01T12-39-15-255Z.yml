@@ -1,0 +1,60 @@
+- generic [active] [ref=f3e1]:
+  - link "Skip to content" [ref=f3e2] [cursor=pointer]:
+    - /url: "#home"
+  - main [ref=f3e3]:
+    - generic [ref=f3e4]:
+      - complementary [ref=f3e5]:
+        - generic [ref=f3e7]:
+          - link "Lunvera" [ref=f3e8] [cursor=pointer]:
+            - /url: /
+            - img [ref=f3e10]
+            - text: Lunvera
+          - generic [ref=f3e12]:
+            - paragraph [ref=f3e13]: Research-grade peptides
+            - heading "Verified sourcing. Sealed handling. Direct from Dubai." [level=2] [ref=f3e14]:
+              - text: Verified sourcing.
+              - text: Sealed handling.
+              - text: Direct from Dubai.
+            - paragraph [ref=f3e15]: Sign in to track shipments, redeem wallet credit and manage your affiliate promo code.
+          - generic [ref=f3e16]:
+            - generic [ref=f3e17]:
+              - paragraph [ref=f3e18]: 99.4%
+              - paragraph [ref=f3e19]: Verified purity
+            - generic [ref=f3e21]:
+              - paragraph [ref=f3e22]: 24/7
+              - paragraph [ref=f3e23]: Cold-chain support
+      - generic [ref=f3e24]:
+        - link "lunvera.com" [ref=f3e25] [cursor=pointer]:
+          - /url: /
+        - generic [ref=f3e26]:
+          - paragraph [ref=f3e27]: Welcome back
+          - heading "Sign in to Lunvera" [level=1] [ref=f3e28]
+          - paragraph [ref=f3e29]: Access your orders, wallet balance and affiliate dashboard.
+          - generic [ref=f3e30]:
+            - generic [ref=f3e31]:
+              - generic [ref=f3e32]: Email
+              - generic [ref=f3e33]:
+                - generic:
+                  - img
+                - textbox "Email" [ref=f3e34]:
+                  - /placeholder: you@lab.com
+            - generic [ref=f3e35]:
+              - generic [ref=f3e36]:
+                - generic [ref=f3e37]: Password
+                - link "Forgot?" [ref=f3e38] [cursor=pointer]:
+                  - /url: /forgot-password
+              - generic [ref=f3e39]:
+                - generic:
+                  - img
+                - textbox "Password" [ref=f3e40]:
+                  - /placeholder: ••••••••
+                - button "Show password" [ref=f3e41] [cursor=pointer]: Show
+            - button "Sign in" [ref=f3e42] [cursor=pointer]
+          - paragraph [ref=f3e43]:
+            - text: Don’t have an account?
+            - link "Create one →" [ref=f3e44] [cursor=pointer]:
+              - /url: /register
+          - paragraph [ref=f3e45]:
+            - img [ref=f3e46]
+            - text: Encrypted end-to-end. Sessions expire after 30 days.
+  - alert [ref=f3e49]

@@ -1,0 +1,118 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e4]:
+      - link "Luma home" [ref=e5] [cursor=pointer]:
+        - /url: /
+        - generic [ref=e6]:
+          - img [ref=e7]
+          - generic [ref=e11]: Luma
+      - navigation [ref=e12]:
+        - link "Home" [ref=e13] [cursor=pointer]:
+          - /url: /#home
+        - link "About" [ref=e14] [cursor=pointer]:
+          - /url: /#about
+        - link "Products" [ref=e15] [cursor=pointer]:
+          - /url: /#products
+        - link "Why Us" [ref=e16] [cursor=pointer]:
+          - /url: /#why
+        - link "Testimonial" [ref=e17] [cursor=pointer]:
+          - /url: /#testimonial
+        - link "Contact" [ref=e18] [cursor=pointer]:
+          - /url: /#contact
+      - generic [ref=e19]:
+        - link "Cart, 0 items" [ref=e20] [cursor=pointer]:
+          - /url: /cart
+          - img [ref=e21]
+        - link "Shop now" [ref=e25] [cursor=pointer]:
+          - /url: /#products
+  - main [ref=e26]:
+    - generic [ref=e27]:
+      - heading "Your cart" [level=1] [ref=e28]
+      - paragraph [ref=e29]: Loading…
+  - contentinfo [ref=e30]:
+    - generic [ref=e31]:
+      - generic [ref=e32]:
+        - generic [ref=e33]:
+          - generic [ref=e34]:
+            - img [ref=e35]
+            - generic [ref=e39]: Luma
+          - paragraph [ref=e40]: Research peptides sourced, verified and dispatched from Dubai. Honest sourcing, sealed handling, and a real person at the other end of every WhatsApp message.
+          - generic [ref=e41]:
+            - paragraph [ref=e42]: Level 5, Business Bay, Dubai, UAE
+            - paragraph [ref=e43]:
+              - link "+971 54 380 0625" [ref=e44] [cursor=pointer]:
+                - /url: https://wa.me/971543800625
+            - paragraph [ref=e45]:
+              - link "sales@lumauae.com" [ref=e46] [cursor=pointer]:
+                - /url: mailto:sales@lumauae.com
+        - generic [ref=e47]:
+          - generic [ref=e48]:
+            - heading "Catalogue" [level=4] [ref=e49]
+            - list [ref=e50]:
+              - listitem [ref=e51]:
+                - link "BPC-157 + TB-500" [ref=e52] [cursor=pointer]:
+                  - /url: "#"
+              - listitem [ref=e53]:
+                - link "Glow" [ref=e54] [cursor=pointer]:
+                  - /url: "#"
+              - listitem [ref=e55]:
+                - link "Retatrutide" [ref=e56] [cursor=pointer]:
+                  - /url: "#"
+              - listitem [ref=e57]:
+                - link "Tirzepatide" [ref=e58] [cursor=pointer]:
+                  - /url: "#"
+          - generic [ref=e59]:
+            - heading "Company" [level=4] [ref=e60]
+            - list [ref=e61]:
+              - listitem [ref=e62]:
+                - link "About Luma" [ref=e63] [cursor=pointer]:
+                  - /url: "#"
+              - listitem [ref=e64]:
+                - link "How we source" [ref=e65] [cursor=pointer]:
+                  - /url: "#"
+              - listitem [ref=e66]:
+                - link "Reviews" [ref=e67] [cursor=pointer]:
+                  - /url: "#"
+              - listitem [ref=e68]:
+                - link "Contact" [ref=e69] [cursor=pointer]:
+                  - /url: "#"
+          - generic [ref=e70]:
+            - heading "Support" [level=4] [ref=e71]
+            - list [ref=e72]:
+              - listitem [ref=e73]:
+                - link "Shipping" [ref=e74] [cursor=pointer]:
+                  - /url: "#"
+              - listitem [ref=e75]:
+                - link "Returns" [ref=e76] [cursor=pointer]:
+                  - /url: "#"
+              - listitem [ref=e77]:
+                - link "Storage guide" [ref=e78] [cursor=pointer]:
+                  - /url: "#"
+              - listitem [ref=e79]:
+                - link "FAQ" [ref=e80] [cursor=pointer]:
+                  - /url: "#"
+          - generic [ref=e81]:
+            - heading "Connect" [level=4] [ref=e82]
+            - list [ref=e83]:
+              - listitem [ref=e84]:
+                - link "WhatsApp" [ref=e85] [cursor=pointer]:
+                  - /url: "#"
+              - listitem [ref=e86]:
+                - link "Instagram" [ref=e87] [cursor=pointer]:
+                  - /url: "#"
+              - listitem [ref=e88]:
+                - link "Facebook" [ref=e89] [cursor=pointer]:
+                  - /url: "#"
+              - listitem [ref=e90]:
+                - link "Email" [ref=e91] [cursor=pointer]:
+                  - /url: "#"
+      - generic [ref=e94]: Luma
+      - generic [ref=e95]:
+        - paragraph [ref=e96]: © 2026 Luma. All rights reserved. For research use only.
+        - generic [ref=e97]:
+          - link "Privacy" [ref=e98] [cursor=pointer]:
+            - /url: "#"
+          - link "Terms" [ref=e99] [cursor=pointer]:
+            - /url: "#"
+          - link "Cookies" [ref=e100] [cursor=pointer]:
+            - /url: "#"

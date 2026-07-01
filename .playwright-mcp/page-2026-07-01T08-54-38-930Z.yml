@@ -1,0 +1,196 @@
+- generic [active] [ref=f1e1]:
+  - banner [ref=f1e2]:
+    - generic [ref=f1e4]:
+      - link "Lunvera home" [ref=f1e5] [cursor=pointer]:
+        - /url: /
+        - generic [ref=f1e6]:
+          - img [ref=f1e8]
+          - generic [ref=f1e13]: Lunvera
+      - generic [ref=f1e14]:
+        - link "Cart, 0 items" [ref=f1e15] [cursor=pointer]:
+          - /url: /cart
+          - img [ref=f1e16]
+        - button "Open menu" [ref=f1e20] [cursor=pointer]:
+          - img [ref=f1e21]
+    - generic:
+      - generic:
+        - generic:
+          - generic:
+            - img
+          - generic: Lunvera
+        - button "Close menu":
+          - img
+      - navigation:
+        - link "Home":
+          - /url: /#home
+        - link "About":
+          - /url: /#about
+        - link "Products":
+          - /url: /#products
+        - link "Why Us":
+          - /url: /#why
+        - link "Testimonial":
+          - /url: /#testimonial
+        - link "Contact":
+          - /url: /#contact
+        - link "View cart":
+          - /url: /cart
+  - main [ref=f1e23]:
+    - generic [ref=f1e24]:
+      - link "Back to the range" [ref=f1e25] [cursor=pointer]:
+        - /url: /#products
+        - img [ref=f1e26]
+        - text: Back to the range
+      - generic [ref=f1e28]:
+        - generic [ref=f1e29]:
+          - img "Retatrutide" [ref=f1e31]
+          - generic [ref=f1e32]:
+            - button "View image 1" [ref=f1e33] [cursor=pointer]:
+              - img "Retatrutide view 1" [ref=f1e34]
+            - button "View image 2" [ref=f1e35] [cursor=pointer]:
+              - img "Retatrutide view 2" [ref=f1e36]
+            - button "View image 3" [ref=f1e37] [cursor=pointer]:
+              - img "Retatrutide view 3" [ref=f1e38]
+            - button "View image 4" [ref=f1e39] [cursor=pointer]:
+              - img "Retatrutide view 4" [ref=f1e40]
+        - generic [ref=f1e41]:
+          - generic [ref=f1e42]: Metabolic
+          - heading "Retatrutide" [level=1] [ref=f1e43]
+          - paragraph [ref=f1e44]: 20 mg · 40 mg
+          - paragraph [ref=f1e45]: from AED 1,990
+          - paragraph [ref=f1e46]: Retatrutide is a next-generation triple-agonist peptide stocked for advanced metabolic research, available in 20 mg and 40 mg concentrations.
+          - paragraph [ref=f1e47]: Sourced directly from certified manufacturers, every batch is independently tested before it touches a customer order, then sealed and cold-shipped across the UAE.
+          - generic [ref=f1e48]:
+            - generic [ref=f1e49]:
+              - button "Decrease quantity" [ref=f1e50] [cursor=pointer]:
+                - img [ref=f1e51]
+              - generic [ref=f1e52]: "1"
+              - button "Increase quantity" [ref=f1e53] [cursor=pointer]:
+                - img [ref=f1e54]
+            - button "Add to cart" [ref=f1e56] [cursor=pointer]
+            - link "View cart" [ref=f1e57] [cursor=pointer]:
+              - /url: /cart
+              - text: View cart
+              - img [ref=f1e58]
+          - list [ref=f1e61]:
+            - listitem [ref=f1e62]: Available in 20 mg and 40 mg
+            - listitem [ref=f1e64]: Triple-agonist research peptide
+            - listitem [ref=f1e66]: Independently batch-tested
+            - listitem [ref=f1e68]: For laboratory research use only
+      - generic [ref=f1e70]:
+        - generic [ref=f1e71]:
+          - heading "Related products" [level=2] [ref=f1e72]
+          - link "View all" [ref=f1e73] [cursor=pointer]:
+            - /url: /#products
+        - generic [ref=f1e74]:
+          - link "BPC-157 + TB-500 BPC-157 + TB-500 AED 999" [ref=f1e75] [cursor=pointer]:
+            - /url: /products/bpc-157-tb-500
+            - img "BPC-157 + TB-500" [ref=f1e77]
+            - generic [ref=f1e78]:
+              - generic [ref=f1e79]:
+                - heading "BPC-157 + TB-500" [level=3] [ref=f1e80]
+                - paragraph [ref=f1e81]: AED 999
+              - img [ref=f1e83]
+          - link "Glow Glow from AED 1,199" [ref=f1e86] [cursor=pointer]:
+            - /url: /products/glow
+            - img "Glow" [ref=f1e88]
+            - generic [ref=f1e89]:
+              - generic [ref=f1e90]:
+                - heading "Glow" [level=3] [ref=f1e91]
+                - paragraph [ref=f1e92]: from AED 1,199
+              - img [ref=f1e94]
+          - link "Tirzepatide Tirzepatide from AED 750" [ref=f1e97] [cursor=pointer]:
+            - /url: /products/tirzepatide
+            - img "Tirzepatide" [ref=f1e99]
+            - generic [ref=f1e100]:
+              - generic [ref=f1e101]:
+                - heading "Tirzepatide" [level=3] [ref=f1e102]
+                - paragraph [ref=f1e103]: from AED 750
+              - img [ref=f1e105]
+  - contentinfo [ref=f1e108]:
+    - generic [ref=f1e109]:
+      - generic [ref=f1e110]:
+        - generic [ref=f1e111]:
+          - generic [ref=f1e112]:
+            - img [ref=f1e114]
+            - generic [ref=f1e119]: Lunvera
+          - paragraph [ref=f1e120]: Research peptides sourced, verified and dispatched from Dubai. Honest sourcing, sealed handling, and a real person at the other end of every WhatsApp message.
+          - generic [ref=f1e121]:
+            - paragraph [ref=f1e122]: Level 5, Business Bay, Dubai, UAE
+            - paragraph [ref=f1e123]:
+              - link "+971 54 380 0625" [ref=f1e124] [cursor=pointer]:
+                - /url: https://wa.me/971543800625
+            - paragraph [ref=f1e125]:
+              - link "sales@lunvera.com" [ref=f1e126] [cursor=pointer]:
+                - /url: mailto:sales@lunvera.com
+        - generic [ref=f1e127]:
+          - generic [ref=f1e128]:
+            - heading "Catalogue" [level=4] [ref=f1e129]
+            - list [ref=f1e130]:
+              - listitem [ref=f1e131]:
+                - link "BPC-157 + TB-500" [ref=f1e132] [cursor=pointer]:
+                  - /url: "#"
+              - listitem [ref=f1e133]:
+                - link "Glow" [ref=f1e134] [cursor=pointer]:
+                  - /url: "#"
+              - listitem [ref=f1e135]:
+                - link "Retatrutide" [ref=f1e136] [cursor=pointer]:
+                  - /url: "#"
+              - listitem [ref=f1e137]:
+                - link "Tirzepatide" [ref=f1e138] [cursor=pointer]:
+                  - /url: "#"
+          - generic [ref=f1e139]:
+            - heading "Company" [level=4] [ref=f1e140]
+            - list [ref=f1e141]:
+              - listitem [ref=f1e142]:
+                - link "About Lunvera" [ref=f1e143] [cursor=pointer]:
+                  - /url: "#"
+              - listitem [ref=f1e144]:
+                - link "How we source" [ref=f1e145] [cursor=pointer]:
+                  - /url: "#"
+              - listitem [ref=f1e146]:
+                - link "Reviews" [ref=f1e147] [cursor=pointer]:
+                  - /url: "#"
+              - listitem [ref=f1e148]:
+                - link "Contact" [ref=f1e149] [cursor=pointer]:
+                  - /url: "#"
+          - generic [ref=f1e150]:
+            - heading "Support" [level=4] [ref=f1e151]
+            - list [ref=f1e152]:
+              - listitem [ref=f1e153]:
+                - link "Shipping" [ref=f1e154] [cursor=pointer]:
+                  - /url: "#"
+              - listitem [ref=f1e155]:
+                - link "Returns" [ref=f1e156] [cursor=pointer]:
+                  - /url: "#"
+              - listitem [ref=f1e157]:
+                - link "Storage guide" [ref=f1e158] [cursor=pointer]:
+                  - /url: "#"
+              - listitem [ref=f1e159]:
+                - link "FAQ" [ref=f1e160] [cursor=pointer]:
+                  - /url: "#"
+          - generic [ref=f1e161]:
+            - heading "Connect" [level=4] [ref=f1e162]
+            - list [ref=f1e163]:
+              - listitem [ref=f1e164]:
+                - link "WhatsApp" [ref=f1e165] [cursor=pointer]:
+                  - /url: "#"
+              - listitem [ref=f1e166]:
+                - link "Instagram" [ref=f1e167] [cursor=pointer]:
+                  - /url: "#"
+              - listitem [ref=f1e168]:
+                - link "Facebook" [ref=f1e169] [cursor=pointer]:
+                  - /url: "#"
+              - listitem [ref=f1e170]:
+                - link "Email" [ref=f1e171] [cursor=pointer]:
+                  - /url: "#"
+      - generic [ref=f1e174]: Lunvera
+      - generic [ref=f1e175]:
+        - paragraph [ref=f1e176]: © 2026 Lunvera. All rights reserved. For research use only.
+        - generic [ref=f1e177]:
+          - link "Privacy" [ref=f1e178] [cursor=pointer]:
+            - /url: "#"
+          - link "Terms" [ref=f1e179] [cursor=pointer]:
+            - /url: "#"
+          - link "Cookies" [ref=f1e180] [cursor=pointer]:
+            - /url: "#"
