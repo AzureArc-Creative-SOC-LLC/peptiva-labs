@@ -7,10 +7,10 @@ import type { Metadata } from "next";
 import { PRODUCTS, type Product, formatAED } from "./products";
 
 export const SITE_URL = (
-  process.env.NEXT_PUBLIC_SITE_URL || "https://lunvera.com"
+  process.env.NEXT_PUBLIC_SITE_URL || "https://peptivalabs.com"
 ).replace(/\/$/, "");
 
-export const SITE_NAME = "Lunvera";
+export const SITE_NAME = "Peptiva Labs";
 
 export const SITE_DESCRIPTION =
   "Lab-grade research peptides sourced, sealed and dispatched from Dubai across the UAE. Verified sourcing, cold-chain handling, and direct WhatsApp support on every order.";
@@ -18,7 +18,7 @@ export const SITE_DESCRIPTION =
 export const CONTACT = {
   whatsapp: "+971543800625",
   whatsappHref: "https://wa.me/971543800625",
-  email: "sales@lunvera.com",
+  email: "sales@peptivalabs.com",
   city: "Dubai",
   country: "AE",
 };
@@ -29,7 +29,7 @@ export const DEFAULT_OG_IMAGE = {
   url: `${SITE_URL}/images/research2.jpg`,
   width: 600,
   height: 400,
-  alt: "Lunvera — research peptides sourced and shipped from Dubai",
+  alt: "Peptiva Labs — research peptides sourced and shipped from Dubai",
 };
 
 /** Build an absolute URL from a site-relative path. */

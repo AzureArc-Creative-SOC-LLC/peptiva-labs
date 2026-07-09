@@ -168,7 +168,7 @@ export default function CartPage() {
 
                 {/* Summary */}
                 <aside className="lg:col-span-5">
-                  <div className="rounded-card bg-surface-soft p-6 sm:p-8 lg:sticky lg:top-28">
+                  <div className="rounded-card bg-surface-dim p-6 sm:p-8 lg:sticky lg:top-28">
                     <p className="text-[11px] uppercase tracking-label text-ink-muted">
                       Order summary
                     </p>

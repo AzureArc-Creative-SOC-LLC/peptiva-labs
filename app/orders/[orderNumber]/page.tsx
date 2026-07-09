@@ -118,7 +118,7 @@ export default function OrderDetailPage({
               <div className="mt-4 flex flex-wrap items-end justify-between gap-4">
                 <div>
                   <p className="text-[11px] uppercase tracking-label text-ink-muted">
-                    Order
+                    Peptiva Labs · Order
                   </p>
                   <h1 className="mt-2 text-[clamp(36px,5vw,52px)] font-medium leading-[1] tracking-tight2 text-ink">
                     {data.order.order_number}
@@ -231,7 +231,7 @@ export default function OrderDetailPage({
 
                 {/* Totals */}
                 <aside className="lg:col-span-5">
-                  <div className="rounded-card bg-surface-soft p-6 sm:p-8 lg:sticky lg:top-28">
+                  <div className="rounded-card bg-surface-dim p-6 sm:p-8 lg:sticky lg:top-28">
                     <p className="text-[11px] uppercase tracking-label text-ink-muted">
                       Totals
                     </p>
@@ -272,7 +272,7 @@ export default function OrderDetailPage({
                         href="/#products"
                         className="inline-flex w-full items-center justify-center rounded-pill border border-line bg-white px-5 py-2.5 text-[14px] font-medium text-ink transition-colors hover:bg-canvas"
                       >
-                        Shop the range
+                        Shop the Peptiva Labs range
                       </Link>
                     </div>
                   </div>

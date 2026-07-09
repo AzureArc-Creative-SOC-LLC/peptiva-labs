@@ -277,13 +277,11 @@ export default function CTA() {
           <div className="absolute inset-0 z-20 flex flex-col items-center justify-center px-4 text-center">
             <h2 className="orbit-head text-h2 font-normal text-balance">
               Ready to order?
-              <br /> Message us on WhatsApp
+              <br /> Browse the catalogue
             </h2>
             <a
               id="contact"
-              href="https://wa.me/971543800625"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="/#products"
               className="orbit-cta btn-dark mt-5 transition-[transform,box-shadow] duration-300 hover:scale-[1.05] hover:shadow-[0_16px_40px_-10px_rgba(26,29,32,0.55)] sm:mt-6"
             >
               Start your order

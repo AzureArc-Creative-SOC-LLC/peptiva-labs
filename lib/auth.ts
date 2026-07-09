@@ -3,8 +3,8 @@
 
 import type { ApiUser } from "./api";
 
-const TOKEN_KEY = "lunvera-auth-token";
-const USER_KEY = "lunvera-auth-user";
+const TOKEN_KEY = "peptivalabs-auth-token";
+const USER_KEY = "peptivalabs-auth-user";
 
 export function getToken(): string | null {
   if (typeof window === "undefined") return null;

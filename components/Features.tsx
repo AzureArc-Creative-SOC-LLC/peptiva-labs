@@ -27,12 +27,12 @@ export default function Features() {
           >
             <span className="inline-flex w-fit items-center gap-2 rounded-pill border border-line bg-canvas px-4 py-1.5 text-[11px] uppercase tracking-label text-ink-secondary">
               <span className="h-1.5 w-1.5 rounded-full bg-emerald-500" />
-              Why Lunvera
+              Why Peptiva Labs
             </span>
             <h2 className="mt-4 text-[clamp(30px,3.4vw,46px)] font-medium uppercase leading-[1.02] tracking-tight2 text-ink">
               Why Choose
               <br />
-              Lunvera?
+              Peptiva Labs?
             </h2>
             <p className="mt-3 max-w-sm text-[14px] leading-relaxed text-ink-secondary">
               Purity, paperwork, and real customer service — all on the same
@@ -47,7 +47,7 @@ export default function Features() {
           >
             <Image
               src="https://images.unsplash.com/photo-1582719471384-894fbb16e074?w=900&auto=format&fit=crop&q=70"
-              alt="Researcher at work in the Lunvera Dubai lab"
+              alt="Researcher at work in the Peptiva Labs Dubai facility"
               fill
               sizes="(min-width: 1024px) 25vw, (min-width: 640px) 100vw, 100vw"
               className="object-cover"

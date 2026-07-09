@@ -15,7 +15,7 @@ const TESTIMONIALS = [
   },
   {
     quote:
-      "I've worked with three different peptide vendors. Lunvera is the only one that has been consistent on purity, stock, and after-sales communication every single order.",
+      "I've worked with three different peptide vendors. Peptiva Labs is the only one that has been consistent on purity, stock, and after-sales communication every single order.",
     name: "Dr. Aisha Khan",
     role: "Clinical research coordinator",
     img: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=400&auto=format&fit=crop&q=70",

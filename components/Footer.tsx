@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { ApiError, newsletterSubscribe } from "@/lib/api";
+import { useToast } from "@/components/Toast";
 
 type FooterLink = { label: string; href: string; external?: boolean };
 
@@ -19,7 +20,7 @@ const COLUMNS: { title: string; links: FooterLink[] }[] = [
   {
     title: "Company",
     links: [
-      { label: "About Lunvera", href: "/#about" },
+      { label: "About Peptiva Labs", href: "/#about" },
       { label: "How we source", href: "/#why" },
       { label: "Reviews", href: "/#testimonial" },
       { label: "Contact", href: "/#contact" },
@@ -44,7 +45,7 @@ const COLUMNS: { title: string; links: FooterLink[] }[] = [
       },
       {
         label: "Email",
-        href: "mailto:sales@lunvera.com",
+        href: "mailto:sales@peptivalabs.com",
         external: true,
       },
       { label: "Shop now", href: "/#products" },
@@ -54,19 +55,25 @@ const COLUMNS: { title: string; links: FooterLink[] }[] = [
 ];
 
 function NewsletterForm() {
+  const toast = useToast();
   const [email, setEmail] = useState("");
   const [consent, setConsent] = useState(true);
   const [website, setWebsite] = useState(""); // honeypot
   const [busy, setBusy] = useState(false);
-  const [result, setResult] = useState<
-    { ok: true; already?: boolean } | { ok: false; error: string } | null
-  >(null);
 
   async function submit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
     if (busy) return;
+
+    if (!consent) {
+      toast.error(
+        "Please tick the consent box to receive research updates.",
+        "Consent required"
+      );
+      return;
+    }
+
     setBusy(true);
-    setResult(null);
     try {
       const r = await newsletterSubscribe({
         email,
@@ -74,18 +81,31 @@ function NewsletterForm() {
         source: "footer",
         website,
       });
-      setResult({ ok: true, already: !!r.already_subscribed });
+      if (r.already_subscribed) {
+        toast.info(
+          "You're already on the Peptiva Labs list — thanks.",
+          "Already subscribed"
+        );
+      } else {
+        toast.success(
+          "You're subscribed. Watch your inbox for the next drop.",
+          "Subscribed"
+        );
+      }
       setEmail("");
-    } catch (e) {
-      setResult({
-        ok: false,
-        error:
-          e instanceof ApiError
-            ? e.message
-            : e instanceof Error
-              ? e.message
-              : "Failed to subscribe",
-      });
+    } catch (err) {
+      if (typeof console !== "undefined") console.error("newsletter failed:", err);
+      const msg =
+        err instanceof ApiError
+          ? err.status === 400
+            ? "Please enter a valid email address."
+            : err.status === 429
+              ? "Too many attempts. Please try again in a little while."
+              : err.status >= 500
+                ? "Our newsletter service is briefly unavailable. Please try again in a minute."
+                : "We couldn't subscribe you right now. Please try again."
+          : "We couldn't reach the newsletter service. Check your connection and try again.";
+      toast.error(msg, "Subscription failed");
     } finally {
       setBusy(false);
     }
@@ -136,16 +156,6 @@ function NewsletterForm() {
         className="absolute -left-[9999px] h-0 w-0 opacity-0"
         aria-hidden
       />
-      {result && result.ok && (
-        <p className="mt-2 text-[12px] text-emerald-300">
-          {result.already
-            ? "You're already subscribed — thanks."
-            : "Subscribed. Watch your inbox."}
-        </p>
-      )}
-      {result && !result.ok && (
-        <p className="mt-2 text-[12px] text-red-300">{result.error}</p>
-      )}
     </form>
   );
 }
@@ -173,7 +183,7 @@ export default function Footer() {
                 </svg>
               </span>
               <span className="font-display text-[21px] font-medium tracking-tight2">
-                Lunvera
+                Peptiva Labs
               </span>
             </span>
             <p className="mt-5 max-w-xs text-[14px] leading-relaxed text-white/70">
@@ -195,10 +205,10 @@ export default function Footer() {
               </p>
               <p>
                 <a
-                  href="mailto:sales@lunvera.com"
+                  href="mailto:sales@peptivalabs.com"
                   className="hover:text-white"
                 >
-                  sales@lunvera.com
+                  sales@peptivalabs.com
                 </a>
               </p>
             </div>
@@ -257,13 +267,13 @@ export default function Footer() {
                 lineHeight: 0.85,
               }}
             >
-              Lunvera
+              Peptiva
             </span>
           </div>
         </div>
 
         <div className="mt-2 flex flex-col items-center justify-between gap-3 border-t border-white/15 pb-8 pt-6 text-[12px] text-white/60 sm:flex-row">
-          <p>© {new Date().getFullYear()} Lunvera. All rights reserved. For research use only.</p>
+          <p>© {new Date().getFullYear()} Peptiva Labs. All rights reserved. For research use only.</p>
           <div className="flex items-center gap-6">
             <Link href="/#contact" className="transition-colors hover:text-white">
               Privacy

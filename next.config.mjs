@@ -1,5 +1,12 @@
 /** @type {import('next').NextConfig} */
 
+// Upstream User Order service — proxied through Next so browser requests stay
+// same-origin (the service does not send CORS headers for localhost).
+const API_UPSTREAM =
+  process.env.API_PROXY_TARGET ||
+  process.env.NEXT_PUBLIC_API_BASE ||
+  "https://www.microservices.tech";
+
 // Security headers applied to every route. HSTS is intentionally scoped to
 // the deployed origin (browsers ignore it on http/localhost).
 const securityHeaders = [
@@ -37,6 +44,15 @@ const nextConfig = {
   },
   experimental: {
     optimizePackageImports: ["gsap"],
+  },
+  async rewrites() {
+    // Proxy every backend path to the User Order service so the browser only
+    // ever sees same-origin `/api/*` calls (no CORS).
+    return [
+      { source: "/api/:path*", destination: `${API_UPSTREAM}/api/:path*` },
+      { source: "/health", destination: `${API_UPSTREAM}/health` },
+      { source: "/uploads/:path*", destination: `${API_UPSTREAM}/uploads/:path*` },
+    ];
   },
   async headers() {
     return [

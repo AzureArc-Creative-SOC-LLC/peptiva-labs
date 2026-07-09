@@ -127,7 +127,6 @@ function AccountButton({ onClick }: { onClick?: () => void }) {
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
-  const [hidden, setHidden] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const { user } = useAuth();
 
@@ -148,16 +147,13 @@ export default function Navbar() {
     };
   }, [open]);
 
-  // Hide on scroll down, reveal on scroll up; raise shadow once scrolled.
+  // Header stays visible at all times — only the drop-shadow gets stronger
+  // once the user scrolls past the top so the pill separates cleanly from
+  // whatever content is scrolling behind it.
   useEffect(() => {
-    let last = window.scrollY;
     let ticking = false;
     const update = () => {
-      const y = window.scrollY;
-      setScrolled(y > 8);
-      if (y > last && y > 140) setHidden(true);
-      else if (y < last) setHidden(false);
-      last = y;
+      setScrolled(window.scrollY > 8);
       ticking = false;
     };
     const onScroll = () => {
@@ -172,18 +168,14 @@ export default function Navbar() {
 
   return (
     <>
-      <header
-        className={`fixed inset-x-0 top-0 z-40 pt-4 transition-transform duration-[450ms] ease-[cubic-bezier(0.22,1,0.36,1)] ${
-          hidden && !open ? "-translate-y-[140%]" : "translate-y-0"
-        }`}
-      >
+      <header className="fixed inset-x-0 top-0 z-40 pt-4">
         <div className="container-fluid">
           <div
             className={`nav-pill flex h-[56px] sm:h-[60px] items-center justify-between pl-4 pr-1.5 sm:pl-5 sm:pr-2 transition-shadow duration-300 ${
               scrolled ? "shadow-card" : "shadow-soft"
             }`}
           >
-            <Link href="/" aria-label="Lunvera home">
+            <Link href="/" aria-label="Peptiva Labs home">
               <Logo />
             </Link>
 
@@ -231,7 +223,7 @@ export default function Navbar() {
         <div className="container-fluid flex h-[72px] flex-none items-center justify-between border-b border-line sm:h-[88px]">
           <Link
             href="/"
-            aria-label="Lunvera home"
+            aria-label="Peptiva Labs home"
             onClick={() => setOpen(false)}
           >
             <Logo />

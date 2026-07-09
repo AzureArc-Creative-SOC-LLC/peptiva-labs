@@ -9,7 +9,8 @@ import { useCart } from "@/components/CartContext";
 import { useAuth } from "@/components/AuthContext";
 import { ArrowLeft } from "@/components/icons";
 import { getProduct, formatAED, type Product } from "@/lib/products";
-import { ApiError, createCentralOrder, validatePromo } from "@/lib/api";
+import { ApiError, createUserOrder, validatePromo } from "@/lib/api";
+import { useToast } from "@/components/Toast";
 
 const SHIPPING_FEE = 45;
 
@@ -37,9 +38,56 @@ const EMPTY_FORM: FormState = {
   country: "",
 };
 
+// Translate raw backend errors into copy a shopper can act on. The technical
+// detail is still logged to the console for debugging.
+function friendlyOrderError(e: unknown): string {
+  if (e instanceof ApiError) {
+    const raw = (e.message || "").toLowerCase();
+
+    // Blacklist / anti-fraud rejection (documented as 403)
+    if (e.status === 403) {
+      return "We couldn't process this order. Please contact support if you think this is a mistake.";
+    }
+
+    // The service throws a generic 500 for a missing/invalid email — surface
+    // it as a form-level hint instead of a server error.
+    if (raw.includes("missing") && raw.includes("email")) {
+      return "Please double-check your email address and try again.";
+    }
+    if (raw.includes("invalid") && raw.includes("email")) {
+      return "That email address doesn't look right. Please check and try again.";
+    }
+
+    if (e.status === 429) {
+      return "Too many attempts in a short time. Please wait a moment and try again.";
+    }
+
+    // 502 / 503 / 504 — upstream is briefly unreachable
+    if (e.status === 502 || e.status === 503 || e.status === 504) {
+      return "Our checkout is briefly unavailable. Please try again in a minute.";
+    }
+
+    // Any other 5xx — generic server hiccup
+    if (e.status >= 500) {
+      return "Something went wrong on our side while placing your order. Please try again in a moment.";
+    }
+
+    // 400-range — surface a soft, action-oriented message.
+    if (e.status >= 400) {
+      return "We couldn't complete your order. Please review your details and try again.";
+    }
+
+    // status 0 → network / timeout / offline
+    return "We couldn't reach the checkout server. Check your connection and try again.";
+  }
+
+  return "We couldn't place your order right now. Please try again in a moment.";
+}
+
 export default function CheckoutPage() {
   const { items, hydrated, clear } = useCart();
   const { user } = useAuth();
+  const toast = useToast();
 
   const [form, setForm] = useState<FormState>(EMPTY_FORM);
   const [promoInput, setPromoInput] = useState("");
@@ -47,10 +95,8 @@ export default function CheckoutPage() {
     null
   );
   const [promoBusy, setPromoBusy] = useState(false);
-  const [promoError, setPromoError] = useState<string | null>(null);
 
   const [placing, setPlacing] = useState(false);
-  const [orderError, setOrderError] = useState<string | null>(null);
   const [placed, setPlaced] = useState(false);
   const [orderRef, setOrderRef] = useState("");
   const [placedTotal, setPlacedTotal] = useState(0);
@@ -95,19 +141,22 @@ export default function CheckoutPage() {
     const code = promoInput.trim();
     if (!code) return;
     setPromoBusy(true);
-    setPromoError(null);
     try {
       const r = await validatePromo(code);
       setPromo({ code: code.toUpperCase(), percent: r.percent });
+      toast.success(
+        `${code.toUpperCase()} applied — ${r.percent}% off your subtotal.`,
+        "Promo applied"
+      );
     } catch (e) {
       setPromo(null);
-      setPromoError(
+      const msg =
         e instanceof ApiError
           ? e.status === 404
-            ? "Invalid promo code"
-            : e.message
-          : "Failed to validate promo"
-      );
+            ? "That promo code isn't valid or has expired."
+            : "We couldn't check that promo code right now. Please try again."
+          : "We couldn't check that promo code right now. Please try again.";
+      toast.error(msg, "Promo code");
     } finally {
       setPromoBusy(false);
     }
@@ -116,51 +165,50 @@ export default function CheckoutPage() {
   function removePromo() {
     setPromo(null);
     setPromoInput("");
-    setPromoError(null);
   }
 
   async function placeOrder() {
-    setOrderError(null);
+    // Guard against duplicate submissions — a re-entrant click while `placing`
+    // is true would post twice.
+    if (placing) return;
+
     setPlacing(true);
     try {
-      const r = await createCentralOrder({
-        customer: {
-          firstName: form.firstName,
-          lastName: form.lastName,
-          email: form.email,
-          mobile: form.mobile,
-        },
-        shippingAddress: {
-          line1: form.line1,
-          line2: form.line2,
-          city: form.city,
-          postcode: form.postcode,
-          country: form.country,
-        },
+      const fullAddress = [form.line1, form.line2].filter(Boolean).join(", ");
+      const r = await createUserOrder({
+        email: form.email,
+        firstName: form.firstName,
+        lastName: form.lastName,
+        customerName: `${form.firstName} ${form.lastName}`.trim(),
+        phone: form.mobile,
+        address: fullAddress,
+        city: form.city,
+        postcode: form.postcode,
+        country: form.country,
         promoCode: promo?.code,
-        items: lines.map((l) => ({
-          name: l.product.name,
-          price: l.product.price,
-          qty: l.qty,
-          sku: l.product.slug,
-        })),
+        promoDiscount: promo?.percent,
         subtotal,
-        shipping,
-        discount,
+        discountAmount: discount,
         total,
+        createdAtIso: new Date().toISOString(),
+        items: lines.map((l) => ({
+          productId: l.product.slug,
+          name: l.product.name,
+          sku: l.product.slug,
+          quantity: l.qty,
+          unitPrice: l.product.price,
+        })),
+        paymentMethod: "manual",
       });
       setOrderRef(r.orderNumber);
-      setPlacedTotal(r.totals?.total ?? total);
+      setPlacedTotal(total);
       setPlaced(true);
       clear();
     } catch (e) {
-      setOrderError(
-        e instanceof ApiError
-          ? e.message
-          : e instanceof Error
-            ? e.message
-            : "Failed to place order"
-      );
+      // Keep the raw error visible in the console for engineers, but show the
+      // shopper an actionable message instead of an HTTP status.
+      if (typeof console !== "undefined") console.error("placeOrder failed:", e);
+      toast.error(friendlyOrderError(e), "Order not placed");
     } finally {
       setPlacing(false);
     }
@@ -299,12 +347,6 @@ export default function CheckoutPage() {
                     </div>
                   </section>
 
-                  {orderError && (
-                    <p className="mt-6 rounded-xl border border-red-200 bg-red-50 px-4 py-2.5 text-[13px] text-red-700">
-                      {orderError}
-                    </p>
-                  )}
-
                   {/* Mobile-only place order button */}
                   <button
                     type="submit"
@@ -317,7 +359,7 @@ export default function CheckoutPage() {
 
                 {/* Order summary */}
                 <aside className="lg:col-span-5">
-                  <div className="rounded-card bg-surface-soft p-6 sm:p-8 lg:sticky lg:top-28">
+                  <div className="rounded-card bg-surface-dim p-6 sm:p-8 lg:sticky lg:top-28">
                     <p className="text-[11px] uppercase tracking-label text-ink-muted">
                       Order summary
                     </p>
@@ -393,11 +435,6 @@ export default function CheckoutPage() {
                               {promoBusy ? "…" : "Apply"}
                             </button>
                           </div>
-                          {promoError && (
-                            <p className="mt-2 text-[12px] text-red-600">
-                              {promoError}
-                            </p>
-                          )}
                         </>
                       )}
                     </div>

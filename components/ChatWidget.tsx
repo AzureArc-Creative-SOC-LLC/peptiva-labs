@@ -176,7 +176,7 @@ export default function ChatWidget() {
             <div>
               <p className="text-[13px] text-ink-secondary">
                 Hi. I&rsquo;m your research assistant — ask me anything about the
-                Lunvera catalogue.
+                Peptiva Labs catalogue.
               </p>
               {suggestions.length > 0 && (
                 <div className="mt-4 flex flex-col gap-2">

@@ -6,13 +6,15 @@ import { useRouter, useSearchParams } from "next/navigation";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { useAuth } from "@/components/AuthContext";
-import { ApiError } from "@/lib/api";
+import { useToast } from "@/components/Toast";
+import { friendlyRegisterError } from "@/lib/errors";
 
 function RegisterInner() {
   const router = useRouter();
   const search = useSearchParams();
   const next = search.get("next") || "/account";
   const { register, loading } = useAuth();
+  const toast = useToast();
 
   const [form, setForm] = useState({
     name: "",
@@ -22,7 +24,6 @@ function RegisterInner() {
     nationality: "",
     country_of_residence: "",
   });
-  const [error, setError] = useState<string | null>(null);
 
   function update<K extends keyof typeof form>(k: K, v: (typeof form)[K]) {
     setForm((f) => ({ ...f, [k]: v }));
@@ -30,22 +31,23 @@ function RegisterInner() {
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
-    setError(null);
     if (form.password.length < 6) {
-      setError("Password must be at least 6 characters long");
+      toast.error(
+        "Please choose a password with at least 6 characters.",
+        "Password too short"
+      );
       return;
     }
     try {
-      await register(form);
-      router.push(next);
-    } catch (e) {
-      setError(
-        e instanceof ApiError
-          ? e.message
-          : e instanceof Error
-            ? e.message
-            : "Registration failed"
+      const user = await register(form);
+      toast.success(
+        `Welcome to Peptiva Labs${user.name ? `, ${user.name.split(" ")[0]}` : ""}.`,
+        "Account created"
       );
+      router.push(next);
+    } catch (err) {
+      if (typeof console !== "undefined") console.error("register failed:", err);
+      toast.error(friendlyRegisterError(err), "We couldn't create your account");
     }
   }
 
@@ -55,11 +57,11 @@ function RegisterInner() {
         Get started
       </p>
       <h1 className="mt-2 text-[clamp(36px,5vw,56px)] font-medium leading-[1] tracking-tight2 text-ink">
-        Create account
+        Create your Peptiva Labs account
       </h1>
       <p className="mt-3 text-[14px] text-ink-secondary">
-        Register to track orders, earn wallet credit, and access the affiliate
-        program.
+        Register to track orders, earn wallet credit, and access the
+        Peptiva Labs affiliate program.
       </p>
 
       <form
@@ -119,15 +121,6 @@ function RegisterInner() {
           full
           autoComplete="country-name"
         />
-
-        {error && (
-          <p
-            role="alert"
-            className="rounded-xl border border-red-200 bg-red-50 px-4 py-2.5 text-[13px] text-red-700 sm:col-span-2"
-          >
-            {error}
-          </p>
-        )}
 
         <button
           type="submit"

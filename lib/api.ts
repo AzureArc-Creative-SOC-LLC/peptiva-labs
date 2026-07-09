@@ -1,12 +1,17 @@
-// Central microservice API client.
+// User Order service API client.
 //
-// Docs: API_DOCUMENTATION.md (Central Order Management API).
-// Base URL is configurable via NEXT_PUBLIC_API_BASE.
+// Docs: API_DOCUMENTATION-USER-ORDER.md (User Order Service).
+//
+// Base URL: by default this is empty (relative to the site's own origin).
+// The backend does not send CORS headers for arbitrary origins, so browser
+// requests go to `/api/*` and Next.js rewrites (see next.config.mjs) proxy
+// them to the upstream service — same-origin from the browser's perspective.
+// Set `NEXT_PUBLIC_API_BASE` to force absolute calls (e.g. for tools that
+// consume this module outside the Next.js runtime).
 
 import { getToken } from "./auth";
 
-export const API_BASE =
-  process.env.NEXT_PUBLIC_API_BASE || "https://www.microservices.tech";
+export const API_BASE = process.env.NEXT_PUBLIC_API_BASE || "";
 
 export class ApiError extends Error {
   status: number;
@@ -21,15 +26,29 @@ export class ApiError extends Error {
 type Query = Record<string, string | number | boolean | undefined | null>;
 
 function buildUrl(path: string, query?: Query): string {
-  const url = new URL(
-    path.startsWith("http") ? path : `${API_BASE}${path}`
-  );
+  const absolute = path.startsWith("http");
+  const raw = absolute ? path : `${API_BASE}${path}`;
+  // Same-origin relative paths (`/api/...`) are only valid URLs once we know
+  // the origin. In the browser we resolve against `location`; on the server
+  // we fall back to a placeholder just to use URL's query serialization.
+  const base =
+    absolute || raw.startsWith("http")
+      ? undefined
+      : typeof window !== "undefined"
+        ? window.location.origin
+        : "www.microservices.tech";
+  const url = new URL(raw, base);
   if (query) {
     Object.entries(query).forEach(([k, v]) => {
       if (v !== undefined && v !== null && v !== "") {
         url.searchParams.set(k, String(v));
       }
     });
+  }
+  // If the caller passed a relative path (no explicit base), keep the fetch
+  // relative so browsers use the current origin and Next.js rewrites apply.
+  if (!absolute && !raw.startsWith("http")) {
+    return `${url.pathname}${url.search}`;
   }
   return url.toString();
 }
@@ -210,67 +229,90 @@ export function validatePromo(code: string) {
   );
 }
 
-// Orders — details-only intake (bank transfer flow)
-export type CentralOrderPayload = {
-  customer: {
-    firstName: string;
-    lastName: string;
-    email: string;
-    mobile?: string;
-  };
-  shippingAddress: {
-    line1: string;
-    line2?: string;
-    city: string;
-    postcode: string;
-    country: string;
-  };
+// Orders — POST /api/user-orders (primary checkout endpoint).
+//
+// Field names below use the documented aliases exactly. The service also
+// accepts other spellings (customerEmail/shippingAddress/etc.) per the
+// aliasing rules in API_DOCUMENTATION-USER-ORDER, but this shape is what the
+// endpoint reads first.
+export type UserOrderItemPayload = {
+  productId?: string | number;
+  name: string;
+  sku?: string;
+  quantity: number;
+  unitPrice: number;
+};
+
+export type UserOrderPayload = {
+  email: string;
+  firstName?: string;
+  lastName?: string;
+  customerName?: string;
+  phone?: string;
+  address?: string;
+  city?: string;
+  postcode?: string;
+  country?: string;
+  orderId?: string;
   promoCode?: string;
-  items: Array<{ name: string; price: number; qty: number; sku?: string }>;
+  promoDiscount?: number;
   subtotal: number;
-  shipping: number;
-  discount: number;
+  discountAmount?: number;
   total: number;
+  createdAtIso?: string;
+  items: UserOrderItemPayload[];
+  paymentMethod?: "manual" | string;
 };
 
-export type CentralOrderResponse = {
-  ok: true;
+export type UserOrderResponse = {
   success: true;
+  // Despite the field name, `orderId` is the order-number string, not a numeric DB id.
+  orderId: string;
   orderNumber: string;
-  orderId: number;
-  status: string;
-  paymentStatus: string;
-  paymentMethod: string;
-  totals: {
-    subtotal: number;
-    shipping: number;
-    discount: number;
-    total: number;
+  email_debug?: {
+    paymentLinkCreated?: boolean;
+    orderConfirmation?: { attempted: boolean; ok: boolean; error: string | null };
+    paymentCapture?: { attempted: boolean; ok: boolean; error: string | null };
   };
-  message: string;
 };
 
-export function createCentralOrder(payload: CentralOrderPayload) {
-  return api.post<CentralOrderResponse>("/api/central/orders", {
+export function createUserOrder(payload: UserOrderPayload) {
+  return api.post<UserOrderResponse>("/api/user-orders", {
     json: payload,
+    timeoutMs: 30_000,
   });
 }
 
-// Order lookup
+// Order lookup — matches the `orders` table row shape from
+// API_DOCUMENTATION-USER-ORDER. Monetary fields come back as strings
+// (Postgres NUMERIC/DECIMAL) — the UI runs them through `toNumber` before
+// formatting.
 export type OrderRow = {
   id: number;
   order_number: string;
-  email: string;
-  customer_name?: string;
+  user_id?: number | null;
+  customer_email: string;
+  customer_name?: string | null;
+  customer_phone?: string | null;
+  shipping_address?: string | null;
+  shipping_city?: string | null;
+  shipping_state?: string | null;
+  shipping_zip?: string | null;
+  shipping_country?: string | null;
+  tracking_number?: string | null;
+  currency?: string;
+  subtotal?: number | string;
+  shipping?: number | string;
+  total?: number | string;
   status: string;
   payment_status: string;
   payment_method?: string;
-  tracking_number?: string | null;
-  subtotal?: number | string;
-  shipping?: number | string;
-  discount_amount?: number | string;
-  total?: number | string;
+  promo_code?: string | null;
+  promo_discount?: string | number | null;
+  discount_amount?: number | string | null;
   created_at: string;
+  updated_at?: string;
+  items_text?: string | null;
 };
 
 export function getOrdersByEmail(email: string) {

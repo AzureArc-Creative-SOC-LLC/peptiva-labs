@@ -5,19 +5,20 @@ import Link from "next/link";
 import { useRouter, useSearchParams } from "next/navigation";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { ApiError, resetPassword } from "@/lib/api";
+import { resetPassword } from "@/lib/api";
+import { useToast } from "@/components/Toast";
+import { friendlyPasswordError } from "@/lib/errors";
 
 function ResetInner() {
   const router = useRouter();
   const search = useSearchParams();
+  const toast = useToast();
   const tokenFromUrl = search.get("token") || "";
 
   const [token, setToken] = useState(tokenFromUrl);
   const [password, setPassword] = useState("");
   const [confirm, setConfirm] = useState("");
   const [loading, setLoading] = useState(false);
-  const [done, setDone] = useState<string | null>(null);
-  const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
     if (tokenFromUrl) setToken(tokenFromUrl);
@@ -25,28 +26,42 @@ function ResetInner() {
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
-    setError(null);
+    if (loading) return;
+
+    if (!token.trim()) {
+      toast.error(
+        "Please paste the reset token from your email, or open the link we sent you.",
+        "Reset token missing"
+      );
+      return;
+    }
     if (password.length < 6) {
-      setError("Password must be at least 6 characters long");
+      toast.error(
+        "Please choose a password with at least 6 characters.",
+        "Password too short"
+      );
       return;
     }
     if (password !== confirm) {
-      setError("Passwords do not match");
+      toast.error(
+        "The two passwords don't match. Please try again.",
+        "Passwords don't match"
+      );
       return;
     }
+
     setLoading(true);
     try {
       const r = await resetPassword(token, password);
-      setDone(r.message);
-      setTimeout(() => router.push("/login"), 1500);
-    } catch (e) {
-      setError(
-        e instanceof ApiError
-          ? e.message
-          : e instanceof Error
-            ? e.message
-            : "Reset failed"
+      toast.success(
+        r.message || "Your password has been reset. You can sign in now.",
+        "Password updated"
       );
+      // Give the shopper a beat to read the toast, then send them to sign in.
+      setTimeout(() => router.push("/login"), 1200);
+    } catch (err) {
+      if (typeof console !== "undefined") console.error("reset-password failed:", err);
+      toast.error(friendlyPasswordError(err), "Reset failed");
     } finally {
       setLoading(false);
     }
@@ -55,7 +70,7 @@ function ResetInner() {
   return (
     <div className="mx-auto w-full max-w-md">
       <p className="text-[11px] uppercase tracking-label text-ink-muted">
-        Choose a new password
+        Peptiva Labs · Choose a new password
       </p>
       <h1 className="mt-2 text-[clamp(36px,5vw,56px)] font-medium leading-[1] tracking-tight2 text-ink">
         Reset password
@@ -97,17 +112,6 @@ function ResetInner() {
             className="rounded-xl border border-line bg-white px-4 py-3 text-[14px] text-ink outline-none transition-colors placeholder:text-ink-subtle focus:border-ink/30"
           />
         </label>
-
-        {done && (
-          <p className="rounded-xl border border-emerald-200 bg-emerald-50 px-4 py-2.5 text-[13px] text-emerald-800">
-            {done} Redirecting…
-          </p>
-        )}
-        {error && (
-          <p className="rounded-xl border border-red-200 bg-red-50 px-4 py-2.5 text-[13px] text-red-700">
-            {error}
-          </p>
-        )}
 
         <button
           type="submit"

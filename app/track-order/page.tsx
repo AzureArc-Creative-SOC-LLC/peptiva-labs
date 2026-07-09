@@ -82,14 +82,14 @@ export default function TrackOrderPage() {
       <main className="section-block bg-canvas pb-24 pt-28 sm:pt-32">
         <div className="container-fluid">
           <p className="text-[11px] uppercase tracking-label text-ink-muted">
-            Order lookup
+            Peptiva Labs · Order lookup
           </p>
           <h1 className="mt-2 text-[clamp(44px,7vw,96px)] font-medium leading-[1] tracking-tight2 text-ink">
-            Track order
+            Track your order
           </h1>
           <p className="mt-4 max-w-xl text-[14px] text-ink-secondary">
             Enter the email you used at checkout to see the latest status,
-            tracking and totals for each order.
+            tracking and totals for every Peptiva Labs order on your account.
           </p>
 
           <form

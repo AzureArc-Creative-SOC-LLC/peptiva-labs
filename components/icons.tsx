@@ -238,7 +238,7 @@ export function Logo({ className = "" }: { className?: string }) {
         </svg>
       </span>
       <span className="font-display text-[21px] font-medium leading-none tracking-tight2 text-ink">
-        Lunvera
+        Peptiva Labs
       </span>
     </span>
   );

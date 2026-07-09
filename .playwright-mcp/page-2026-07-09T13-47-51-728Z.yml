@@ -1,0 +1,171 @@
+- generic [active] [ref=f2e1]:
+  - link "Skip to content" [ref=f2e2] [cursor=pointer]:
+    - /url: "#home"
+  - banner [ref=f2e3]:
+    - generic [ref=f2e5]:
+      - link "Peptiva Labs home" [ref=f2e6] [cursor=pointer]:
+        - /url: /
+        - generic [ref=f2e7]:
+          - img [ref=f2e9]
+          - generic [ref=f2e14]: Peptiva Labs
+      - generic [ref=f2e15]:
+        - link "Cart, 0 items" [ref=f2e17] [cursor=pointer]:
+          - /url: /cart
+          - img [ref=f2e18]
+        - button "Open menu" [ref=f2e22] [cursor=pointer]:
+          - img [ref=f2e23]
+  - generic:
+    - generic:
+      - link:
+        - /url: /
+        - generic:
+          - generic:
+            - img
+          - generic: Peptiva Labs
+      - button:
+        - img
+    - generic:
+      - navigation:
+        - link:
+          - /url: /#home
+          - text: Home
+        - link:
+          - /url: /#about
+          - text: About
+        - link:
+          - /url: /#products
+          - text: Products
+        - link:
+          - /url: /#why
+          - text: Why Us
+        - link:
+          - /url: /#testimonial
+          - text: Testimonial
+        - link:
+          - /url: /#contact
+          - text: Contact
+      - generic:
+        - paragraph: Account
+        - generic:
+          - link:
+            - /url: /login
+            - text: Sign in
+          - link:
+            - /url: /register
+            - text: Create account
+      - generic:
+        - link:
+          - /url: /#products
+          - text: Shop now
+        - link:
+          - /url: /cart
+          - text: View cart
+  - main [ref=f2e25]:
+    - generic [ref=f2e26]:
+      - paragraph [ref=f2e27]: Peptiva Labs · Order lookup
+      - heading "Track your order" [level=1] [ref=f2e28]
+      - paragraph [ref=f2e29]: Enter the email you used at checkout to see the latest status, tracking and totals for every Peptiva Labs order on your account.
+      - generic [ref=f2e30]:
+        - textbox "you@lab.com" [ref=f2e31]
+        - button "Look up orders" [ref=f2e32] [cursor=pointer]
+      - paragraph [ref=f2e33]:
+        - text: Or
+        - link "sign in" [ref=f2e34] [cursor=pointer]:
+          - /url: /login
+        - text: to auto-load your orders.
+  - contentinfo [ref=f2e35]:
+    - generic [ref=f2e36]:
+      - generic [ref=f2e37]:
+        - generic [ref=f2e38]:
+          - generic [ref=f2e39]:
+            - img [ref=f2e41]
+            - generic [ref=f2e46]: Peptiva Labs
+          - paragraph [ref=f2e47]: Research peptides sourced, verified and dispatched from Dubai. Honest sourcing, sealed handling, and a real person at the other end of every WhatsApp message.
+          - generic [ref=f2e48]:
+            - paragraph [ref=f2e49]: Level 5, Business Bay, Dubai, UAE
+            - paragraph [ref=f2e50]:
+              - link "+971 54 380 0625" [ref=f2e51] [cursor=pointer]:
+                - /url: https://wa.me/971543800625
+            - paragraph [ref=f2e52]:
+              - link "sales@peptivalabs.com" [ref=f2e53] [cursor=pointer]:
+                - /url: mailto:sales@peptivalabs.com
+          - generic [ref=f2e54]:
+            - paragraph [ref=f2e55]: Newsletter
+            - paragraph [ref=f2e56]: Batch drops, storage tips, sourcing notes. No spam.
+            - generic [ref=f2e57]:
+              - textbox "you@lab.com" [ref=f2e58]
+              - button "Subscribe" [disabled] [ref=f2e59]
+            - generic [ref=f2e60]:
+              - checkbox "I agree to receive research updates." [checked] [ref=f2e61]
+              - text: I agree to receive research updates.
+        - generic [ref=f2e62]:
+          - generic [ref=f2e63]:
+            - heading "Catalogue" [level=4] [ref=f2e64]
+            - list [ref=f2e65]:
+              - listitem [ref=f2e66]:
+                - link "BPC-157 + TB-500" [ref=f2e67] [cursor=pointer]:
+                  - /url: /products/bpc-157-tb-500
+              - listitem [ref=f2e68]:
+                - link "Glow" [ref=f2e69] [cursor=pointer]:
+                  - /url: /products/glow
+              - listitem [ref=f2e70]:
+                - link "Retatrutide" [ref=f2e71] [cursor=pointer]:
+                  - /url: /products/retatrutide
+              - listitem [ref=f2e72]:
+                - link "Tirzepatide" [ref=f2e73] [cursor=pointer]:
+                  - /url: /products/tirzepatide
+          - generic [ref=f2e74]:
+            - heading "Company" [level=4] [ref=f2e75]
+            - list [ref=f2e76]:
+              - listitem [ref=f2e77]:
+                - link "About Peptiva Labs" [ref=f2e78] [cursor=pointer]:
+                  - /url: /#about
+              - listitem [ref=f2e79]:
+                - link "How we source" [ref=f2e80] [cursor=pointer]:
+                  - /url: /#why
+              - listitem [ref=f2e81]:
+                - link "Reviews" [ref=f2e82] [cursor=pointer]:
+                  - /url: /#testimonial
+              - listitem [ref=f2e83]:
+                - link "Contact" [ref=f2e84] [cursor=pointer]:
+                  - /url: /#contact
+          - generic [ref=f2e85]:
+            - heading "Support" [level=4] [ref=f2e86]
+            - list [ref=f2e87]:
+              - listitem [ref=f2e88]:
+                - link "Track order" [ref=f2e89] [cursor=pointer]:
+                  - /url: /track-order
+              - listitem [ref=f2e90]:
+                - link "Cart" [ref=f2e91] [cursor=pointer]:
+                  - /url: /cart
+              - listitem [ref=f2e92]:
+                - link "Account" [ref=f2e93] [cursor=pointer]:
+                  - /url: /account
+              - listitem [ref=f2e94]:
+                - link "Sign in" [ref=f2e95] [cursor=pointer]:
+                  - /url: /login
+          - generic [ref=f2e96]:
+            - heading "Connect" [level=4] [ref=f2e97]
+            - list [ref=f2e98]:
+              - listitem [ref=f2e99]:
+                - link "WhatsApp" [ref=f2e100] [cursor=pointer]:
+                  - /url: https://wa.me/971543800625
+              - listitem [ref=f2e101]:
+                - link "Email" [ref=f2e102] [cursor=pointer]:
+                  - /url: mailto:sales@peptivalabs.com
+              - listitem [ref=f2e103]:
+                - link "Shop now" [ref=f2e104] [cursor=pointer]:
+                  - /url: /#products
+              - listitem [ref=f2e105]:
+                - link "Register" [ref=f2e106] [cursor=pointer]:
+                  - /url: /register
+      - generic [ref=f2e109]: Peptiva
+      - generic [ref=f2e110]:
+        - paragraph [ref=f2e111]: © 2026 Peptiva Labs. All rights reserved. For research use only.
+        - generic [ref=f2e112]:
+          - link "Privacy" [ref=f2e113] [cursor=pointer]:
+            - /url: /#contact
+          - link "Terms" [ref=f2e114] [cursor=pointer]:
+            - /url: /#contact
+          - link "Cookies" [ref=f2e115] [cursor=pointer]:
+            - /url: /#contact

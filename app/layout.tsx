@@ -5,6 +5,7 @@ import "./globals.css";
 import SmoothScroll from "@/components/SmoothScroll";
 import { CartProvider } from "@/components/CartContext";
 import { AuthProvider } from "@/components/AuthContext";
+import { ToastProvider } from "@/components/Toast";
 import ChatWidgetLoader from "@/components/ChatWidgetLoader";
 import {
   SITE_URL,
@@ -41,7 +42,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   applicationName: SITE_NAME,
   ...buildMetadata({
-    title: "Lunvera — Research Peptides, Sourced and Shipped from Dubai",
+    title: "Peptiva Labs — Research Peptides, Sourced and Shipped from Dubai",
     path: "/",
     keywords: [
       "research peptides Dubai",
@@ -50,11 +51,12 @@ export const metadata: Metadata = {
       "tirzepatide research",
       "retatrutide UAE",
       "lab-grade peptides",
+      "Peptiva Labs",
     ],
   }),
-  // Child routes render "<Page> · Lunvera"; the home page keeps its full title.
+  // Child routes render "<Page> · Peptiva Labs"; the home page keeps its full title.
   title: {
-    default: "Lunvera — Research Peptides, Sourced and Shipped from Dubai",
+    default: "Peptiva Labs — Research Peptides, Sourced and Shipped from Dubai",
     template: `%s · ${SITE_NAME}`,
   },
   formatDetection: { telephone: false, address: false, email: false },
@@ -88,12 +90,14 @@ export default function RootLayout({
           Skip to content
         </a>
 
-        <AuthProvider>
-          <CartProvider>
-            <SmoothScroll>{children}</SmoothScroll>
-            <ChatWidgetLoader />
-          </CartProvider>
-        </AuthProvider>
+        <ToastProvider>
+          <AuthProvider>
+            <CartProvider>
+              <SmoothScroll>{children}</SmoothScroll>
+              <ChatWidgetLoader />
+            </CartProvider>
+          </AuthProvider>
+        </ToastProvider>
 
         <script
           type="application/ld+json"

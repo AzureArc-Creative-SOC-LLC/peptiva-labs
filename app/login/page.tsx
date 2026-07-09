@@ -5,33 +5,32 @@ import Link from "next/link";
 import Image from "next/image";
 import { useRouter, useSearchParams } from "next/navigation";
 import { useAuth } from "@/components/AuthContext";
-import { ApiError } from "@/lib/api";
+import { useToast } from "@/components/Toast";
+import { friendlyLoginError } from "@/lib/errors";
 
 function LoginInner() {
   const router = useRouter();
   const search = useSearchParams();
   const next = search.get("next") || "/account";
   const { login, loading } = useAuth();
+  const toast = useToast();
 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [showPw, setShowPw] = useState(false);
-  const [error, setError] = useState<string | null>(null);
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
-    setError(null);
     try {
-      await login(email, password);
-      router.push(next);
-    } catch (e) {
-      setError(
-        e instanceof ApiError
-          ? e.message
-          : e instanceof Error
-            ? e.message
-            : "Login failed"
+      const user = await login(email, password);
+      toast.success(
+        `Welcome back${user.name ? `, ${user.name.split(" ")[0]}` : ""}.`,
+        "Signed in"
       );
+      router.push(next);
+    } catch (err) {
+      if (typeof console !== "undefined") console.error("login failed:", err);
+      toast.error(friendlyLoginError(err), "Sign-in failed");
     }
   }
 
@@ -41,7 +40,7 @@ function LoginInner() {
         Welcome back
       </p>
       <h1 className="mt-2 text-[clamp(32px,4.4vw,44px)] font-medium leading-[1.05] tracking-tight2 text-ink">
-        Sign in to Lunvera
+        Sign in to Peptiva Labs
       </h1>
       <p className="mt-3 text-[14px] text-ink-secondary">
         Access your orders, wallet balance and affiliate dashboard.
@@ -108,15 +107,6 @@ function LoginInner() {
           </div>
         </div>
 
-        {error && (
-          <p
-            role="alert"
-            className="rounded-xl border border-red-200 bg-red-50 px-4 py-2.5 text-[13px] text-red-700"
-          >
-            {error}
-          </p>
-        )}
-
         <button
           type="submit"
           disabled={loading}
@@ -171,7 +161,7 @@ export default function LoginPage() {
                   <path d="M4 20l8-14 8 14" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
               </span>
-              Lunvera
+              Peptiva Labs
             </Link>
 
             <div className="max-w-md">
@@ -217,7 +207,7 @@ export default function LoginPage() {
             href="/"
             className="absolute right-5 top-6 text-[12px] text-ink-muted transition-colors hover:text-ink"
           >
-            lunvera.com
+            peptivalabs.com
           </Link>
 
           <Suspense

@@ -104,7 +104,7 @@ export default function AccountPage() {
               </span>
               <div>
                 <p className="text-[11px] uppercase tracking-label text-ink-muted">
-                  Welcome back
+                  Welcome back to Peptiva Labs
                 </p>
                 <h1 className="mt-1 text-[clamp(32px,5vw,52px)] font-medium leading-[1] tracking-tight2 text-ink">
                   {user.name || user.email}
@@ -164,7 +164,11 @@ export default function AccountPage() {
             <StatCard
               eyebrow="Account"
               value={new Date().getFullYear().toString()}
-              hint={user.role === "admin" ? "Admin account" : "Research account"}
+              hint={
+                user.role === "admin"
+                  ? "Peptiva Labs admin account"
+                  : "Peptiva Labs research account"
+              }
             />
           </div>
 

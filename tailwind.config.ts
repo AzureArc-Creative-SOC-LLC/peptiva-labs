@@ -26,6 +26,9 @@ const config: Config = {
           DEFAULT: "#FFFFFF",
           soft: "#EFEEEB",
           mute: "#E9E8EE",
+          // Deeper warm neutral used for order-summary / totals panels so
+          // they read as a distinct card against the page canvas.
+          dim: "#E4E2DD",
         },
         // Ink (text)
         ink: {

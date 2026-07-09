@@ -112,7 +112,7 @@ export default function About() {
               The fastest way to source peptides you can actually trust.
             </h2>
             <p className="mt-5 max-w-xl text-[15px] leading-relaxed text-ink-secondary">
-              We started Lunvera because the research peptide market needed a brand
+              We started Peptiva Labs because the research peptide market needed a brand
               willing to be boring about the basics — transparent sourcing, real
               lab testing, and people you can actually message. Every batch is
               checked before it reaches our shelves.

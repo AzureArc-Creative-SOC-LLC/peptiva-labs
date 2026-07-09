@@ -12,7 +12,10 @@ const HERO_IMAGES = [
   "/images/4th-card.jpeg",
 ];
 
-const LETTERS = ["L", "u", "n", "v", "e", "r", "a"];
+// Individual letters so GSAP can stagger them into place. The giant hero
+// mark uses the short brand "Peptiva" to keep the same visual scale — the
+// full "Peptiva Labs" wordmark appears in the nav, footer, and inline copy.
+const LETTERS = ["P", "e", "p", "t", "i", "v", "a"];
 
 export default function Hero() {
   const root = useRef<HTMLElement>(null);
@@ -90,7 +93,7 @@ export default function Hero() {
               >
                 <Image
                   src={src}
-                  alt={i === 0 ? "Lunvera research peptide vial" : ""}
+                  alt={i === 0 ? "Peptiva Labs research peptide vial" : ""}
                   fill
                   sizes="(min-width: 640px) 24vw, 22vw"
                   priority={i === 0}

@@ -6,6 +6,7 @@ import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { useCart } from "@/components/CartContext";
+import { useToast } from "@/components/Toast";
 import {
   ArrowLeft,
   ArrowUpRight,
@@ -22,8 +23,8 @@ export default function ProductDetail({
   related: Product[];
 }) {
   const { add } = useCart();
+  const toast = useToast();
   const [qty, setQty] = useState(1);
-  const [added, setAdded] = useState(false);
   const gallery =
     product.gallery && product.gallery.length > 0
       ? product.gallery
@@ -32,8 +33,12 @@ export default function ProductDetail({
 
   function handleAdd() {
     add(product.slug, qty);
-    setAdded(true);
-    setTimeout(() => setAdded(false), 1800);
+    toast.success(
+      qty > 1
+        ? `${qty} × ${product.name} added to your cart.`
+        : `${product.name} added to your cart.`,
+      "Added to cart"
+    );
   }
 
   return (
@@ -101,7 +106,7 @@ export default function ProductDetail({
 
             <div className="flex flex-col">
               <span className="inline-flex w-fit items-center gap-2 rounded-pill border border-line bg-white px-3 py-1 text-[10px] uppercase tracking-label text-ink-secondary">
-                {product.category}
+                Peptiva Labs · {product.category}
               </span>
               <h1 className="mt-3 text-[clamp(24px,3vw,34px)] font-medium leading-[1.1] tracking-tight2 text-ink">
                 {product.name}
@@ -154,19 +159,10 @@ export default function ProductDetail({
                   onClick={handleAdd}
                   className="btn-dark inline-flex items-center gap-2"
                 >
-                  {added ? "Added to cart ✓" : "Add to cart"}
+                  Add to cart
                 </button>
 
-                <Link
-                  href="/cart"
-                  className="btn-ghost inline-flex items-center gap-2"
-                >
-                  View cart <ArrowUpRight />
-                </Link>
               </div>
-              <span role="status" aria-live="polite" className="sr-only">
-                {added ? `${product.name} added to your cart` : ""}
-              </span>
 
               {/* Highlights */}
               <ul className="mt-6 grid grid-cols-1 gap-2 border-t border-line pt-4 sm:grid-cols-2">

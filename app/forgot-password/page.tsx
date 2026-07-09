@@ -4,30 +4,30 @@ import { useState } from "react";
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { ApiError, forgotPassword } from "@/lib/api";
+import { forgotPassword } from "@/lib/api";
+import { useToast } from "@/components/Toast";
+import { friendlyPasswordError } from "@/lib/errors";
 
 export default function ForgotPasswordPage() {
+  const toast = useToast();
   const [email, setEmail] = useState("");
   const [loading, setLoading] = useState(false);
-  const [sent, setSent] = useState<string | null>(null);
-  const [error, setError] = useState<string | null>(null);
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
-    setError(null);
-    setSent(null);
+    if (loading) return;
     setLoading(true);
     try {
       const r = await forgotPassword(email);
-      setSent(r.message);
-    } catch (e) {
-      setError(
-        e instanceof ApiError
-          ? e.message
-          : e instanceof Error
-            ? e.message
-            : "Request failed"
+      toast.success(
+        r.message ||
+          "If an account exists with this email, a password reset link has been sent.",
+        "Check your inbox"
       );
+      setEmail("");
+    } catch (err) {
+      if (typeof console !== "undefined") console.error("forgot-password failed:", err);
+      toast.error(friendlyPasswordError(err), "Reset link not sent");
     } finally {
       setLoading(false);
     }
@@ -40,7 +40,7 @@ export default function ForgotPasswordPage() {
         <div className="container-fluid">
           <div className="mx-auto w-full max-w-md">
             <p className="text-[11px] uppercase tracking-label text-ink-muted">
-              Password reset
+              Peptiva Labs · Password reset
             </p>
             <h1 className="mt-2 text-[clamp(36px,5vw,56px)] font-medium leading-[1] tracking-tight2 text-ink">
               Forgot password
@@ -61,17 +61,6 @@ export default function ForgotPasswordPage() {
                   className="rounded-xl border border-line bg-white px-4 py-3 text-[14px] text-ink outline-none transition-colors placeholder:text-ink-subtle focus:border-ink/30"
                 />
               </label>
-
-              {sent && (
-                <p className="rounded-xl border border-emerald-200 bg-emerald-50 px-4 py-2.5 text-[13px] text-emerald-800">
-                  {sent}
-                </p>
-              )}
-              {error && (
-                <p className="rounded-xl border border-red-200 bg-red-50 px-4 py-2.5 text-[13px] text-red-700">
-                  {error}
-                </p>
-              )}
 
               <button
                 type="submit"
