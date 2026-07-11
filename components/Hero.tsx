@@ -3,13 +3,24 @@
 import { useEffect, useRef } from "react";
 import Image from "next/image";
 import { gsap } from "gsap";
-import { ArrowUpRight } from "./icons";
 
-const HERO_IMAGES = [
-  "https://images.unsplash.com/photo-1628595351029-c2bf17511435?w=800&auto=format&fit=crop&q=70",
-  "/images/hero-card2.jpeg",
-  "/images/3rd-card.jpeg",
-  "/images/4th-card.jpeg",
+const HERO_IMAGES: { src: string; alt: string }[] = [
+  {
+    src: "/images/hero3-seo.webp",
+    alt: "Cold-chain dispatch of verified research peptides from Peptiva Labs",
+  },
+  {
+    src: "/images/hero1-seo.webp",
+    alt: "Peptiva Labs research peptide vial sourced and shipped from Dubai",
+  },
+  {
+    src: "/images/hero2-seo.webp",
+    alt: "Lab-tested research peptide packaging by Peptiva Labs UAE",
+  },
+  {
+    src: "/images/hero4-seo.webp",
+    alt: "Third-party tested peptide vial ready for research use",
+  },
 ];
 
 // Individual letters so GSAP can stagger them into place. The giant hero
@@ -82,7 +93,7 @@ export default function Hero() {
         </h1>
 
         <div className="mt-8 sm:mt-10 flex items-end justify-center gap-2 sm:gap-3 md:gap-5">
-          {HERO_IMAGES.map((src, i) => {
+          {HERO_IMAGES.map(({ src, alt }, i) => {
             const rotations = ["-rotate-6", "rotate-3", "-rotate-2", "rotate-6"];
             const offset = ["", "-mb-2 sm:-mb-4", "", "-mb-1 sm:-mb-2"];
             return (
@@ -93,7 +104,7 @@ export default function Hero() {
               >
                 <Image
                   src={src}
-                  alt={i === 0 ? "Peptiva Labs research peptide vial" : ""}
+                  alt={alt}
                   fill
                   sizes="(min-width: 640px) 24vw, 22vw"
                   priority={i === 0}
@@ -116,12 +127,6 @@ export default function Hero() {
           <div data-hero-foot className="flex flex-wrap items-center gap-3 w-full md:w-auto">
             <a href="#products" className="btn-dark">
               Browse catalogue
-            </a>
-            <a
-              href="#contact"
-              className="btn-ghost inline-flex items-center gap-2"
-            >
-              Chat on WhatsApp <ArrowUpRight />
             </a>
           </div>
         </div>

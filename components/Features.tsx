@@ -46,8 +46,8 @@ export default function Features() {
             className="relative overflow-hidden rounded-card bg-surface-mute sm:col-span-2 sm:row-span-2 lg:col-span-1 lg:col-start-2 lg:row-start-1 lg:row-span-2"
           >
             <Image
-              src="https://images.unsplash.com/photo-1582719471384-894fbb16e074?w=900&auto=format&fit=crop&q=70"
-              alt="Researcher at work in the Peptiva Labs Dubai facility"
+              src="/images/whyus-seo.webp"
+              alt="Why choose Peptiva Labs — verified research peptides sourced and shipped from Dubai"
               fill
               sizes="(min-width: 1024px) 25vw, (min-width: 640px) 100vw, 100vw"
               className="object-cover"

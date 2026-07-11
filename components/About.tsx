@@ -5,7 +5,6 @@ import Image from "next/image";
 import { useReveal } from "./useReveal";
 import CountUp from "./CountUp";
 import {
-  ArrowRight,
   VialIcon,
   TruckIcon,
   CoachIcon,
@@ -66,8 +65,8 @@ export default function About() {
               {/* Top image — 350×310, top-left */}
               <div data-img-reveal className="absolute left-0 top-0 z-0 h-[59.62%] w-[67.31%] overflow-hidden rounded-[28px] shadow-[0_30px_60px_-20px_rgba(15,23,42,0.28)]">
                 <Image
-                  src="https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=800&auto=format&fit=crop&q=80"
-                  alt="Researcher pipetting samples in a Dubai lab"
+                  src="/images/about1-seo.webp"
+                  alt="Peptiva Labs researcher preparing research peptides in Dubai laboratory"
                   fill
                   sizes="(min-width: 768px) 35vw, 68vw"
                   className="object-cover"
@@ -77,8 +76,8 @@ export default function About() {
               {/* Bottom image — 320×260, bottom-right, 70px overlap */}
               <div data-img-reveal className="absolute bottom-0 right-0 z-10 h-[50%] w-[61.54%] overflow-hidden rounded-[28px] shadow-[0_30px_60px_-20px_rgba(15,23,42,0.28)]">
                 <Image
-                  src="https://images.unsplash.com/photo-1554475901-4538ddfbccc2?w=800&auto=format&fit=crop&q=80"
-                  alt="Laboratory flask and test tubes"
+                  src="/images/about2-seo.webp"
+                  alt="Verified research peptide vials third-party tested at Peptiva Labs UAE"
                   fill
                   sizes="(min-width: 768px) 32vw, 62vw"
                   className="object-cover"
@@ -130,15 +129,6 @@ export default function About() {
               ))}
             </ul>
 
-            <div className="mt-8">
-              <a
-                href="#products"
-                className="inline-flex items-center gap-2 rounded-pill px-6 py-3 text-[14px] font-medium text-white transition-all hover:-translate-y-0.5 hover:opacity-95"
-                style={{ backgroundColor: BRAND }}
-              >
-                Browse Catalogue <ArrowRight />
-              </a>
-            </div>
           </div>
         </div>
 

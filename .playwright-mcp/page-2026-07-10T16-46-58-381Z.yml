@@ -1,0 +1,332 @@
+- generic [active] [ref=e1]:
+  - link "Skip to content" [ref=e2] [cursor=pointer]:
+    - /url: "#home"
+  - banner [ref=e3]:
+    - generic [ref=e5]:
+      - link "Peptiva Labs home" [ref=e6] [cursor=pointer]:
+        - /url: /
+        - generic [ref=e7]: Peptiva Labs
+      - generic [ref=e15]:
+        - link "Cart, 0 items" [ref=e17] [cursor=pointer]:
+          - /url: /cart
+        - button "Open menu" [ref=e22] [cursor=pointer]
+  - generic:
+    - generic:
+      - link:
+        - /url: /
+        - generic: Peptiva Labs
+      - button
+    - generic:
+      - navigation:
+        - link:
+          - /url: /#home
+          - text: Home
+        - link:
+          - /url: /#about
+          - text: About
+        - link:
+          - /url: /#products
+          - text: Products
+        - link:
+          - /url: /#why
+          - text: Why Us
+        - link:
+          - /url: /#testimonial
+          - text: Testimonial
+        - link:
+          - /url: /#contact
+          - text: Contact
+      - generic:
+        - paragraph: Account
+        - generic:
+          - link:
+            - /url: /login
+            - text: Sign in
+          - link:
+            - /url: /register
+            - text: Create account
+      - generic:
+        - link:
+          - /url: /#products
+          - text: Shop now
+  - main [ref=e25]:
+    - generic [ref=e27]:
+      - heading "P e p t i v a" [level=1] [ref=e28]:
+        - generic [ref=e29]: P
+        - generic [ref=e30]: e
+        - generic [ref=e31]: p
+        - generic [ref=e32]: t
+        - generic [ref=e33]: i
+        - generic [ref=e34]: v
+        - generic [ref=e35]: a
+      - generic [ref=e36]:
+        - img "Cold-chain dispatch of verified research peptides from Peptiva Labs" [ref=e38]
+        - img "Peptiva Labs research peptide vial sourced and shipped from Dubai" [ref=e40]
+        - img "Lab-tested research peptide packaging by Peptiva Labs UAE" [ref=e42]
+        - img "Third-party tested peptide vial ready for research use" [ref=e44]
+      - generic [ref=e45]:
+        - paragraph [ref=e46]: Verified research peptides, packed and dispatched from Dubai. Honest sourcing, careful handling, and a real person on WhatsApp when you need one.
+        - link "Browse catalogue" [ref=e48] [cursor=pointer]:
+          - /url: "#products"
+    - generic [ref=e51]:
+      - generic [ref=e52]:
+        - generic [ref=e53]: Verified Sourcing
+        - generic [ref=e57]: Lab-Tested Purity
+        - generic [ref=e61]: Sealed Cold Packaging
+        - generic [ref=e65]: WhatsApp Support
+        - generic [ref=e69]: Verified Sourcing
+        - generic [ref=e73]: Lab-Tested Purity
+        - generic [ref=e77]: Sealed Cold Packaging
+        - generic [ref=e81]: WhatsApp Support
+        - generic [ref=e85]: Verified Sourcing
+        - generic [ref=e89]: Lab-Tested Purity
+        - generic [ref=e93]: Sealed Cold Packaging
+        - generic [ref=e97]: WhatsApp Support
+        - generic [ref=e101]: Verified Sourcing
+        - generic [ref=e105]: Lab-Tested Purity
+        - generic [ref=e109]: Sealed Cold Packaging
+        - generic [ref=e113]: WhatsApp Support
+      - generic [ref=e117]:
+        - generic [ref=e118]: Verified Sourcing
+        - generic [ref=e122]: Lab-Tested Purity
+        - generic [ref=e126]: Sealed Cold Packaging
+        - generic [ref=e130]: WhatsApp Support
+        - generic [ref=e134]: Verified Sourcing
+        - generic [ref=e138]: Lab-Tested Purity
+        - generic [ref=e142]: Sealed Cold Packaging
+        - generic [ref=e146]: WhatsApp Support
+        - generic [ref=e150]: Verified Sourcing
+        - generic [ref=e154]: Lab-Tested Purity
+        - generic [ref=e158]: Sealed Cold Packaging
+        - generic [ref=e162]: WhatsApp Support
+        - generic [ref=e166]: Verified Sourcing
+        - generic [ref=e170]: Lab-Tested Purity
+        - generic [ref=e174]: Sealed Cold Packaging
+        - generic [ref=e178]: WhatsApp Support
+    - generic [ref=e183]:
+      - generic [ref=e184]:
+        - generic [ref=e186]:
+          - img "Peptiva Labs researcher preparing research peptides in Dubai laboratory" [ref=e188]
+          - img "Verified research peptide vials third-party tested at Peptiva Labs UAE" [ref=e190]
+          - generic [ref=e191]:
+            - paragraph [ref=e192]: 99.4%
+            - paragraph [ref=e193]: Verified Peptide Purity
+        - generic [ref=e194]:
+          - text: Company About
+          - heading "The fastest way to source peptides you can actually trust." [level=2] [ref=e195]
+          - paragraph [ref=e196]: We started Peptiva Labs because the research peptide market needed a brand willing to be boring about the basics — transparent sourcing, real lab testing, and people you can actually message. Every batch is checked before it reaches our shelves.
+          - paragraph [ref=e197]: "Our Special Services:"
+          - list [ref=e198]:
+            - listitem [ref=e199]:
+              - generic [ref=e203]: Third-party tested for purity
+            - listitem [ref=e204]:
+              - generic [ref=e208]: Direct-from-supplier sourcing
+            - listitem [ref=e209]:
+              - generic [ref=e213]: Accurate labelling on every vial
+            - listitem [ref=e214]:
+              - generic [ref=e218]: Cold-chain UAE-wide dispatch
+      - generic [ref=e220]:
+        - generic [ref=e226]:
+          - paragraph [ref=e227]: 99.4%
+          - paragraph [ref=e228]: Verified Peptide Purity
+        - generic [ref=e236]:
+          - paragraph [ref=e237]: 5,000+
+          - paragraph [ref=e238]: Vials Shipped UAE-Wide
+        - generic [ref=e243]:
+          - paragraph [ref=e244]: 8+
+          - paragraph [ref=e245]: Curated Peptide Lines
+        - generic [ref=e251]:
+          - paragraph [ref=e252]: 4,000+
+          - paragraph [ref=e253]: Researchers Served
+    - generic [ref=e255]:
+      - generic [ref=e256]:
+        - heading "The Range" [level=2] [ref=e257]
+        - paragraph [ref=e258]: Four core peptide lines, each available in the concentrations researchers actually ask for. Every batch is verified, sealed, and cold-shipped from our Dubai facility.
+      - generic [ref=e259]:
+        - link "BPC-157 + TB-500 40 mg dual blend BPC-157 + TB-500 Two of the most studied recovery peptides, paired in one research-grade vial for streamlined protocols. AED 999" [ref=e260] [cursor=pointer]:
+          - /url: /products/bpc-157-tb-500
+          - img "BPC-157 + TB-500" [ref=e262]
+          - generic [ref=e263]:
+            - paragraph [ref=e264]: 40 mg dual blend
+            - heading "BPC-157 + TB-500" [level=3] [ref=e265]
+            - paragraph [ref=e266]: Two of the most studied recovery peptides, paired in one research-grade vial for streamlined protocols.
+            - generic [ref=e267]: AED 999
+        - link "Glow 5 mg · 70 mg options Glow Our skin and tissue blend, formulated for studies focused on appearance, texture, and recovery markers. from AED 1,199" [ref=e273] [cursor=pointer]:
+          - /url: /products/glow
+          - img "Glow" [ref=e275]
+          - generic [ref=e276]:
+            - paragraph [ref=e277]: 5 mg · 70 mg options
+            - heading "Glow" [level=3] [ref=e278]
+            - paragraph [ref=e279]: Our skin and tissue blend, formulated for studies focused on appearance, texture, and recovery markers.
+            - generic [ref=e280]: from AED 1,199
+        - link "Retatrutide 20 mg · 40 mg Retatrutide A next-generation triple-agonist peptide for advanced metabolic research, batch-tested before dispatch. from AED 1,990" [ref=e286] [cursor=pointer]:
+          - /url: /products/retatrutide
+          - img "Retatrutide" [ref=e288]
+          - generic [ref=e289]:
+            - paragraph [ref=e290]: 20 mg · 40 mg
+            - heading "Retatrutide" [level=3] [ref=e291]
+            - paragraph [ref=e292]: A next-generation triple-agonist peptide for advanced metabolic research, batch-tested before dispatch.
+            - generic [ref=e293]: from AED 1,990
+        - link "Tirzepatide 5 / 20 / 40 mg Tirzepatide Dual-agonist GLP-1 / GIP peptide stocked in three concentrations to suit different study designs. from AED 750" [ref=e299] [cursor=pointer]:
+          - /url: /products/tirzepatide
+          - img "Tirzepatide" [ref=e301]
+          - generic [ref=e302]:
+            - paragraph [ref=e303]: 5 / 20 / 40 mg
+            - heading "Tirzepatide" [level=3] [ref=e304]
+            - paragraph [ref=e305]: Dual-agonist GLP-1 / GIP peptide stocked in three concentrations to suit different study designs.
+            - generic [ref=e306]: from AED 750
+    - generic [ref=e314]:
+      - generic [ref=e315]:
+        - generic [ref=e316]: Why Peptiva Labs
+        - heading "Why Choose Peptiva Labs?" [level=2] [ref=e318]: Why ChoosePeptiva Labs?
+        - paragraph [ref=e319]: Purity, paperwork, and real customer service — all on the same side of the table.
+      - img "Why choose Peptiva Labs — verified research peptides sourced and shipped from Dubai" [ref=e321]
+      - generic [ref=e322]:
+        - heading "Lab-tested vials" [level=3] [ref=e326]
+        - paragraph [ref=e327]: Every batch is screened for purity. Out of spec means it never ships.
+      - generic [ref=e328]:
+        - heading "Traceable sourcing" [level=3] [ref=e333]
+        - link "Talk to the team" [ref=e334] [cursor=pointer]:
+          - /url: "#contact"
+      - generic [ref=e338]:
+        - heading "UAE stock, AED pricing" [level=3] [ref=e345]
+        - paragraph [ref=e346]: Cold-stored in Dubai and dispatched same or next working day.
+      - generic [ref=e347]:
+        - heading "A human on WhatsApp" [level=3] [ref=e352]
+        - generic [ref=e353]:
+          - paragraph [ref=e354]: Real replies, fast.
+          - link "Message us on WhatsApp" [ref=e355] [cursor=pointer]:
+            - /url: "#contact"
+    - generic [ref=e360]:
+      - generic [ref=e361]:
+        - heading "How a vial gets to you" [level=2] [ref=e362]
+        - paragraph [ref=e363]: Three deliberate steps between the lab bench and your doorstep — so nothing about the product is left to chance.
+      - generic [ref=e364]:
+        - article [ref=e365]:
+          - img "Sourcing research peptides directly from certified manufacturers for Peptiva Labs Dubai" [ref=e367]
+          - generic [ref=e368]:
+            - paragraph [ref=e369]: 01 · Source
+            - paragraph [ref=e370]: Direct contracts with certified manufacturers. No grey-market resellers in the chain.
+        - article [ref=e371]:
+          - img "Independent purity verification of every research peptide batch at Peptiva Labs" [ref=e373]
+          - generic [ref=e374]:
+            - paragraph [ref=e375]: 02 · Verify
+            - paragraph [ref=e376]: Independent purity and concentration checks on every batch before it touches a customer order.
+        - article [ref=e377]:
+          - img "Cold-chain shipping of sealed research peptide vials across the UAE" [ref=e379]
+          - generic [ref=e380]:
+            - paragraph [ref=e381]: 03 · Ship
+            - paragraph [ref=e382]: Cold-packed, tamper-sealed, and dispatched same or next day from our Dubai warehouse.
+    - generic [ref=e385]:
+      - generic [ref=e386]:
+        - img "Research peptide vial from Peptiva Labs Dubai catalogue" [ref=e390]
+        - img "Lab-tested BPC-157 research peptide by Peptiva Labs" [ref=e394]
+        - img "Tirzepatide research peptide vial stocked in the UAE" [ref=e398]
+        - img "Retatrutide research peptide from Peptiva Labs" [ref=e402]
+        - img "Glow peptide blend for skin and tissue research" [ref=e406]
+        - img "Sealed research peptide vial ready for cold-chain dispatch" [ref=e410]
+      - generic [ref=e411]:
+        - heading "Ready to order? Browse the catalogue" [level=2] [ref=e412]
+        - link "Start your order" [ref=e413] [cursor=pointer]:
+          - /url: /#products
+    - generic [ref=e415]:
+      - heading "What our customers say" [level=2] [ref=e416]
+      - generic [ref=e417]:
+        - img "Hassan Al Marri, Independent researcher, Abu Dhabi" [ref=e419]
+        - figure "Hassan Al Marri Independent researcher, Abu Dhabi" [ref=e420]:
+          - blockquote [ref=e424]: Ordered late afternoon, dispatched the next morning, and the packaging was easily the cleanest I've seen from a UAE supplier. Replies on WhatsApp arrived in minutes.
+          - generic [ref=e425]:
+            - generic [ref=e426]: Hassan Al Marri
+            - generic [ref=e427]: Independent researcher, Abu Dhabi
+      - generic [ref=e428]:
+        - button "Testimonial 1" [ref=e429] [cursor=pointer]
+        - button "Testimonial 2" [ref=e431] [cursor=pointer]
+        - button "Testimonial 3" [ref=e433] [cursor=pointer]
+  - contentinfo [ref=e435]:
+    - generic [ref=e436]:
+      - generic [ref=e437]:
+        - generic [ref=e438]:
+          - generic [ref=e439]: Peptiva Labs
+          - paragraph [ref=e447]: Research peptides sourced, verified and dispatched from Dubai. Honest sourcing, sealed handling, and a real person at the other end of every WhatsApp message.
+          - generic [ref=e448]:
+            - paragraph [ref=e449]: Level 5, Business Bay, Dubai, UAE
+            - paragraph [ref=e450]:
+              - link "+971 54 380 0625" [ref=e451] [cursor=pointer]:
+                - /url: https://wa.me/971543800625
+            - paragraph [ref=e452]:
+              - link "sales@peptivalabs.com" [ref=e453] [cursor=pointer]:
+                - /url: mailto:sales@peptivalabs.com
+          - generic [ref=e454]:
+            - paragraph [ref=e455]: Newsletter
+            - paragraph [ref=e456]: Batch drops, storage tips, sourcing notes. No spam.
+            - generic [ref=e457]:
+              - textbox "you@lab.com" [ref=e458]
+              - button "Subscribe" [disabled] [ref=e459]
+            - generic [ref=e460]:
+              - checkbox "I agree to receive research updates." [checked] [ref=e461]
+              - text: I agree to receive research updates.
+        - generic [ref=e462]:
+          - generic [ref=e463]:
+            - heading "Catalogue" [level=3] [ref=e464]
+            - list [ref=e465]:
+              - listitem [ref=e466]:
+                - link "BPC-157 + TB-500" [ref=e467] [cursor=pointer]:
+                  - /url: /products/bpc-157-tb-500
+              - listitem [ref=e468]:
+                - link "Glow" [ref=e469] [cursor=pointer]:
+                  - /url: /products/glow
+              - listitem [ref=e470]:
+                - link "Retatrutide" [ref=e471] [cursor=pointer]:
+                  - /url: /products/retatrutide
+              - listitem [ref=e472]:
+                - link "Tirzepatide" [ref=e473] [cursor=pointer]:
+                  - /url: /products/tirzepatide
+          - generic [ref=e474]:
+            - heading "Company" [level=3] [ref=e475]
+            - list [ref=e476]:
+              - listitem [ref=e477]:
+                - link "About Peptiva Labs" [ref=e478] [cursor=pointer]:
+                  - /url: /#about
+              - listitem [ref=e479]:
+                - link "How we source" [ref=e480] [cursor=pointer]:
+                  - /url: /#why
+              - listitem [ref=e481]:
+                - link "Reviews" [ref=e482] [cursor=pointer]:
+                  - /url: /#testimonial
+              - listitem [ref=e483]:
+                - link "Contact" [ref=e484] [cursor=pointer]:
+                  - /url: /#contact
+          - generic [ref=e485]:
+            - heading "Support" [level=3] [ref=e486]
+            - list [ref=e487]:
+              - listitem [ref=e488]:
+                - link "Track order" [ref=e489] [cursor=pointer]:
+                  - /url: /track-order
+              - listitem [ref=e490]:
+                - link "Cart" [ref=e491] [cursor=pointer]:
+                  - /url: /cart
+              - listitem [ref=e492]:
+                - link "Account" [ref=e493] [cursor=pointer]:
+                  - /url: /account
+              - listitem [ref=e494]:
+                - link "Sign in" [ref=e495] [cursor=pointer]:
+                  - /url: /login
+          - generic [ref=e496]:
+            - heading "Connect" [level=3] [ref=e497]
+            - list [ref=e498]:
+              - listitem [ref=e499]:
+                - link "Shop now" [ref=e500] [cursor=pointer]:
+                  - /url: /#products
+              - listitem [ref=e501]:
+                - link "Register" [ref=e502] [cursor=pointer]:
+                  - /url: /register
+      - generic [ref=e503]: Peptiva
+      - generic [ref=e506]:
+        - paragraph [ref=e507]: © 2026 Peptiva Labs. All rights reserved. For research use only.
+        - generic [ref=e508]:
+          - link "Privacy" [ref=e509] [cursor=pointer]:
+            - /url: /#contact
+          - link "Terms" [ref=e510] [cursor=pointer]:
+            - /url: /#contact
+          - link "Cookies" [ref=e511] [cursor=pointer]:
+            - /url: /#contact

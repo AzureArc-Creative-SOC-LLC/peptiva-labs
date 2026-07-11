@@ -11,21 +11,21 @@ const TESTIMONIALS = [
       "Ordered late afternoon, dispatched the next morning, and the packaging was easily the cleanest I've seen from a UAE supplier. Replies on WhatsApp arrived in minutes.",
     name: "Hassan Al Marri",
     role: "Independent researcher, Abu Dhabi",
-    img: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&auto=format&fit=crop&q=70",
+    img: "/images/review-img1-seo.webp",
   },
   {
     quote:
       "I've worked with three different peptide vendors. Peptiva Labs is the only one that has been consistent on purity, stock, and after-sales communication every single order.",
     name: "Dr. Aisha Khan",
     role: "Clinical research coordinator",
-    img: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=400&auto=format&fit=crop&q=70",
+    img: "/images/review-img2-seo.webp",
   },
   {
     quote:
       "Their team walked me through concentration choices before I bought anything. No upsell, no pressure — just useful guidance. That's rare in this space.",
     name: "Yusuf Rahman",
     role: "Performance coach, Dubai",
-    img: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&auto=format&fit=crop&q=70",
+    img: "/images/review-img3-seo.webp",
   },
 ];
 
@@ -74,16 +74,22 @@ export default function Testimonials() {
           </figure>
         </div>
 
-        <div className="mt-6 flex justify-center gap-2">
+        <div className="mt-6 flex justify-center">
           {TESTIMONIALS.map((_, i) => (
             <button
               key={i}
               onClick={() => setIndex(i)}
               aria-label={`Testimonial ${i + 1}`}
-              className={`h-2.5 w-2.5 rounded-full transition-colors ${
-                i === index ? "bg-ink" : "bg-ink/20"
-              }`}
-            />
+              aria-current={i === index ? "true" : undefined}
+              className="group inline-flex h-6 w-6 items-center justify-center"
+            >
+              <span
+                aria-hidden
+                className={`h-2.5 w-2.5 rounded-full transition-colors ${
+                  i === index ? "bg-ink" : "bg-ink/20 group-hover:bg-ink/40"
+                }`}
+              />
+            </button>
           ))}
         </div>
       </div>

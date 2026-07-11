@@ -302,13 +302,6 @@ export default function Navbar() {
             >
               Shop now
             </Link>
-            <Link
-              href="/cart"
-              onClick={() => setOpen(false)}
-              className="inline-flex w-full items-center justify-center rounded-pill border border-line bg-white px-5 py-2.5 text-[14px] font-medium text-ink"
-            >
-              View cart
-            </Link>
           </div>
         </div>
       </div>

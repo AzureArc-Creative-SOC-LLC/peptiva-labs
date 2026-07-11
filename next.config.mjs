@@ -34,7 +34,10 @@ const nextConfig = {
     // Tuned to the layout's real breakpoints (see tailwind.config screens).
     deviceSizes: [360, 430, 640, 750, 828, 1080, 1200, 1320, 1920],
     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
-    minimumCacheTTL: 31536000,
+    // Short optimizer cache so swapped images (same filename, new content) don't
+    // linger for a year. Static assets with hashed URLs still get long cache
+    // via the /_next/static header rule below.
+    minimumCacheTTL: 60,
     remotePatterns: [
       {
         protocol: "https",
@@ -76,6 +79,18 @@ const nextConfig = {
           {
             key: "Cache-Control",
             value: "public, max-age=31536000, immutable",
+          },
+        ],
+      },
+      {
+        // Raw /public/images/* served directly (not via Next Image optimizer).
+        // Force browsers to revalidate so replaced files show up immediately
+        // instead of serving a stale copy from cache.
+        source: "/images/:path*",
+        headers: [
+          {
+            key: "Cache-Control",
+            value: "public, max-age=0, must-revalidate",
           },
         ],
       },

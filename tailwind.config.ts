@@ -28,7 +28,9 @@ const config: Config = {
           mute: "#E9E8EE",
           // Deeper warm neutral used for order-summary / totals panels so
           // they read as a distinct card against the page canvas.
-          dim: "#E4E2DD",
+          dim: "#D5D2C8",
+          // A touch deeper again — used for the cart order-summary card.
+          dimmer: "#DBD8CF",
         },
         // Ink (text)
         ink: {

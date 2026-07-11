@@ -1,0 +1,217 @@
+- generic [active] [ref=f11e1]:
+  - link "Skip to content" [ref=f11e2] [cursor=pointer]:
+    - /url: "#home"
+  - banner [ref=f11e105]:
+    - generic [ref=f11e107]:
+      - link "Peptiva Labs home" [ref=f11e108] [cursor=pointer]:
+        - /url: /
+        - generic [ref=f11e109]: Peptiva Labs
+      - generic [ref=f11e117]:
+        - link "Sign in" [ref=f11e118] [cursor=pointer]:
+          - /url: /login
+        - link "Cart, 2 items" [ref=f11e119] [cursor=pointer]:
+          - /url: /cart
+          - generic [ref=f11e124]: "2"
+        - button "Open menu" [ref=f11e125] [cursor=pointer]
+  - generic:
+    - generic:
+      - link:
+        - /url: /
+        - generic: Peptiva Labs
+      - button
+    - generic:
+      - navigation:
+        - link:
+          - /url: /#home
+          - text: Home
+        - link:
+          - /url: /#about
+          - text: About
+        - link:
+          - /url: /#products
+          - text: Products
+        - link:
+          - /url: /#why
+          - text: Why Us
+        - link:
+          - /url: /#testimonial
+          - text: Testimonial
+        - link:
+          - /url: /#contact
+          - text: Contact
+      - generic:
+        - paragraph: Account
+        - generic:
+          - link:
+            - /url: /login
+            - text: Sign in
+          - link:
+            - /url: /register
+            - text: Create account
+      - generic:
+        - link:
+          - /url: /#products
+          - text: Shop now
+  - main [ref=f11e128]:
+    - generic [ref=f11e129]:
+      - navigation "Breadcrumb" [ref=f11e130]:
+        - link "Back to the range" [ref=f11e131] [cursor=pointer]:
+          - /url: /#products
+      - generic [ref=f11e134]:
+        - generic [ref=f11e135]:
+          - img "BPC-157 + TB-500 — 40 mg dual blend" [ref=f11e137]
+          - generic [ref=f11e138]:
+            - button "View image 1 of 4" [ref=f11e139] [cursor=pointer]:
+              - img "BPC-157 + TB-500 view 1" [ref=f11e140]
+            - button "View image 2 of 4" [ref=f11e141] [cursor=pointer]:
+              - img "BPC-157 + TB-500 view 2" [ref=f11e142]
+            - button "View image 3 of 4" [ref=f11e143] [cursor=pointer]:
+              - img "BPC-157 + TB-500 view 3" [ref=f11e144]
+            - button "View image 4 of 4" [ref=f11e145] [cursor=pointer]:
+              - img "BPC-157 + TB-500 view 4" [ref=f11e146]
+        - generic [ref=f11e147]:
+          - generic [ref=f11e148]: Peptiva Labs · Recovery
+          - heading "BPC-157 + TB-500" [level=1] [ref=f11e149]
+          - paragraph [ref=f11e150]: 40 mg dual blend
+          - paragraph [ref=f11e151]: AED 999
+          - paragraph [ref=f11e152]: Our BPC-157 + TB-500 dual blend pairs two of the most widely researched repair peptides into a single, accurately dosed vial — built for studies that would otherwise juggle two separate reconstitutions.
+          - paragraph [ref=f11e153]: Each batch is third-party tested for identity and purity, sealed, and cold-stored in our Dubai facility before dispatch. Labelling reflects exactly what is in the vial — nothing more, nothing less.
+          - generic [ref=f11e154]:
+            - generic [ref=f11e155]:
+              - button "Decrease quantity" [ref=f11e156] [cursor=pointer]
+              - generic [ref=f11e158]: "1"
+              - button "Increase quantity" [ref=f11e159] [cursor=pointer]
+            - button "Add to cart" [ref=f11e162] [cursor=pointer]
+          - list [ref=f11e163]:
+            - listitem [ref=f11e164]: 40 mg total (20 mg / 20 mg) per vial
+            - listitem [ref=f11e166]: 99.4% verified purity, third-party tested
+            - listitem [ref=f11e168]: Lyophilised, sealed, cold-chain handled
+            - listitem [ref=f11e170]: For laboratory research use only
+      - region [ref=f11e172]:
+        - generic [ref=f11e173]:
+          - heading "Related products" [level=2] [ref=f11e174]
+          - link "View all" [ref=f11e175] [cursor=pointer]:
+            - /url: /#products
+        - generic [ref=f11e176]:
+          - link [ref=f11e177] [cursor=pointer]:
+            - /url: /products/glow
+            - img "Glow" [ref=f11e179]
+            - generic [ref=f11e181]:
+              - heading "Glow" [level=3] [ref=f11e182]
+              - paragraph [ref=f11e183]: from AED 1,199
+          - link [ref=f11e188] [cursor=pointer]:
+            - /url: /products/retatrutide
+            - img "Retatrutide" [ref=f11e190]
+            - generic [ref=f11e192]:
+              - heading "Retatrutide" [level=3] [ref=f11e193]
+              - paragraph [ref=f11e194]: from AED 1,990
+          - link [ref=f11e199] [cursor=pointer]:
+            - /url: /products/tirzepatide
+            - img "Tirzepatide" [ref=f11e201]
+            - generic [ref=f11e203]:
+              - heading "Tirzepatide" [level=3] [ref=f11e204]
+              - paragraph [ref=f11e205]: from AED 750
+  - contentinfo [ref=f11e210]:
+    - generic [ref=f11e211]:
+      - generic [ref=f11e212]:
+        - generic [ref=f11e213]:
+          - generic [ref=f11e214]: Peptiva Labs
+          - paragraph [ref=f11e222]: Research peptides sourced, verified and dispatched from Dubai. Honest sourcing, sealed handling, and a real person at the other end of every WhatsApp message.
+          - generic [ref=f11e223]:
+            - paragraph [ref=f11e224]: Level 5, Business Bay, Dubai, UAE
+            - paragraph [ref=f11e225]:
+              - link "+971 54 380 0625" [ref=f11e226] [cursor=pointer]:
+                - /url: https://wa.me/971543800625
+            - paragraph [ref=f11e227]:
+              - link "sales@peptivalabs.com" [ref=f11e228] [cursor=pointer]:
+                - /url: mailto:sales@peptivalabs.com
+          - generic [ref=f11e229]:
+            - paragraph [ref=f11e230]: Newsletter
+            - paragraph [ref=f11e231]: Batch drops, storage tips, sourcing notes. No spam.
+            - generic [ref=f11e232]:
+              - textbox "you@lab.com" [ref=f11e233]
+              - button "Subscribe" [disabled] [ref=f11e234]
+            - generic [ref=f11e235]:
+              - checkbox "I agree to receive research updates." [checked] [ref=f11e236]
+              - text: I agree to receive research updates.
+        - generic [ref=f11e237]:
+          - generic [ref=f11e238]:
+            - heading "Catalogue" [level=3] [ref=f11e239]
+            - list [ref=f11e240]:
+              - listitem [ref=f11e241]:
+                - link "BPC-157 + TB-500" [ref=f11e242] [cursor=pointer]:
+                  - /url: /products/bpc-157-tb-500
+              - listitem [ref=f11e243]:
+                - link "Glow" [ref=f11e244] [cursor=pointer]:
+                  - /url: /products/glow
+              - listitem [ref=f11e245]:
+                - link "Retatrutide" [ref=f11e246] [cursor=pointer]:
+                  - /url: /products/retatrutide
+              - listitem [ref=f11e247]:
+                - link "Tirzepatide" [ref=f11e248] [cursor=pointer]:
+                  - /url: /products/tirzepatide
+          - generic [ref=f11e249]:
+            - heading "Company" [level=3] [ref=f11e250]
+            - list [ref=f11e251]:
+              - listitem [ref=f11e252]:
+                - link "About Peptiva Labs" [ref=f11e253] [cursor=pointer]:
+                  - /url: /#about
+              - listitem [ref=f11e254]:
+                - link "How we source" [ref=f11e255] [cursor=pointer]:
+                  - /url: /#why
+              - listitem [ref=f11e256]:
+                - link "Reviews" [ref=f11e257] [cursor=pointer]:
+                  - /url: /#testimonial
+              - listitem [ref=f11e258]:
+                - link "Contact" [ref=f11e259] [cursor=pointer]:
+                  - /url: /#contact
+          - generic [ref=f11e260]:
+            - heading "Support" [level=3] [ref=f11e261]
+            - list [ref=f11e262]:
+              - listitem [ref=f11e263]:
+                - link "Track order" [ref=f11e264] [cursor=pointer]:
+                  - /url: /track-order
+              - listitem [ref=f11e265]:
+                - link "Cart" [ref=f11e266] [cursor=pointer]:
+                  - /url: /cart
+              - listitem [ref=f11e267]:
+                - link "Account" [ref=f11e268] [cursor=pointer]:
+                  - /url: /account
+              - listitem [ref=f11e269]:
+                - link "Sign in" [ref=f11e270] [cursor=pointer]:
+                  - /url: /login
+          - generic [ref=f11e271]:
+            - heading "Connect" [level=3] [ref=f11e272]
+            - list [ref=f11e273]:
+              - listitem [ref=f11e274]:
+                - link "Shop now" [ref=f11e275] [cursor=pointer]:
+                  - /url: /#products
+              - listitem [ref=f11e276]:
+                - link "Register" [ref=f11e277] [cursor=pointer]:
+                  - /url: /register
+      - generic [ref=f11e278]: Peptiva
+      - generic [ref=f11e281]:
+        - paragraph [ref=f11e282]: © 2026 Peptiva Labs. All rights reserved. For research use only.
+        - generic [ref=f11e283]:
+          - link "Privacy" [ref=f11e284] [cursor=pointer]:
+            - /url: /#contact
+          - link "Terms" [ref=f11e285] [cursor=pointer]:
+            - /url: /#contact
+          - link "Cookies" [ref=f11e286] [cursor=pointer]:
+            - /url: /#contact
+  - button "Open assistant" [ref=f11e287] [cursor=pointer]
+  - dialog "Research assistant":
+    - generic:
+      - generic:
+        - generic:
+          - paragraph: Research assistant
+          - paragraph: Ask about compounds, storage, or sourcing.
+      - button "Close"
+    - generic:
+      - generic:
+        - paragraph: Hi. I’m your research assistant — ask me anything about the Peptiva Labs catalogue.
+      - list
+    - generic:
+      - textbox "Ask about a compound…"
+      - button "Send" [disabled]
+  - alert [ref=f11e290]: BPC-157 + TB-500 — 40 mg dual blend · Peptiva Labs

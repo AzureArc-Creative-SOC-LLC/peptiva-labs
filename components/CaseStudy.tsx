@@ -5,21 +5,24 @@ import { useReveal } from "./useReveal";
 
 const CASES = [
   {
-    img: "https://images.unsplash.com/photo-1581093450021-4a7360e9a6b5?w=900&auto=format&fit=crop&q=70",
+    img: "/images/source-seo.webp",
+    alt: "Sourcing research peptides directly from certified manufacturers for Peptiva Labs Dubai",
     step: "01 · Source",
     quote:
       "Direct contracts with certified manufacturers. No grey-market resellers in the chain.",
     bg: "bg-lilac",
   },
   {
-    img: "https://images.unsplash.com/photo-1576086213369-97a306d36557?w=900&auto=format&fit=crop&q=70",
+    img: "/images/verify-seo.webp",
+    alt: "Independent purity verification of every research peptide batch at Peptiva Labs",
     step: "02 · Verify",
     quote:
       "Independent purity and concentration checks on every batch before it touches a customer order.",
     bg: "bg-cream",
   },
   {
-    img: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=900&auto=format&fit=crop&q=70",
+    img: "/images/ship-seo.webp",
+    alt: "Cold-chain shipping of sealed research peptide vials across the UAE",
     step: "03 · Ship",
     quote:
       "Cold-packed, tamper-sealed, and dispatched same or next day from our Dubai warehouse.",
@@ -55,7 +58,7 @@ export default function CaseStudy() {
               <div data-img-reveal className="relative aspect-[5/4] overflow-hidden">
                 <Image
                   src={c.img}
-                  alt=""
+                  alt={c.alt}
                   fill
                   sizes="(min-width: 768px) 33vw, 100vw"
                   className="object-cover"

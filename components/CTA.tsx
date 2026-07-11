@@ -10,32 +10,38 @@ gsap.registerPlugin(ScrollTrigger, SplitText);
 
 const CARDS = [
   {
-    src: "/images/med-vials.jpg",
+    src: "/images/circle-img-seo1.webp",
+    alt: "Research peptide vial from Peptiva Labs Dubai catalogue",
     pos: "top-[7%] left-[8%] w-[92px] h-[116px] sm:w-[126px] sm:h-[160px]",
     tilt: -8,
   },
   {
-    src: "/images/lab3.jpg",
+    src: "/images/circle-img-seo2.webp",
+    alt: "Lab-tested BPC-157 research peptide by Peptiva Labs",
     pos: "top-[4%] right-[8%] w-[96px] h-[120px] sm:w-[134px] sm:h-[168px]",
     tilt: 7,
   },
   {
-    src: "/images/lab1.jpg",
+    src: "/images/circle-img3-seo.webp",
+    alt: "Tirzepatide research peptide vial stocked in the UAE",
     pos: "top-[39%] left-0 sm:left-[1%] w-[86px] h-[108px] sm:w-[118px] sm:h-[150px]",
     tilt: -5,
   },
   {
-    src: "/images/lab2.avif",
+    src: "/images/circle-img4-seo-new.webp",
+    alt: "Retatrutide research peptide from Peptiva Labs",
     pos: "top-[41%] right-0 sm:right-[1%] w-[86px] h-[108px] sm:w-[118px] sm:h-[150px]",
     tilt: 6,
   },
   {
-    src: "/images/research1.jpg",
+    src: "/images/circle-img5.webp",
+    alt: "Glow peptide blend for skin and tissue research",
     pos: "bottom-[7%] left-[11%] w-[92px] h-[116px] sm:w-[126px] sm:h-[160px]",
     tilt: 5,
   },
   {
-    src: "/images/peptide2.jpg",
+    src: "/images/circle-img6-seo.webp",
+    alt: "Sealed research peptide vial ready for cold-chain dispatch",
     pos: "bottom-[4%] right-[11%] w-[92px] h-[116px] sm:w-[126px] sm:h-[160px]",
     tilt: -7,
   },
@@ -262,7 +268,7 @@ export default function CTA() {
                   <div className="group relative h-full w-full overflow-hidden rounded-image bg-surface-mute shadow-card transition-[transform,box-shadow] duration-300 hover:z-30 hover:scale-105 hover:shadow-[0_24px_50px_-12px_rgba(15,23,42,0.35)]">
                     <Image
                       src={c.src}
-                      alt=""
+                      alt={c.alt}
                       fill
                       sizes="168px"
                       className="object-cover"

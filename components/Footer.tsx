@@ -38,16 +38,6 @@ const COLUMNS: { title: string; links: FooterLink[] }[] = [
   {
     title: "Connect",
     links: [
-      {
-        label: "WhatsApp",
-        href: "https://wa.me/971543800625",
-        external: true,
-      },
-      {
-        label: "Email",
-        href: "mailto:sales@peptivalabs.com",
-        external: true,
-      },
       { label: "Shop now", href: "/#products" },
       { label: "Register", href: "/register" },
     ],
@@ -116,7 +106,7 @@ function NewsletterForm() {
       <p className="text-[12px] font-medium text-white">
         Newsletter
       </p>
-      <p className="mt-1 text-[12px] text-white/60">
+      <p className="mt-1 text-[12px] text-white/90">
         Batch drops, storage tips, sourcing notes. No spam.
       </p>
       <div className="mt-3 flex gap-2">
@@ -126,7 +116,7 @@ function NewsletterForm() {
           placeholder="you@lab.com"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
-          className="min-w-0 flex-1 rounded-pill border border-white/20 bg-white/10 px-4 py-2.5 text-[13px] text-white placeholder:text-white/50 outline-none focus:border-white/40"
+          className="min-w-0 flex-1 rounded-pill border border-white/20 bg-white/5 px-4 py-2.5 text-[13px] text-white placeholder:text-white/70 outline-none focus:border-white/40"
         />
         <button
           type="submit"
@@ -136,7 +126,7 @@ function NewsletterForm() {
           {busy ? "…" : "Subscribe"}
         </button>
       </div>
-      <label className="mt-3 flex items-center gap-2 text-[11px] text-white/60">
+      <label className="mt-3 flex items-center gap-2 text-[11px] text-white/90">
         <input
           type="checkbox"
           checked={consent}
@@ -186,12 +176,12 @@ export default function Footer() {
                 Peptiva Labs
               </span>
             </span>
-            <p className="mt-5 max-w-xs text-[14px] leading-relaxed text-white/70">
+            <p className="mt-5 max-w-xs text-[14px] leading-relaxed text-white/90">
               Research peptides sourced, verified and dispatched from Dubai.
               Honest sourcing, sealed handling, and a real person at the other
               end of every WhatsApp message.
             </p>
-            <div className="mt-6 space-y-1 text-[13px] text-white/70">
+            <div className="mt-6 space-y-1 text-[13px] text-white/90">
               <p>Level 5, Business Bay, Dubai, UAE</p>
               <p>
                 <a
@@ -219,9 +209,9 @@ export default function Footer() {
           <div className="grid grid-cols-2 gap-8 sm:grid-cols-4 md:col-span-8 md:grid-cols-4 md:gap-6">
             {COLUMNS.map((col) => (
               <div key={col.title}>
-                <h4 className="text-[14px] font-medium text-white">
+                <h3 className="text-[14px] font-medium text-white">
                   {col.title}
-                </h4>
+                </h3>
                 <ul className="mt-5 space-y-3">
                   {col.links.map((l) => (
                     <li key={l.label}>
@@ -236,14 +226,14 @@ export default function Footer() {
                               ? "noopener noreferrer"
                               : undefined
                           }
-                          className="text-[14px] text-white/60 transition-colors hover:text-white"
+                          className="text-[14px] text-white/90 transition-colors hover:text-white"
                         >
                           {l.label}
                         </a>
                       ) : (
                         <Link
                           href={l.href}
-                          className="text-[14px] text-white/60 transition-colors hover:text-white"
+                          className="text-[14px] text-white/90 transition-colors hover:text-white"
                         >
                           {l.label}
                         </Link>
@@ -272,7 +262,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-2 flex flex-col items-center justify-between gap-3 border-t border-white/15 pb-8 pt-6 text-[12px] text-white/60 sm:flex-row">
+        <div className="mt-2 flex flex-col items-center justify-between gap-3 border-t border-white/15 pb-8 pt-6 text-[12px] text-white/90 sm:flex-row">
           <p>© {new Date().getFullYear()} Peptiva Labs. All rights reserved. For research use only.</p>
           <div className="flex items-center gap-6">
             <Link href="/#contact" className="transition-colors hover:text-white">

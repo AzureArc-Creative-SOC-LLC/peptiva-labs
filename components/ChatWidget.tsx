@@ -23,6 +23,18 @@ export default function ChatWidget() {
   >([]);
 
   const scrollRef = useRef<HTMLDivElement>(null);
+  const panelRef = useRef<HTMLDivElement>(null);
+
+  // Toggle the native `inert` attribute so focusable descendants (close button,
+  // textarea, send button, suggestion chips) are removed from the tab order and
+  // the accessibility tree while the panel is closed. This preserves the CSS
+  // fade/translate animation but resolves the axe `aria-hidden-focus` rule.
+  useEffect(() => {
+    const el = panelRef.current;
+    if (!el) return;
+    if (open) el.removeAttribute("inert");
+    else el.setAttribute("inert", "");
+  }, [open]);
 
   useEffect(() => {
     if (!open || suggestions.length > 0) return;
@@ -117,6 +129,7 @@ export default function ChatWidget() {
 
       {/* Panel */}
       <div
+        ref={panelRef}
         className={`fixed inset-x-4 bottom-24 z-40 flex flex-col overflow-hidden rounded-card border border-line bg-white shadow-card transition-all duration-200 sm:bottom-24 sm:right-5 sm:left-auto sm:w-[380px] ${
           open
             ? "pointer-events-auto translate-y-0 opacity-100"
@@ -124,7 +137,6 @@ export default function ChatWidget() {
         }`}
         style={{ maxHeight: "min(560px, calc(100vh - 120px))" }}
         role="dialog"
-        aria-hidden={!open}
         aria-label="Research assistant"
       >
         {/* Header */}

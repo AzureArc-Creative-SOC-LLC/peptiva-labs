@@ -1,0 +1,33 @@
+- generic [active] [ref=f5e1]:
+  - link "Skip to content" [ref=f5e2] [cursor=pointer]:
+    - /url: "#home"
+  - main [ref=f5e3]:
+    - generic [ref=f5e5]:
+      - link "← Back to home" [ref=f5e6] [cursor=pointer]:
+        - /url: /
+      - link "peptivalabs.com" [ref=f5e7] [cursor=pointer]:
+        - /url: /
+      - generic [ref=f5e8]:
+        - paragraph [ref=f5e9]: Welcome back
+        - heading "Sign in to Peptiva Labs" [level=1] [ref=f5e10]
+        - paragraph [ref=f5e11]: Access your orders, wallet balance and affiliate dashboard.
+        - generic [ref=f5e12]:
+          - generic [ref=f5e13]:
+            - generic [ref=f5e14]: Email
+            - textbox "Email" [ref=f5e16]:
+              - /placeholder: you@lab.com
+          - generic [ref=f5e17]:
+            - generic [ref=f5e18]:
+              - generic [ref=f5e19]: Password
+              - link "Forgot?" [ref=f5e20] [cursor=pointer]:
+                - /url: /forgot-password
+            - generic [ref=f5e21]:
+              - textbox "Password" [ref=f5e22]:
+                - /placeholder: ••••••••
+              - button "Show password" [ref=f5e23] [cursor=pointer]: Show
+          - button "Sign in" [ref=f5e24] [cursor=pointer]
+        - paragraph [ref=f5e25]:
+          - text: Don’t have an account?
+          - link "Create one →" [ref=f5e26] [cursor=pointer]:
+            - /url: /register
+        - paragraph [ref=f5e27]: Encrypted end-to-end. Sessions expire after 30 days.
