@@ -22,7 +22,7 @@ const CASES = [
   },
   {
     img: "/images/ship-seo.webp",
-    alt: "Cold-chain shipping of sealed research peptide vials across the UAE",
+    alt: "Cold-chain shipping of sealed research peptide pens across the UAE",
     step: "03 · Ship",
     quote:
       "Cold-packed, tamper-sealed, and dispatched same or next day from our Dubai warehouse.",
@@ -37,7 +37,7 @@ export default function CaseStudy() {
       <div ref={scope} className="container-fluid">
         <div className="mx-auto max-w-2xl text-center">
           <h2 data-reveal className="reveal-init text-h2 font-normal text-balance">
-            How a vial gets to you
+            How a pen gets to you
           </h2>
           <p
             data-reveal

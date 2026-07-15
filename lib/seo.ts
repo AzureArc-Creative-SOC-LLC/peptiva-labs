@@ -4,7 +4,7 @@
 // build can be promoted across preview/production without hard-coding a host.
 
 import type { Metadata } from "next";
-import { PRODUCTS, type Product, formatAED } from "./products";
+import { PRODUCTS, type Product, formatUSD } from "./products";
 
 export const SITE_URL = (
   process.env.NEXT_PUBLIC_SITE_URL || "https://peptivalabs.com"
@@ -138,8 +138,8 @@ export function localBusinessSchema() {
     description: SITE_DESCRIPTION,
     telephone: CONTACT.whatsapp,
     email: CONTACT.email,
-    priceRange: "AED",
-    currenciesAccepted: "AED",
+    priceRange: "USD",
+    currenciesAccepted: "USD",
     areaServed: { "@type": "Country", name: "United Arab Emirates" },
     address: {
       "@type": "PostalAddress",
@@ -193,13 +193,13 @@ export function productSchema(product: Product) {
     offers: {
       "@type": "Offer",
       url: absoluteUrl(`/products/${product.slug}`),
-      priceCurrency: "AED",
+      priceCurrency: "USD",
       price: product.price,
       availability: "https://schema.org/InStock",
       priceValidUntil: "2026-12-31",
       seller: { "@id": `${SITE_URL}/#organization` },
       // Human-readable label kept for parity with the on-page price.
-      description: `${product.from ? "from " : ""}${formatAED(product.price)}`,
+      description: `${product.from ? "from " : ""}${formatUSD(product.price)}`,
     },
   };
 }

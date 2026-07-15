@@ -11,7 +11,7 @@ gsap.registerPlugin(ScrollTrigger, SplitText);
 const CARDS = [
   {
     src: "/images/circle-img-seo1.webp",
-    alt: "Research peptide vial from Peptiva Labs Dubai catalogue",
+    alt: "Research peptide pen from Peptiva Labs Dubai catalogue",
     pos: "top-[7%] left-[8%] w-[92px] h-[116px] sm:w-[126px] sm:h-[160px]",
     tilt: -8,
   },
@@ -23,7 +23,7 @@ const CARDS = [
   },
   {
     src: "/images/circle-img3-seo.webp",
-    alt: "Tirzepatide research peptide vial stocked in the UAE",
+    alt: "Tirzepatide research peptide pen stocked in the UAE",
     pos: "top-[39%] left-0 sm:left-[1%] w-[86px] h-[108px] sm:w-[118px] sm:h-[150px]",
     tilt: -5,
   },
@@ -41,7 +41,7 @@ const CARDS = [
   },
   {
     src: "/images/circle-img6-seo.webp",
-    alt: "Sealed research peptide vial ready for cold-chain dispatch",
+    alt: "Sealed research peptide pen ready for cold-chain dispatch",
     pos: "bottom-[4%] right-[11%] w-[92px] h-[116px] sm:w-[126px] sm:h-[160px]",
     tilt: -7,
   },

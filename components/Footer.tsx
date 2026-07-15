@@ -13,8 +13,10 @@ const COLUMNS: { title: string; links: FooterLink[] }[] = [
     links: [
       { label: "BPC-157 + TB-500", href: "/products/bpc-157-tb-500" },
       { label: "Glow", href: "/products/glow" },
-      { label: "Retatrutide", href: "/products/retatrutide" },
+      { label: "Retatrutide 20mg", href: "/products/retatrutide" },
       { label: "Tirzepatide", href: "/products/tirzepatide" },
+      { label: "Retatrutide 40mg", href: "/products/retatrutide-40mg" },
+      { label: "NAD+ 1,000mg", href: "/products/nad-plus-1000mg" },
     ],
   },
   {
@@ -153,8 +155,9 @@ function NewsletterForm() {
 export default function Footer() {
   return (
     <footer className="w-full">
-      <div className="bg-slate-deep px-5 pt-12 text-white sm:px-8 sm:pt-16 md:px-14 md:pt-20">
-        <div className="grid grid-cols-1 gap-10 sm:gap-12 md:grid-cols-12">
+      <div className="bg-slate-deep pt-12 text-white sm:pt-16 md:pt-20">
+        <div className="container-fluid">
+          <div className="grid grid-cols-1 gap-10 sm:gap-12 md:grid-cols-12">
           {/* brand */}
           <div className="md:col-span-4">
             <span className="inline-flex items-center gap-2.5">
@@ -176,11 +179,6 @@ export default function Footer() {
                 Peptiva Labs
               </span>
             </span>
-            <p className="mt-5 max-w-xs text-[14px] leading-relaxed text-white/90">
-              Research peptides sourced, verified and dispatched from Dubai.
-              Honest sourcing, sealed handling, and a real person at the other
-              end of every WhatsApp message.
-            </p>
             <div className="mt-6 space-y-1 text-[13px] text-white/90">
               <p>Level 5, Business Bay, Dubai, UAE</p>
               <p>
@@ -275,6 +273,7 @@ export default function Footer() {
               Cookies
             </Link>
           </div>
+        </div>
         </div>
       </div>
     </footer>

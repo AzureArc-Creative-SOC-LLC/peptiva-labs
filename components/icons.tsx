@@ -138,7 +138,7 @@ export function DotIcon({ className = "" }: { className?: string }) {
   );
 }
 
-export function VialIcon(props: SVGProps<SVGSVGElement>) {
+export function PenIcon(props: SVGProps<SVGSVGElement>) {
   return (
     <svg {...base} {...props}>
       <path d="M9 3h6" />

@@ -6,7 +6,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { useCart } from "@/components/CartContext";
 import { PlusIcon, MinusIcon, ArrowLeft } from "@/components/icons";
-import { getProduct, formatAED, type Product } from "@/lib/products";
+import { getProduct, formatUSD, type Product } from "@/lib/products";
 
 const SHIPPING_FEE = 45;
 
@@ -152,7 +152,7 @@ export default function CartPage() {
                         </div>
 
                         <div className="self-start text-right text-[16px] font-medium text-ink sm:text-[18px]">
-                          {formatAED(l.product.price * l.qty)}
+                          {formatUSD(l.product.price * l.qty)}
                         </div>
                       </li>
                     ))}
@@ -178,13 +178,13 @@ export default function CartPage() {
                         {itemCount === 1 ? "" : "s"})
                       </span>
                       <span className="font-medium text-ink">
-                        {formatAED(subtotal)}
+                        {formatUSD(subtotal)}
                       </span>
                     </div>
                     <div className="mt-3 flex items-center justify-between text-[14px] text-ink-secondary">
                       <span>Shipping — cold-chain dispatch</span>
                       <span className="font-medium text-ink">
-                        {formatAED(SHIPPING_FEE)}
+                        {formatUSD(SHIPPING_FEE)}
                       </span>
                     </div>
                     <div className="mt-6 flex items-center justify-between border-t border-line pt-5">
@@ -193,10 +193,10 @@ export default function CartPage() {
                       </span>
                       <div className="text-right">
                         <span className="text-[22px] font-medium text-ink">
-                          {formatAED(total)}
+                          {formatUSD(total)}
                         </span>
                         <p className="mt-0.5 text-[10px] uppercase tracking-label text-ink-muted">
-                          AED · Tax included
+                          USD · Tax included
                         </p>
                       </div>
                     </div>

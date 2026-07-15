@@ -7,7 +7,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { useAuth } from "@/components/AuthContext";
 import { getOrdersByEmail, getWallet, type OrderRow } from "@/lib/api";
-import { formatAED } from "@/lib/products";
+import { formatUSD } from "@/lib/products";
 
 function formatDate(iso: string) {
   try {
@@ -135,7 +135,7 @@ export default function AccountPage() {
                   ? "…"
                   : walletState === "error"
                     ? "—"
-                    : formatAED(balance ?? 0)
+                    : formatUSD(balance ?? 0)
               }
               hint={
                 walletState === "error"
@@ -300,7 +300,7 @@ export default function AccountPage() {
                             </p>
                           </div>
                           <p className="text-right text-[15px] font-medium text-ink">
-                            {formatAED(toNumber(o.total))}
+                            {formatUSD(toNumber(o.total))}
                           </p>
                         </Link>
                       </li>

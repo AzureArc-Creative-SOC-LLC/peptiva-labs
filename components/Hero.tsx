@@ -11,7 +11,7 @@ const HERO_IMAGES: { src: string; alt: string }[] = [
   },
   {
     src: "/images/hero1-seo.webp",
-    alt: "Peptiva Labs research peptide vial sourced and shipped from Dubai",
+    alt: "Peptiva Labs research peptide pen sourced and shipped from Dubai",
   },
   {
     src: "/images/hero2-seo.webp",
@@ -19,7 +19,7 @@ const HERO_IMAGES: { src: string; alt: string }[] = [
   },
   {
     src: "/images/hero4-seo.webp",
-    alt: "Third-party tested peptide vial ready for research use",
+    alt: "Third-party tested peptide pen ready for research use",
   },
 ];
 

@@ -4,7 +4,7 @@ import Image from "next/image";
 import { useReveal } from "./useReveal";
 import {
   ShieldIcon,
-  VialIcon,
+  PenIcon,
   TruckIcon,
   ChatIcon,
   ArrowUpRight,
@@ -60,10 +60,10 @@ export default function Features() {
             className={`${tileBase} bg-ink_btn text-white lg:col-start-1 lg:row-start-1`}
           >
             <span className="inline-flex h-11 w-11 items-center justify-center rounded-2xl bg-white/10 text-white">
-              <VialIcon />
+              <PenIcon />
             </span>
             <h3 className="mt-auto pt-6 text-[16px] font-medium uppercase tracking-tight text-white">
-              Lab-tested vials
+              Lab-tested pens
             </h3>
             <p className="mt-2 text-[13px] leading-relaxed text-white/65">
               Every batch is screened for purity. Out of spec means it never
@@ -99,7 +99,7 @@ export default function Features() {
               <TruckIcon />
             </span>
             <h3 className="mt-auto pt-6 text-[16px] font-medium uppercase tracking-tight">
-              UAE stock, AED pricing
+              UAE stock, USD pricing
             </h3>
             <p className="mt-2 text-[13px] leading-relaxed text-ink-secondary">
               Cold-stored in Dubai and dispatched same or next working day.

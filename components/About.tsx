@@ -5,7 +5,7 @@ import Image from "next/image";
 import { useReveal } from "./useReveal";
 import CountUp from "./CountUp";
 import {
-  VialIcon,
+  PenIcon,
   TruckIcon,
   CoachIcon,
   ShieldIcon,
@@ -16,7 +16,7 @@ const BRAND = "#1A1D20"; // project ink_btn — matches site CTAs and footer acc
 const SERVICES = [
   "Third-party tested for purity",
   "Direct-from-supplier sourcing",
-  "Accurate labelling on every vial",
+  "Accurate labelling on every pen",
   "Cold-chain UAE-wide dispatch",
 ];
 
@@ -26,8 +26,8 @@ const STATS: {
   Icon: ComponentType<SVGProps<SVGSVGElement>>;
 }[] = [
   { value: "99.4%", label: "Verified Peptide Purity", Icon: ShieldIcon },
-  { value: "5,000+", label: "Vials Shipped UAE-Wide", Icon: TruckIcon },
-  { value: "8+", label: "Curated Peptide Lines", Icon: VialIcon },
+  { value: "5,000+", label: "Pens Shipped UAE-Wide", Icon: TruckIcon },
+  { value: "8+", label: "Curated Peptide Lines", Icon: PenIcon },
   { value: "4,000+", label: "Researchers Served", Icon: CoachIcon },
 ];
 
@@ -77,7 +77,7 @@ export default function About() {
               <div data-img-reveal className="absolute bottom-0 right-0 z-10 h-[50%] w-[61.54%] overflow-hidden rounded-[28px] shadow-[0_30px_60px_-20px_rgba(15,23,42,0.28)]">
                 <Image
                   src="/images/about2-seo.webp"
-                  alt="Verified research peptide vials third-party tested at Peptiva Labs UAE"
+                  alt="Verified research peptide pens third-party tested at Peptiva Labs UAE"
                   fill
                   sizes="(min-width: 768px) 32vw, 62vw"
                   className="object-cover"

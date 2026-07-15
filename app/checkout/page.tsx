@@ -8,7 +8,7 @@ import Footer from "@/components/Footer";
 import { useCart } from "@/components/CartContext";
 import { useAuth } from "@/components/AuthContext";
 import { ArrowLeft } from "@/components/icons";
-import { getProduct, formatAED, type Product } from "@/lib/products";
+import { getProduct, formatUSD, type Product } from "@/lib/products";
 import { ApiError, createUserOrder, validatePromo } from "@/lib/api";
 import { useToast } from "@/components/Toast";
 
@@ -353,7 +353,7 @@ export default function CheckoutPage() {
                     disabled={placing}
                     className="btn-dark mt-8 w-full justify-center disabled:opacity-60 lg:hidden"
                   >
-                    {placing ? "Placing order…" : `Place order · ${formatAED(total)}`}
+                    {placing ? "Placing order…" : `Place order · ${formatUSD(total)}`}
                   </button>
                 </form>
 
@@ -390,7 +390,7 @@ export default function CheckoutPage() {
                             </p>
                           </div>
                           <span className="text-[14px] font-medium text-ink">
-                            {formatAED(l.product.price * l.qty)}
+                            {formatUSD(l.product.price * l.qty)}
                           </span>
                         </li>
                       ))}
@@ -442,20 +442,20 @@ export default function CheckoutPage() {
                     <div className="mt-6 flex items-center justify-between text-[14px] text-ink-secondary">
                       <span>Subtotal</span>
                       <span className="font-medium text-ink">
-                        {formatAED(subtotal)}
+                        {formatUSD(subtotal)}
                       </span>
                     </div>
                     <div className="mt-3 flex items-center justify-between text-[14px] text-ink-secondary">
                       <span>Shipping</span>
                       <span className="font-medium text-ink">
-                        {formatAED(shipping)}
+                        {formatUSD(shipping)}
                       </span>
                     </div>
                     {discount > 0 && (
                       <div className="mt-3 flex items-center justify-between text-[14px] text-ink-secondary">
                         <span>Discount ({promo?.code})</span>
                         <span className="font-medium text-ink">
-                          −{formatAED(discount)}
+                          −{formatUSD(discount)}
                         </span>
                       </div>
                     )}
@@ -464,7 +464,7 @@ export default function CheckoutPage() {
                         Total
                       </span>
                       <span className="text-[22px] font-medium text-ink">
-                        {formatAED(total)}
+                        {formatUSD(total)}
                       </span>
                     </div>
 
@@ -476,7 +476,7 @@ export default function CheckoutPage() {
                     >
                       {placing
                         ? "Placing order…"
-                        : `Place order · ${formatAED(total)}`}
+                        : `Place order · ${formatUSD(total)}`}
                     </button>
 
                     <p className="mt-4 text-center text-[12px] leading-relaxed text-ink-muted">
@@ -545,7 +545,7 @@ function OrderPlacedModal({
               Total
             </p>
             <p className="mt-0.5 text-[14px] font-medium text-ink">
-              {formatAED(total)}
+              {formatUSD(total)}
             </p>
           </div>
         </div>

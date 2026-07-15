@@ -1,32 +1,52 @@
 "use client";
 
+import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { useReveal } from "./useReveal";
 import { ArrowUpRight } from "./icons";
 import { PRODUCTS, priceLabel } from "@/lib/products";
 
+const INITIAL_COUNT = 4;
+
 export default function Services() {
   const scope = useReveal<HTMLDivElement>();
+  const [showAll, setShowAll] = useState(false);
+  const canToggle = PRODUCTS.length > INITIAL_COUNT;
+  const visible = showAll ? PRODUCTS : PRODUCTS.slice(0, INITIAL_COUNT);
+
   return (
     <section id="products" className="section-block bg-canvas py-12 sm:py-16 md:py-24">
       <div ref={scope} className="container-fluid">
-        <div className="mx-auto max-w-2xl text-center">
-          <h2 data-reveal className="reveal-init text-h2 font-normal">
-            The Range
-          </h2>
-          <p
-            data-reveal
-            className="reveal-init mt-4 text-[14px] text-ink-secondary"
-          >
-            Four core peptide lines, each available in the concentrations
-            researchers actually ask for. Every batch is verified, sealed, and
-            cold-shipped from our Dubai facility.
-          </p>
+        <div className="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between sm:gap-8">
+          <div className="max-w-2xl">
+            <h2 data-reveal className="reveal-init text-h2 font-normal">
+              The Range
+            </h2>
+            <p
+              data-reveal
+              className="reveal-init mt-4 text-[14px] text-ink-secondary"
+            >
+              Six core peptide lines, each available in the concentrations
+              researchers actually ask for. Every batch is verified, sealed,
+              and cold-shipped from our Dubai facility.
+            </p>
+          </div>
+
+          {canToggle && (
+            <button
+              type="button"
+              onClick={() => setShowAll((v) => !v)}
+              className="btn-dark shrink-0 self-start sm:self-end"
+              aria-expanded={showAll}
+            >
+              {showAll ? "Show less" : "All"}
+            </button>
+          )}
         </div>
 
         <div className="mt-10 sm:mt-16 grid grid-cols-1 gap-4 sm:gap-5 sm:grid-cols-2 lg:grid-cols-4">
-          {PRODUCTS.map((s) => (
+          {visible.map((s) => (
             <Link
               key={s.slug}
               href={`/products/${s.slug}`}
@@ -65,6 +85,7 @@ export default function Services() {
             </Link>
           ))}
         </div>
+
       </div>
     </section>
   );

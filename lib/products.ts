@@ -2,7 +2,7 @@ export type Product = {
   slug: string;
   name: string;
   meta: string;
-  price: number; // base price in AED
+  price: number; // base price in USD
   from?: boolean; // show "from" prefix (variants/options)
   img: string;
   gallery?: string[];
@@ -18,7 +18,7 @@ export const PRODUCTS: Product[] = [
     slug: "bpc-157-tb-500",
     name: "BPC-157 + TB-500",
     meta: "40 mg dual blend",
-    price: 999,
+    price: 130,
     img: "/images/bpc/front.jpg",
     gallery: [
       "/images/bpc/front.jpg",
@@ -29,15 +29,15 @@ export const PRODUCTS: Product[] = [
     bg: "bg-lilac",
     category: "Recovery",
     blurb:
-      "Two of the most studied recovery peptides, paired in one research-grade vial for streamlined protocols.",
+      "Two of the most studied recovery peptides, paired in one research-grade pre-filled pen for streamlined protocols.",
     description: [
-      "Our BPC-157 + TB-500 dual blend pairs two of the most widely researched repair peptides into a single, accurately dosed vial — built for studies that would otherwise juggle two separate reconstitutions.",
-      "Each batch is third-party tested for identity and purity, sealed, and cold-stored in our Dubai facility before dispatch. Labelling reflects exactly what is in the vial — nothing more, nothing less.",
+      "Our BPC-157 + TB-500 dual blend pairs two of the most widely researched repair peptides into a single, accurately dosed pre-filled pen — built for studies that would otherwise juggle two separate reconstitutions.",
+      "Each batch is third-party tested for identity and purity, sealed, and cold-stored in our Dubai facility before dispatch. Labelling reflects exactly what is in the pen — nothing more, nothing less.",
     ],
     highlights: [
-      "40 mg total (20 mg / 20 mg) per vial",
+      "40 mg total (20 mg / 20 mg) per pen",
       "99.4% verified purity, third-party tested",
-      "Lyophilised, sealed, cold-chain handled",
+      "Sealed, cold-chain handled",
       "For laboratory research use only",
     ],
   },
@@ -45,7 +45,7 @@ export const PRODUCTS: Product[] = [
     slug: "glow",
     name: "Glow",
     meta: "5 mg · 70 mg options",
-    price: 1199,
+    price: 100,
     from: true,
     img: "/images/glow/front.jpg",
     gallery: [
@@ -65,35 +65,34 @@ export const PRODUCTS: Product[] = [
     highlights: [
       "Available in 5 mg and 70 mg options",
       "Concentration-verified every batch",
-      "Sealed, tamper-evident vials",
+      "Sealed, tamper-evident pens",
       "For laboratory research use only",
     ],
   },
   {
     slug: "retatrutide",
-    name: "Retatrutide",
-    meta: "20 mg · 40 mg",
-    price: 1990,
-    from: true,
-    img: "/images/retatrutide/front.jpg",
+    name: "Retatrutide 20mg",
+    meta: "20 mg pre-filled pen",
+    price: 100,
+    img: "/images/retatrutide/20mg-front.jpg",
     gallery: [
+      "/images/retatrutide/20mg-front.jpg",
       "/images/retatrutide/front.jpg",
       "/images/retatrutide/pen.jpg",
       "/images/retatrutide/open.jpg",
-      "/images/retatrutide/uv.jpg",
     ],
     bg: "bg-nude-green",
     category: "Metabolic",
     blurb:
-      "A next-generation triple-agonist peptide for advanced metabolic research, batch-tested before dispatch.",
+      "Next-generation triple-agonist peptide in a sealed 20 mg pre-filled research pen, batch-tested before dispatch.",
     description: [
-      "Retatrutide is a next-generation triple-agonist peptide stocked for advanced metabolic research, available in 20 mg and 40 mg concentrations.",
-      "Sourced directly from certified manufacturers, every batch is independently tested before it touches a customer order, then sealed and cold-shipped across the UAE.",
+      "A 20 mg Retatrutide formulation supplied in a pre-filled research device, provided exclusively for controlled laboratory R&D applications. Delivered in sealed format to support compound stability analysis, formulation studies and delivery-mechanism evaluation.",
+      "Independently tested and verified by Janoshik Analytical. Concentration is measured per ml; verified content reflects the total assayed mass across the stated fill volume.",
     ],
     highlights: [
-      "Available in 20 mg and 40 mg",
+      "20 mg Retatrutide, pre-filled research pen",
       "Triple-agonist research peptide",
-      "Independently batch-tested",
+      "Janoshik Analytical verified",
       "For laboratory research use only",
     ],
   },
@@ -101,7 +100,7 @@ export const PRODUCTS: Product[] = [
     slug: "tirzepatide",
     name: "Tirzepatide",
     meta: "5 / 20 / 40 mg",
-    price: 750,
+    price: 100,
     from: true,
     img: "/images/tirzepatide/front.jpg",
     gallery: [
@@ -116,12 +115,66 @@ export const PRODUCTS: Product[] = [
       "Dual-agonist GLP-1 / GIP peptide stocked in three concentrations to suit different study designs.",
     description: [
       "Tirzepatide is a dual-agonist GLP-1 / GIP research peptide kept in three concentrations so different study designs can order exactly the strength they need.",
-      "Held in our temperature-controlled Dubai facility and dispatched same or next working day, each vial is verified, sealed and accurately labelled.",
+      "Held in our temperature-controlled Dubai facility and dispatched same or next working day, each pen is verified, sealed and accurately labelled.",
     ],
     highlights: [
       "Available in 5 mg, 20 mg and 40 mg",
       "Dual-agonist GLP-1 / GIP peptide",
       "Verified purity, sealed handling",
+      "For laboratory research use only",
+    ],
+  },
+  {
+    slug: "retatrutide-40mg",
+    name: "Retatrutide 40mg",
+    meta: "40 mg pre-filled pen",
+    price: 180,
+    img: "/images/retatrutide/40mg-front.jpg",
+    gallery: [
+      "/images/retatrutide/40mg-front.jpg",
+      "/images/retatrutide/front.jpg",
+      "/images/retatrutide/pen.jpg",
+      "/images/retatrutide/open.jpg",
+    ],
+    bg: "bg-nude-green",
+    category: "Metabolic",
+    blurb:
+      "High-dose 40 mg Retatrutide in a sealed pre-filled research pen for controlled laboratory R&D applications.",
+    description: [
+      "A 40 mg Retatrutide formulation supplied in a pre-filled research device, provided exclusively for controlled laboratory R&D applications. Delivered in sealed format to support compound stability analysis, formulation studies and delivery-mechanism evaluation.",
+      "Independently tested and verified by Janoshik Analytical. Concentration is measured per ml; verified content reflects the total assayed mass across the stated fill volume.",
+    ],
+    highlights: [
+      "40 mg Retatrutide, pre-filled research pen",
+      "Janoshik Analytical verified",
+      "Sealed for stability and formulation studies",
+      "For laboratory research use only",
+    ],
+  },
+  {
+    slug: "nad-plus-1000mg",
+    name: "NAD+ 1,000mg",
+    meta: "2 × 500 mg pre-filled pens",
+    price: 140,
+    img: "/images/nad/front.jpg",
+    gallery: [
+      "/images/nad/front.jpg",
+      "/images/nad/pen.jpg",
+      "/images/nad/open.jpg",
+      "/images/nad/uv.jpg",
+    ],
+    bg: "bg-lilac",
+    category: "Cellular",
+    blurb:
+      "Nicotinamide Adenine Dinucleotide research kit — two pre-filled 500 mg pens for controlled laboratory studies.",
+    description: [
+      "NAD+ (Nicotinamide Adenine Dinucleotide) research formulation for laboratory analysis and in vitro studies only. Provided exclusively for controlled laboratory R&D applications.",
+      "Each NAD+ 1,000mg kit ships with two pre-filled 500 mg research pens and an information sheet, sealed and cold-shipped from our Dubai facility.",
+    ],
+    highlights: [
+      "2 × pre-filled NAD+ pens (500 mg each)",
+      "Research information sheet included",
+      "Sealed, tamper-evident kit",
       "For laboratory research use only",
     ],
   },
@@ -135,10 +188,10 @@ export function relatedProducts(slug: string, limit = 3): Product[] {
   return PRODUCTS.filter((p) => p.slug !== slug).slice(0, limit);
 }
 
-export function formatAED(n: number): string {
-  return `AED ${n.toLocaleString("en-US")}`;
+export function formatUSD(n: number): string {
+  return `$ ${n.toLocaleString("en-US")}`;
 }
 
 export function priceLabel(p: Product): string {
-  return `${p.from ? "from " : ""}${formatAED(p.price)}`;
+  return `${p.from ? "from " : ""}${formatUSD(p.price)}`;
 }

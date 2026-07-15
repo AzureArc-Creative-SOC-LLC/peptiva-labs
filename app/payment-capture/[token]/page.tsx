@@ -14,7 +14,7 @@ import {
   type OrderRow,
   type PaymentRow,
 } from "@/lib/api";
-import { formatAED } from "@/lib/products";
+import { formatUSD } from "@/lib/products";
 
 function toNumber(v: number | string | null | undefined): number {
   const n = typeof v === "number" ? v : parseFloat(v || "0");
@@ -187,11 +187,11 @@ export default function PaymentCapturePage({
                             {it.name}
                           </p>
                           <p className="text-[12px] text-ink-muted">
-                            Qty {it.quantity} · {formatAED(toNumber(it.unit_price))} each
+                            Qty {it.quantity} · {formatUSD(toNumber(it.unit_price))} each
                           </p>
                         </div>
                         <span className="text-[14px] font-medium text-ink">
-                          {formatAED(toNumber(it.line_total))}
+                          {formatUSD(toNumber(it.line_total))}
                         </span>
                       </li>
                     ))}
@@ -200,20 +200,20 @@ export default function PaymentCapturePage({
                   <div className="mt-5 flex items-center justify-between text-[14px] text-ink-secondary">
                     <span>Subtotal</span>
                     <span className="font-medium text-ink">
-                      {formatAED(toNumber(ctx.order.subtotal))}
+                      {formatUSD(toNumber(ctx.order.subtotal))}
                     </span>
                   </div>
                   <div className="mt-2 flex items-center justify-between text-[14px] text-ink-secondary">
                     <span>Shipping</span>
                     <span className="font-medium text-ink">
-                      {formatAED(toNumber(ctx.order.shipping))}
+                      {formatUSD(toNumber(ctx.order.shipping))}
                     </span>
                   </div>
                   {(promoApplied || toNumber(ctx.order.discount_amount) > 0) && (
                     <div className="mt-2 flex items-center justify-between text-[14px] text-ink-secondary">
                       <span>Discount{promoApplied ? ` (${promoApplied.code})` : ""}</span>
                       <span className="font-medium text-ink">
-                        −{formatAED(toNumber(ctx.order.discount_amount))}
+                        −{formatUSD(toNumber(ctx.order.discount_amount))}
                       </span>
                     </div>
                   )}
@@ -222,7 +222,7 @@ export default function PaymentCapturePage({
                       Total due
                     </span>
                     <span className="text-[22px] font-medium text-ink">
-                      {formatAED(promoApplied?.total ?? toNumber(ctx.order.total))}
+                      {formatUSD(promoApplied?.total ?? toNumber(ctx.order.total))}
                     </span>
                   </div>
 
@@ -257,7 +257,7 @@ export default function PaymentCapturePage({
                   {promoApplied && (
                     <p className="mt-4 rounded-xl border border-emerald-200 bg-emerald-50 px-4 py-2.5 text-[13px] text-emerald-800">
                       {promoApplied.code} · {promoApplied.percent}% off applied. New
-                      total {formatAED(promoApplied.total)}.
+                      total {formatUSD(promoApplied.total)}.
                     </p>
                   )}
                 </section>
@@ -342,7 +342,7 @@ export default function PaymentCapturePage({
                       Amount to send
                     </span>
                     <span className="text-[20px] font-medium text-ink">
-                      {formatAED(promoApplied?.total ?? toNumber(ctx.order.total))}
+                      {formatUSD(promoApplied?.total ?? toNumber(ctx.order.total))}
                     </span>
                   </div>
                   <p className="mt-4 text-[12px] leading-relaxed text-ink-muted">

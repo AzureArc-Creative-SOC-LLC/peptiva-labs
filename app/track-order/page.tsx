@@ -6,7 +6,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { useAuth } from "@/components/AuthContext";
 import { ApiError, getOrdersByEmail, type OrderRow } from "@/lib/api";
-import { formatAED } from "@/lib/products";
+import { formatUSD } from "@/lib/products";
 
 function formatDate(iso: string) {
   try {
@@ -167,7 +167,7 @@ export default function TrackOrderPage() {
                       </div>
                       <div className="text-right">
                         <p className="text-[16px] font-medium text-ink">
-                          {formatAED(toNumber(o.total))}
+                          {formatUSD(toNumber(o.total))}
                         </p>
                         <p className="text-[11px] uppercase tracking-label text-ink-muted">
                           {o.payment_method || "Manual"}

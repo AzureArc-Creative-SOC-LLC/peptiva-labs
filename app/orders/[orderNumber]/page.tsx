@@ -12,7 +12,7 @@ import {
   type OrderRow,
   type PaymentRow,
 } from "@/lib/api";
-import { formatAED } from "@/lib/products";
+import { formatUSD } from "@/lib/products";
 
 function formatDate(iso: string) {
   try {
@@ -175,12 +175,12 @@ export default function OrderDetailPage({
                             </p>
                             <p className="text-[12px] text-ink-muted">
                               Qty {it.quantity} ·{" "}
-                              {formatAED(toNumber(it.unit_price))} each
+                              {formatUSD(toNumber(it.unit_price))} each
                               {it.sku ? ` · ${it.sku}` : ""}
                             </p>
                           </div>
                           <span className="text-[14px] font-medium text-ink">
-                            {formatAED(toNumber(it.line_total))}
+                            {formatUSD(toNumber(it.line_total))}
                           </span>
                         </li>
                       ))}
@@ -212,7 +212,7 @@ export default function OrderDetailPage({
                             </div>
                             <div className="text-right">
                               <p className="text-[13px] font-medium text-ink">
-                                {formatAED(toNumber(p.amount))} {p.currency}
+                                {formatUSD(toNumber(p.amount))} {p.currency}
                               </p>
                               <span
                                 className={`mt-1 inline-flex items-center rounded-pill border px-2 py-0.5 text-[10px] font-medium uppercase tracking-label ${statusStyles(
@@ -238,20 +238,20 @@ export default function OrderDetailPage({
                     <div className="mt-5 flex items-center justify-between text-[14px] text-ink-secondary">
                       <span>Subtotal</span>
                       <span className="font-medium text-ink">
-                        {formatAED(toNumber(data.order.subtotal))}
+                        {formatUSD(toNumber(data.order.subtotal))}
                       </span>
                     </div>
                     <div className="mt-3 flex items-center justify-between text-[14px] text-ink-secondary">
                       <span>Shipping</span>
                       <span className="font-medium text-ink">
-                        {formatAED(toNumber(data.order.shipping))}
+                        {formatUSD(toNumber(data.order.shipping))}
                       </span>
                     </div>
                     {toNumber(data.order.discount_amount) > 0 && (
                       <div className="mt-3 flex items-center justify-between text-[14px] text-ink-secondary">
                         <span>Discount</span>
                         <span className="font-medium text-ink">
-                          −{formatAED(toNumber(data.order.discount_amount))}
+                          −{formatUSD(toNumber(data.order.discount_amount))}
                         </span>
                       </div>
                     )}
@@ -260,7 +260,7 @@ export default function OrderDetailPage({
                         Total
                       </span>
                       <span className="text-[22px] font-medium text-ink">
-                        {formatAED(toNumber(data.order.total))}
+                        {formatUSD(toNumber(data.order.total))}
                       </span>
                     </div>
 
