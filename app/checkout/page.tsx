@@ -9,10 +9,56 @@ import { useCart } from "@/components/CartContext";
 import { useAuth } from "@/components/AuthContext";
 import { ArrowLeft } from "@/components/icons";
 import { getProduct, formatUSD, type Product } from "@/lib/products";
-import { ApiError, createUserOrder, validatePromo } from "@/lib/api";
+import { ApiError, createUserOrder, getOrder, validatePromo } from "@/lib/api";
 import { useToast } from "@/components/Toast";
 
 const SHIPPING_FEE = 45;
+
+function toNumber(v: number | string | null | undefined): number {
+  const n = typeof v === "number" ? v : parseFloat(v || "0");
+  return Number.isFinite(n) ? n : 0;
+}
+
+// Fires the shared-email order confirmation using the order the backend
+// persisted (fetched fresh via getOrder) rather than the checkout form state,
+// so the email always reflects what was actually saved. Best-effort — a
+// failure here must never surface as a checkout error.
+async function sendOrderConfirmation(orderNumber: string) {
+  const { order, items } = await getOrder(orderNumber);
+  await fetch("/api/send-order-confirmation", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({
+      customer: {
+        name: order.customer_name || "",
+        email: order.customer_email,
+      },
+      order: {
+        orderNumber: order.order_number,
+        currency: order.currency || "USD",
+        items: items.map((it) => ({
+          name: it.name,
+          quantity: it.quantity,
+          price: toNumber(it.unit_price),
+        })),
+        subtotal: toNumber(order.subtotal),
+        shipping: toNumber(order.shipping),
+        tax: 0,
+        discount: toNumber(order.discount_amount),
+        total: toNumber(order.total),
+        shippingAddress: [
+          order.shipping_address,
+          order.shipping_city,
+          order.shipping_state,
+          order.shipping_zip,
+          order.shipping_country,
+        ]
+          .filter(Boolean)
+          .join(", "),
+      },
+    }),
+  });
+}
 
 type FormState = {
   firstName: string;
@@ -216,6 +262,11 @@ export default function CheckoutPage() {
           r.email_debug
         );
       }
+      sendOrderConfirmation(r.orderNumber).catch((err) => {
+        if (typeof console !== "undefined") {
+          console.error("[checkout] order confirmation email failed:", err);
+        }
+      });
     } catch (e) {
       // Keep the raw error visible in the console for engineers, but show the
       // shopper an actionable message instead of an HTTP status.
