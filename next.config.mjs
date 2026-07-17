@@ -52,12 +52,20 @@ const nextConfig = {
   },
   async rewrites() {
     // Proxy every backend path to the User Order service so the browser only
-    // ever sees same-origin `/api/*` calls (no CORS).
-    return [
-      { source: "/api/:path*", destination: `${API_UPSTREAM}/api/:path*` },
-      { source: "/health", destination: `${API_UPSTREAM}/health` },
-      { source: "/uploads/:path*", destination: `${API_UPSTREAM}/uploads/:path*` },
-    ];
+    // ever sees same-origin `/api/*` calls (no CORS). This must run as a
+    // `fallback` rewrite (checked only after filesystem routes, including our
+    // own app/api/* route handlers) — an ordinary rewrite is matched before
+    // API routes and would swallow local routes like
+    // /api/send-order-confirmation, proxying them upstream where they 502.
+    return {
+      beforeFiles: [],
+      afterFiles: [],
+      fallback: [
+        { source: "/api/:path*", destination: `${API_UPSTREAM}/api/:path*` },
+        { source: "/health", destination: `${API_UPSTREAM}/health` },
+        { source: "/uploads/:path*", destination: `${API_UPSTREAM}/uploads/:path*` },
+      ],
+    };
   },
   async headers() {
     return [
