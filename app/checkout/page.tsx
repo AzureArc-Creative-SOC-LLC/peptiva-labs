@@ -100,6 +100,7 @@ export default function CheckoutPage() {
   const [placed, setPlaced] = useState(false);
   const [orderRef, setOrderRef] = useState("");
   const [placedTotal, setPlacedTotal] = useState(0);
+  const [placedEmail, setPlacedEmail] = useState("");
 
   // Prefill from logged-in user (only once).
   const [prefilled, setPrefilled] = useState(false);
@@ -202,8 +203,19 @@ export default function CheckoutPage() {
       });
       setOrderRef(r.orderNumber);
       setPlacedTotal(total);
+      setPlacedEmail(form.email);
       setPlaced(true);
       clear();
+      // Warn engineers (and inform via toast) if the backend created the order
+      // but silently skipped the confirmation email — this points at the
+      // upstream email layer being disabled rather than a shopper-side issue.
+      const emailAttempted = r.email_debug?.orderConfirmation?.attempted;
+      if (emailAttempted === false && typeof console !== "undefined") {
+        console.warn(
+          "Order placed but backend did not attempt to send the confirmation email.",
+          r.email_debug
+        );
+      }
     } catch (e) {
       // Keep the raw error visible in the console for engineers, but show the
       // shopper an actionable message instead of an HTTP status.
@@ -492,7 +504,13 @@ export default function CheckoutPage() {
       </main>
       <Footer />
 
-      {placed && <OrderPlacedModal orderRef={orderRef} total={placedTotal} />}
+      {placed && (
+        <OrderPlacedModal
+          orderRef={orderRef}
+          total={placedTotal}
+          email={placedEmail}
+        />
+      )}
     </>
   );
 }
@@ -500,10 +518,29 @@ export default function CheckoutPage() {
 function OrderPlacedModal({
   orderRef,
   total,
+  email,
 }: {
   orderRef: string;
   total: number;
+  email: string;
 }) {
+  const [copied, setCopied] = useState(false);
+  const whatsappMsg = encodeURIComponent(
+    `Hi Peptiva Labs — I've just placed order ${orderRef} (${formatUSD(
+      total
+    )}). Please send the bank-transfer payment instructions.`
+  );
+
+  async function copyRef() {
+    try {
+      await navigator.clipboard.writeText(orderRef);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 1600);
+    } catch {
+      /* clipboard blocked — silent */
+    }
+  }
+
   return (
     <div
       role="dialog"
@@ -524,44 +561,57 @@ function OrderPlacedModal({
           </svg>
         </span>
         <h2 className="mt-5 text-[26px] font-medium tracking-tight2 text-ink">
-          Order placed
+          Order confirmed
         </h2>
-        <p className="mx-auto mt-3 max-w-xs text-[14px] leading-relaxed text-ink-secondary">
-          Thank you. Check your inbox — we&rsquo;ve sent payment instructions
-          and a secure link to upload your bank-transfer screenshot.
+        <p className="mx-auto mt-3 max-w-sm text-[14px] leading-relaxed text-ink-secondary">
+          Your order is recorded. A payment-instructions email will follow to{" "}
+          <span className="font-medium text-ink">{email}</span>. If it
+          doesn&rsquo;t arrive within a few minutes, message us on WhatsApp with
+          your reference and we&rsquo;ll send the bank details manually.
         </p>
 
-        <div className="mt-6 flex items-center justify-between rounded-xl bg-white px-4 py-3 text-left">
-          <div>
-            <p className="text-[10px] uppercase tracking-label text-ink-muted">
-              Order reference
-            </p>
-            <p className="mt-0.5 text-[13px] font-medium text-ink">
-              {orderRef}
-            </p>
+        <div className="mt-6 rounded-xl bg-white px-4 py-3 text-left">
+          <div className="flex items-center justify-between gap-3">
+            <div className="min-w-0">
+              <p className="text-[10px] uppercase tracking-label text-ink-muted">
+                Order reference
+              </p>
+              <p className="mt-0.5 truncate text-[13px] font-medium text-ink">
+                {orderRef}
+              </p>
+            </div>
+            <button
+              type="button"
+              onClick={copyRef}
+              className="shrink-0 rounded-pill border border-line px-3 py-1.5 text-[11px] font-medium text-ink-secondary transition-colors hover:bg-canvas hover:text-ink"
+            >
+              {copied ? "Copied" : "Copy"}
+            </button>
           </div>
-          <div className="text-right">
+          <div className="mt-3 flex items-center justify-between border-t border-line pt-3">
             <p className="text-[10px] uppercase tracking-label text-ink-muted">
               Total
             </p>
-            <p className="mt-0.5 text-[14px] font-medium text-ink">
+            <p className="text-[14px] font-medium text-ink">
               {formatUSD(total)}
             </p>
           </div>
         </div>
 
         <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:justify-center">
+          <a
+            href={`https://wa.me/971543800625?text=${whatsappMsg}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-dark justify-center sm:min-w-[180px]"
+          >
+            Message on WhatsApp
+          </a>
           <Link
             href="/track-order"
-            className="btn-dark justify-center sm:min-w-[160px]"
+            className="inline-flex items-center justify-center rounded-pill border border-line bg-white px-5 py-2.5 text-[14px] font-medium text-ink transition-colors hover:bg-canvas sm:min-w-[140px]"
           >
             Track order
-          </Link>
-          <Link
-            href="/"
-            className="inline-flex items-center justify-center rounded-pill border border-line bg-white px-5 py-2.5 text-[14px] font-medium text-ink transition-colors hover:bg-canvas sm:min-w-[160px]"
-          >
-            Back to home
           </Link>
         </div>
       </div>

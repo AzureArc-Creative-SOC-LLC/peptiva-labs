@@ -1,0 +1,224 @@
+- generic [active] [ref=f22e1]:
+  - link "Skip to content" [ref=f22e2] [cursor=pointer]:
+    - /url: "#home"
+  - banner [ref=f22e3]:
+    - generic [ref=f22e5]:
+      - link "Peptiva Labs home" [ref=f22e6] [cursor=pointer]:
+        - /url: /
+        - generic [ref=f22e7]: Peptiva Labs
+      - navigation [ref=f22e15]:
+        - link "Home" [ref=f22e16] [cursor=pointer]:
+          - /url: /#home
+        - link "About" [ref=f22e17] [cursor=pointer]:
+          - /url: /#about
+        - link "Products" [ref=f22e18] [cursor=pointer]:
+          - /url: /#products
+        - link "Why Us" [ref=f22e19] [cursor=pointer]:
+          - /url: /#why
+        - link "Testimonial" [ref=f22e20] [cursor=pointer]:
+          - /url: /#testimonial
+        - link "Contact" [ref=f22e21] [cursor=pointer]:
+          - /url: /#contact
+      - generic [ref=f22e22]:
+        - link "Sign in" [ref=f22e114] [cursor=pointer]:
+          - /url: /login
+        - link "Cart, 1 item" [ref=f22e115] [cursor=pointer]:
+          - /url: /cart
+          - generic [ref=f22e116]: "1"
+        - link "Shop now" [ref=f22e29] [cursor=pointer]:
+          - /url: /#products
+  - main [ref=f22e30]:
+    - generic [ref=f22e31]:
+      - generic [ref=f22e117]:
+        - generic [ref=f22e118]:
+          - link "Back to cart" [ref=f22e119] [cursor=pointer]:
+            - /url: /cart
+          - generic [ref=f22e122]: Final step
+        - heading "Checkout" [level=1] [ref=f22e123]
+      - generic [ref=f22e124]:
+        - generic [ref=f22e125]:
+          - generic [ref=f22e126]:
+            - paragraph [ref=f22e127]: Contact
+            - generic [ref=f22e128]:
+              - generic [ref=f22e129]:
+                - generic [ref=f22e130]: First name
+                - textbox "First name" [ref=f22e131]:
+                  - /placeholder: Jordan
+                  - text: Test
+              - generic [ref=f22e132]:
+                - generic [ref=f22e133]: Last name
+                - textbox "Last name" [ref=f22e134]:
+                  - /placeholder: Avery
+                  - text: Buyer
+              - generic [ref=f22e135]:
+                - generic [ref=f22e136]: Email address
+                - textbox "Email address" [ref=f22e137]:
+                  - /placeholder: jordan@lab.com
+                  - text: test-order@example.com
+              - generic [ref=f22e138]:
+                - generic [ref=f22e139]: Mobile
+                - textbox "Mobile" [ref=f22e140]:
+                  - /placeholder: +971 54 …
+                  - text: +971 54 000 0000
+          - generic [ref=f22e141]:
+            - paragraph [ref=f22e142]: Shipping address
+            - generic [ref=f22e143]:
+              - generic [ref=f22e144]:
+                - generic [ref=f22e145]: Address line 1
+                - textbox "Address line 1" [ref=f22e146]:
+                  - /placeholder: 123 Research Park
+                  - text: 123 Test Street
+              - generic [ref=f22e147]:
+                - generic [ref=f22e148]: Address line 2 (optional)
+                - textbox "Address line 2 (optional)" [ref=f22e149]:
+                  - /placeholder: Unit 4B
+              - generic [ref=f22e150]:
+                - generic [ref=f22e151]: City
+                - textbox "City" [ref=f22e152]:
+                  - /placeholder: Dubai
+                  - text: Dubai
+              - generic [ref=f22e153]:
+                - generic [ref=f22e154]: Postcode
+                - textbox "Postcode" [ref=f22e155]:
+                  - /placeholder: "00000"
+                  - text: "00000"
+              - generic [ref=f22e156]:
+                - generic [ref=f22e157]: Country
+                - textbox "Country" [ref=f22e158]:
+                  - /placeholder: United Arab Emirates
+                  - text: United Arab Emirates
+        - complementary [ref=f22e159]:
+          - generic [ref=f22e160]:
+            - paragraph [ref=f22e161]: Order summary
+            - list [ref=f22e162]:
+              - listitem [ref=f22e163]:
+                - generic [ref=f22e164]:
+                  - img "NAD+ 1,000mg" [ref=f22e166]
+                  - generic [ref=f22e167]: "1"
+                - generic [ref=f22e168]:
+                  - paragraph [ref=f22e169]: NAD+ 1,000mg
+                  - paragraph [ref=f22e170]: 2 × 500 mg pre-filled pens
+                - generic [ref=f22e171]: $ 140
+            - generic [ref=f22e173]:
+              - textbox "Promo code" [ref=f22e174]
+              - button "Apply" [disabled] [ref=f22e175]
+            - generic [ref=f22e176]:
+              - generic [ref=f22e177]: Subtotal
+              - generic [ref=f22e178]: $ 140
+            - generic [ref=f22e179]:
+              - generic [ref=f22e180]: Shipping
+              - generic [ref=f22e181]: $ 45
+            - generic [ref=f22e182]:
+              - generic [ref=f22e183]: Total
+              - generic [ref=f22e184]: $ 185
+            - button "Placing order…" [disabled] [ref=f22e191]
+            - paragraph [ref=f22e186]: Payment by bank transfer. We’ll email you secure payment instructions and a capture link for your receipt.
+  - contentinfo [ref=f22e33]:
+    - generic [ref=f22e35]:
+      - generic [ref=f22e36]:
+        - generic [ref=f22e37]:
+          - generic [ref=f22e38]: Peptiva Labs
+          - generic [ref=f22e46]:
+            - paragraph [ref=f22e47]: Level 5, Business Bay, Dubai, UAE
+            - paragraph [ref=f22e48]:
+              - link "+971 54 380 0625" [ref=f22e49] [cursor=pointer]:
+                - /url: https://wa.me/971543800625
+            - paragraph [ref=f22e50]:
+              - link "sales@peptivalabs.com" [ref=f22e51] [cursor=pointer]:
+                - /url: mailto:sales@peptivalabs.com
+          - generic [ref=f22e52]:
+            - paragraph [ref=f22e53]: Newsletter
+            - paragraph [ref=f22e54]: Batch drops, storage tips, sourcing notes. No spam.
+            - generic [ref=f22e55]:
+              - textbox "you@lab.com" [ref=f22e56]
+              - button "Subscribe" [disabled] [ref=f22e57]
+            - generic [ref=f22e58]:
+              - checkbox "I agree to receive research updates." [checked] [ref=f22e59]
+              - text: I agree to receive research updates.
+        - generic [ref=f22e60]:
+          - generic [ref=f22e61]:
+            - heading "Catalogue" [level=3] [ref=f22e62]
+            - list [ref=f22e63]:
+              - listitem [ref=f22e64]:
+                - link "BPC-157 + TB-500" [ref=f22e65] [cursor=pointer]:
+                  - /url: /products/bpc-157-tb-500
+              - listitem [ref=f22e66]:
+                - link "Glow" [ref=f22e67] [cursor=pointer]:
+                  - /url: /products/glow
+              - listitem [ref=f22e68]:
+                - link "Retatrutide 20mg" [ref=f22e69] [cursor=pointer]:
+                  - /url: /products/retatrutide
+              - listitem [ref=f22e70]:
+                - link "Tirzepatide" [ref=f22e71] [cursor=pointer]:
+                  - /url: /products/tirzepatide
+              - listitem [ref=f22e72]:
+                - link "Retatrutide 40mg" [ref=f22e73] [cursor=pointer]:
+                  - /url: /products/retatrutide-40mg
+              - listitem [ref=f22e74]:
+                - link "NAD+ 1,000mg" [ref=f22e75] [cursor=pointer]:
+                  - /url: /products/nad-plus-1000mg
+          - generic [ref=f22e76]:
+            - heading "Company" [level=3] [ref=f22e77]
+            - list [ref=f22e78]:
+              - listitem [ref=f22e79]:
+                - link "About Peptiva Labs" [ref=f22e80] [cursor=pointer]:
+                  - /url: /#about
+              - listitem [ref=f22e81]:
+                - link "How we source" [ref=f22e82] [cursor=pointer]:
+                  - /url: /#why
+              - listitem [ref=f22e83]:
+                - link "Reviews" [ref=f22e84] [cursor=pointer]:
+                  - /url: /#testimonial
+              - listitem [ref=f22e85]:
+                - link "Contact" [ref=f22e86] [cursor=pointer]:
+                  - /url: /#contact
+          - generic [ref=f22e87]:
+            - heading "Support" [level=3] [ref=f22e88]
+            - list [ref=f22e89]:
+              - listitem [ref=f22e90]:
+                - link "Track order" [ref=f22e91] [cursor=pointer]:
+                  - /url: /track-order
+              - listitem [ref=f22e92]:
+                - link "Cart" [ref=f22e93] [cursor=pointer]:
+                  - /url: /cart
+              - listitem [ref=f22e94]:
+                - link "Account" [ref=f22e95] [cursor=pointer]:
+                  - /url: /account
+              - listitem [ref=f22e96]:
+                - link "Sign in" [ref=f22e97] [cursor=pointer]:
+                  - /url: /login
+          - generic [ref=f22e98]:
+            - heading "Connect" [level=3] [ref=f22e99]
+            - list [ref=f22e100]:
+              - listitem [ref=f22e101]:
+                - link "Shop now" [ref=f22e102] [cursor=pointer]:
+                  - /url: /#products
+              - listitem [ref=f22e103]:
+                - link "Register" [ref=f22e104] [cursor=pointer]:
+                  - /url: /register
+      - generic [ref=f22e105]: Peptiva
+      - generic [ref=f22e108]:
+        - paragraph [ref=f22e109]: © 2026 Peptiva Labs. All rights reserved. For research use only.
+        - generic [ref=f22e110]:
+          - link "Privacy" [ref=f22e111] [cursor=pointer]:
+            - /url: /#contact
+          - link "Terms" [ref=f22e112] [cursor=pointer]:
+            - /url: /#contact
+          - link "Cookies" [ref=f22e113] [cursor=pointer]:
+            - /url: /#contact
+  - button "Open assistant" [ref=f22e187] [cursor=pointer]
+  - dialog "Research assistant":
+    - generic:
+      - generic:
+        - generic:
+          - paragraph: Research assistant
+          - paragraph: Ask about compounds, storage, or sourcing.
+      - button "Close"
+    - generic:
+      - generic:
+        - paragraph: Hi. I’m your research assistant — ask me anything about the Peptiva Labs catalogue.
+      - list
+    - generic:
+      - textbox "Ask about a compound…"
+      - button "Send" [disabled]
+  - alert [ref=f22e190]

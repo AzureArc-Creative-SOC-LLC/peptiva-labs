@@ -135,7 +135,7 @@ function RegisterInner() {
         Already have an account?{" "}
         <Link
           href={`/login${next !== "/account" ? `?next=${encodeURIComponent(next)}` : ""}`}
-          className="text-ink hover:opacity-70"
+          className="text-blue-600 hover:text-blue-800"
         >
           Sign in →
         </Link>

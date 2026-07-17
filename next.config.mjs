@@ -24,6 +24,8 @@ const securityHeaders = [
   },
 ];
 
+const isProd = process.env.NODE_ENV === "production";
+
 const nextConfig = {
   reactStrictMode: true,
   poweredByHeader: false,
@@ -64,12 +66,16 @@ const nextConfig = {
         headers: securityHeaders,
       },
       {
-        // Immutable, content-hashed static assets can be cached forever.
+        // In production, static chunks have content-hashed filenames so
+        // `immutable` is safe. In dev, HMR chunks reuse the same URL after a
+        // file change — an immutable cache would freeze the stale version.
         source: "/_next/static/:path*",
         headers: [
           {
             key: "Cache-Control",
-            value: "public, max-age=31536000, immutable",
+            value: isProd
+              ? "public, max-age=31536000, immutable"
+              : "no-cache, no-store, must-revalidate",
           },
         ],
       },
@@ -78,7 +84,9 @@ const nextConfig = {
         headers: [
           {
             key: "Cache-Control",
-            value: "public, max-age=31536000, immutable",
+            value: isProd
+              ? "public, max-age=31536000, immutable"
+              : "no-cache, no-store, must-revalidate",
           },
         ],
       },

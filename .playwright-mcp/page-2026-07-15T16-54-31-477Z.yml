@@ -1,0 +1,203 @@
+- generic [ref=f25e1]:
+  - link "Skip to content" [ref=f25e2] [cursor=pointer]:
+    - /url: "#home"
+  - banner [ref=f25e3]:
+    - generic [ref=f25e5]:
+      - link "Peptiva Labs home" [ref=f25e6] [cursor=pointer]:
+        - /url: /
+        - generic [ref=f25e7]: Peptiva Labs
+      - navigation [ref=f25e15]:
+        - link "Home" [ref=f25e16] [cursor=pointer]:
+          - /url: /#home
+        - link "About" [ref=f25e17] [cursor=pointer]:
+          - /url: /#about
+        - link "Products" [ref=f25e18] [cursor=pointer]:
+          - /url: /#products
+        - link "Why Us" [ref=f25e19] [cursor=pointer]:
+          - /url: /#why
+        - link "Testimonial" [ref=f25e20] [cursor=pointer]:
+          - /url: /#testimonial
+        - link "Contact" [ref=f25e21] [cursor=pointer]:
+          - /url: /#contact
+      - generic [ref=f25e22]:
+        - link "Sign in" [ref=f25e193] [cursor=pointer]:
+          - /url: /login
+        - link "Cart, 1 item" [ref=f25e194] [cursor=pointer]:
+          - /url: /cart
+          - generic [ref=f25e195]: "1"
+        - link "Shop now" [ref=f25e29] [cursor=pointer]:
+          - /url: /#products
+  - main [ref=f25e30]:
+    - generic [ref=f25e31]:
+      - navigation "Breadcrumb" [ref=f25e32]:
+        - link "Back to the range" [ref=f25e33] [cursor=pointer]:
+          - /url: /#products
+      - generic [ref=f25e36]:
+        - generic [ref=f25e37]:
+          - img "NAD+ 1,000mg — 2 × 500 mg pre-filled pens" [ref=f25e39]
+          - generic [ref=f25e40]:
+            - button "View image 1 of 4" [ref=f25e41] [cursor=pointer]:
+              - img "NAD+ 1,000mg view 1" [ref=f25e42]
+            - button "View image 2 of 4" [ref=f25e43] [cursor=pointer]:
+              - img "NAD+ 1,000mg view 2" [ref=f25e44]
+            - button "View image 3 of 4" [ref=f25e45] [cursor=pointer]:
+              - img "NAD+ 1,000mg view 3" [ref=f25e46]
+            - button "View image 4 of 4" [ref=f25e47] [cursor=pointer]:
+              - img "NAD+ 1,000mg view 4" [ref=f25e48]
+        - generic [ref=f25e49]:
+          - generic [ref=f25e50]: Peptiva Labs · Cellular
+          - heading "NAD+ 1,000mg" [level=1] [ref=f25e51]
+          - paragraph [ref=f25e52]: 2 × 500 mg pre-filled pens
+          - paragraph [ref=f25e53]: $ 140
+          - paragraph [ref=f25e54]: NAD+ (Nicotinamide Adenine Dinucleotide) research formulation for laboratory analysis and in vitro studies only. Provided exclusively for controlled laboratory R&D applications.
+          - paragraph [ref=f25e55]: Each NAD+ 1,000mg kit ships with two pre-filled 500 mg research pens and an information sheet, sealed and cold-shipped from our Dubai facility.
+          - generic [ref=f25e56]:
+            - generic [ref=f25e57]:
+              - button "Decrease quantity" [ref=f25e58] [cursor=pointer]
+              - generic [ref=f25e60]: "1"
+              - button "Increase quantity" [ref=f25e61] [cursor=pointer]
+            - button "Add to cart" [active] [ref=f25e64] [cursor=pointer]
+          - list [ref=f25e65]:
+            - listitem [ref=f25e66]: 2 × pre-filled NAD+ pens (500 mg each)
+            - listitem [ref=f25e68]: Research information sheet included
+            - listitem [ref=f25e70]: Sealed, tamper-evident kit
+            - listitem [ref=f25e72]: For laboratory research use only
+      - region [ref=f25e74]:
+        - generic [ref=f25e75]:
+          - heading "Related products" [level=2] [ref=f25e76]
+          - link "View all" [ref=f25e77] [cursor=pointer]:
+            - /url: /#products
+        - generic [ref=f25e78]:
+          - link [ref=f25e79] [cursor=pointer]:
+            - /url: /products/bpc-157-tb-500
+            - img "BPC-157 + TB-500" [ref=f25e81]
+            - generic [ref=f25e83]:
+              - heading "BPC-157 + TB-500" [level=3] [ref=f25e84]
+              - paragraph [ref=f25e85]: $ 130
+          - link [ref=f25e90] [cursor=pointer]:
+            - /url: /products/glow
+            - img "Glow" [ref=f25e92]
+            - generic [ref=f25e94]:
+              - heading "Glow" [level=3] [ref=f25e95]
+              - paragraph [ref=f25e96]: from $ 100
+          - link [ref=f25e101] [cursor=pointer]:
+            - /url: /products/retatrutide
+            - img "Retatrutide 20mg" [ref=f25e103]
+            - generic [ref=f25e105]:
+              - heading "Retatrutide 20mg" [level=3] [ref=f25e106]
+              - paragraph [ref=f25e107]: $ 100
+  - contentinfo [ref=f25e112]:
+    - generic [ref=f25e114]:
+      - generic [ref=f25e115]:
+        - generic [ref=f25e116]:
+          - generic [ref=f25e117]: Peptiva Labs
+          - generic [ref=f25e125]:
+            - paragraph [ref=f25e126]: Level 5, Business Bay, Dubai, UAE
+            - paragraph [ref=f25e127]:
+              - link "+971 54 380 0625" [ref=f25e128] [cursor=pointer]:
+                - /url: https://wa.me/971543800625
+            - paragraph [ref=f25e129]:
+              - link "sales@peptivalabs.com" [ref=f25e130] [cursor=pointer]:
+                - /url: mailto:sales@peptivalabs.com
+          - generic [ref=f25e131]:
+            - paragraph [ref=f25e132]: Newsletter
+            - paragraph [ref=f25e133]: Batch drops, storage tips, sourcing notes. No spam.
+            - generic [ref=f25e134]:
+              - textbox "you@lab.com" [ref=f25e135]
+              - button "Subscribe" [disabled] [ref=f25e136]
+            - generic [ref=f25e137]:
+              - checkbox "I agree to receive research updates." [checked] [ref=f25e138]
+              - text: I agree to receive research updates.
+        - generic [ref=f25e139]:
+          - generic [ref=f25e140]:
+            - heading "Catalogue" [level=3] [ref=f25e141]
+            - list [ref=f25e142]:
+              - listitem [ref=f25e143]:
+                - link "BPC-157 + TB-500" [ref=f25e144] [cursor=pointer]:
+                  - /url: /products/bpc-157-tb-500
+              - listitem [ref=f25e145]:
+                - link "Glow" [ref=f25e146] [cursor=pointer]:
+                  - /url: /products/glow
+              - listitem [ref=f25e147]:
+                - link "Retatrutide 20mg" [ref=f25e148] [cursor=pointer]:
+                  - /url: /products/retatrutide
+              - listitem [ref=f25e149]:
+                - link "Tirzepatide" [ref=f25e150] [cursor=pointer]:
+                  - /url: /products/tirzepatide
+              - listitem [ref=f25e151]:
+                - link "Retatrutide 40mg" [ref=f25e152] [cursor=pointer]:
+                  - /url: /products/retatrutide-40mg
+              - listitem [ref=f25e153]:
+                - link "NAD+ 1,000mg" [ref=f25e154] [cursor=pointer]:
+                  - /url: /products/nad-plus-1000mg
+          - generic [ref=f25e155]:
+            - heading "Company" [level=3] [ref=f25e156]
+            - list [ref=f25e157]:
+              - listitem [ref=f25e158]:
+                - link "About Peptiva Labs" [ref=f25e159] [cursor=pointer]:
+                  - /url: /#about
+              - listitem [ref=f25e160]:
+                - link "How we source" [ref=f25e161] [cursor=pointer]:
+                  - /url: /#why
+              - listitem [ref=f25e162]:
+                - link "Reviews" [ref=f25e163] [cursor=pointer]:
+                  - /url: /#testimonial
+              - listitem [ref=f25e164]:
+                - link "Contact" [ref=f25e165] [cursor=pointer]:
+                  - /url: /#contact
+          - generic [ref=f25e166]:
+            - heading "Support" [level=3] [ref=f25e167]
+            - list [ref=f25e168]:
+              - listitem [ref=f25e169]:
+                - link "Track order" [ref=f25e170] [cursor=pointer]:
+                  - /url: /track-order
+              - listitem [ref=f25e171]:
+                - link "Cart" [ref=f25e172] [cursor=pointer]:
+                  - /url: /cart
+              - listitem [ref=f25e173]:
+                - link "Account" [ref=f25e174] [cursor=pointer]:
+                  - /url: /account
+              - listitem [ref=f25e175]:
+                - link "Sign in" [ref=f25e176] [cursor=pointer]:
+                  - /url: /login
+          - generic [ref=f25e177]:
+            - heading "Connect" [level=3] [ref=f25e178]
+            - list [ref=f25e179]:
+              - listitem [ref=f25e180]:
+                - link "Shop now" [ref=f25e181] [cursor=pointer]:
+                  - /url: /#products
+              - listitem [ref=f25e182]:
+                - link "Register" [ref=f25e183] [cursor=pointer]:
+                  - /url: /register
+      - generic [ref=f25e184]: Peptiva
+      - generic [ref=f25e187]:
+        - paragraph [ref=f25e188]: © 2026 Peptiva Labs. All rights reserved. For research use only.
+        - generic [ref=f25e189]:
+          - link "Privacy" [ref=f25e190] [cursor=pointer]:
+            - /url: /#contact
+          - link "Terms" [ref=f25e191] [cursor=pointer]:
+            - /url: /#contact
+          - link "Cookies" [ref=f25e192] [cursor=pointer]:
+            - /url: /#contact
+  - button "Open assistant" [ref=f25e196] [cursor=pointer]
+  - dialog "Research assistant":
+    - generic:
+      - generic:
+        - generic:
+          - paragraph: Research assistant
+          - paragraph: Ask about compounds, storage, or sourcing.
+      - button "Close"
+    - generic:
+      - generic:
+        - paragraph: Hi. I’m your research assistant — ask me anything about the Peptiva Labs catalogue.
+      - list
+    - generic:
+      - textbox "Ask about a compound…"
+      - button "Send" [disabled]
+  - status [ref=f25e199]:
+    - generic [ref=f25e200]:
+      - generic [ref=f25e204]:
+        - paragraph [ref=f25e205]: Added to cart
+        - paragraph [ref=f25e206]: NAD+ 1,000mg added to your cart.
+      - button "Dismiss" [ref=f25e207] [cursor=pointer]
+  - alert [ref=f25e210]

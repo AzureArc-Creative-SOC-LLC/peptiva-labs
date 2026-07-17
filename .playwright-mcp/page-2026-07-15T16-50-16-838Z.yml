@@ -1,0 +1,121 @@
+- generic [active] [ref=f22e1]:
+  - link "Skip to content" [ref=f22e2] [cursor=pointer]:
+    - /url: "#home"
+  - banner [ref=f22e3]:
+    - generic [ref=f22e5]:
+      - link "Peptiva Labs home" [ref=f22e6] [cursor=pointer]:
+        - /url: /
+        - generic [ref=f22e7]: Peptiva Labs
+      - navigation [ref=f22e15]:
+        - link "Home" [ref=f22e16] [cursor=pointer]:
+          - /url: /#home
+        - link "About" [ref=f22e17] [cursor=pointer]:
+          - /url: /#about
+        - link "Products" [ref=f22e18] [cursor=pointer]:
+          - /url: /#products
+        - link "Why Us" [ref=f22e19] [cursor=pointer]:
+          - /url: /#why
+        - link "Testimonial" [ref=f22e20] [cursor=pointer]:
+          - /url: /#testimonial
+        - link "Contact" [ref=f22e21] [cursor=pointer]:
+          - /url: /#contact
+      - generic [ref=f22e22]:
+        - link "Cart, 0 items" [ref=f22e24] [cursor=pointer]:
+          - /url: /cart
+        - link "Shop now" [ref=f22e29] [cursor=pointer]:
+          - /url: /#products
+  - main [ref=f22e30]:
+    - paragraph [ref=f22e32]: Loading…
+  - contentinfo [ref=f22e33]:
+    - generic [ref=f22e35]:
+      - generic [ref=f22e36]:
+        - generic [ref=f22e37]:
+          - generic [ref=f22e38]: Peptiva Labs
+          - generic [ref=f22e46]:
+            - paragraph [ref=f22e47]: Level 5, Business Bay, Dubai, UAE
+            - paragraph [ref=f22e48]:
+              - link "+971 54 380 0625" [ref=f22e49] [cursor=pointer]:
+                - /url: https://wa.me/971543800625
+            - paragraph [ref=f22e50]:
+              - link "sales@peptivalabs.com" [ref=f22e51] [cursor=pointer]:
+                - /url: mailto:sales@peptivalabs.com
+          - generic [ref=f22e52]:
+            - paragraph [ref=f22e53]: Newsletter
+            - paragraph [ref=f22e54]: Batch drops, storage tips, sourcing notes. No spam.
+            - generic [ref=f22e55]:
+              - textbox "you@lab.com" [ref=f22e56]
+              - button "Subscribe" [disabled] [ref=f22e57]
+            - generic [ref=f22e58]:
+              - checkbox "I agree to receive research updates." [checked] [ref=f22e59]
+              - text: I agree to receive research updates.
+        - generic [ref=f22e60]:
+          - generic [ref=f22e61]:
+            - heading "Catalogue" [level=3] [ref=f22e62]
+            - list [ref=f22e63]:
+              - listitem [ref=f22e64]:
+                - link "BPC-157 + TB-500" [ref=f22e65] [cursor=pointer]:
+                  - /url: /products/bpc-157-tb-500
+              - listitem [ref=f22e66]:
+                - link "Glow" [ref=f22e67] [cursor=pointer]:
+                  - /url: /products/glow
+              - listitem [ref=f22e68]:
+                - link "Retatrutide 20mg" [ref=f22e69] [cursor=pointer]:
+                  - /url: /products/retatrutide
+              - listitem [ref=f22e70]:
+                - link "Tirzepatide" [ref=f22e71] [cursor=pointer]:
+                  - /url: /products/tirzepatide
+              - listitem [ref=f22e72]:
+                - link "Retatrutide 40mg" [ref=f22e73] [cursor=pointer]:
+                  - /url: /products/retatrutide-40mg
+              - listitem [ref=f22e74]:
+                - link "NAD+ 1,000mg" [ref=f22e75] [cursor=pointer]:
+                  - /url: /products/nad-plus-1000mg
+          - generic [ref=f22e76]:
+            - heading "Company" [level=3] [ref=f22e77]
+            - list [ref=f22e78]:
+              - listitem [ref=f22e79]:
+                - link "About Peptiva Labs" [ref=f22e80] [cursor=pointer]:
+                  - /url: /#about
+              - listitem [ref=f22e81]:
+                - link "How we source" [ref=f22e82] [cursor=pointer]:
+                  - /url: /#why
+              - listitem [ref=f22e83]:
+                - link "Reviews" [ref=f22e84] [cursor=pointer]:
+                  - /url: /#testimonial
+              - listitem [ref=f22e85]:
+                - link "Contact" [ref=f22e86] [cursor=pointer]:
+                  - /url: /#contact
+          - generic [ref=f22e87]:
+            - heading "Support" [level=3] [ref=f22e88]
+            - list [ref=f22e89]:
+              - listitem [ref=f22e90]:
+                - link "Track order" [ref=f22e91] [cursor=pointer]:
+                  - /url: /track-order
+              - listitem [ref=f22e92]:
+                - link "Cart" [ref=f22e93] [cursor=pointer]:
+                  - /url: /cart
+              - listitem [ref=f22e94]:
+                - link "Account" [ref=f22e95] [cursor=pointer]:
+                  - /url: /account
+              - listitem [ref=f22e96]:
+                - link "Sign in" [ref=f22e97] [cursor=pointer]:
+                  - /url: /login
+          - generic [ref=f22e98]:
+            - heading "Connect" [level=3] [ref=f22e99]
+            - list [ref=f22e100]:
+              - listitem [ref=f22e101]:
+                - link "Shop now" [ref=f22e102] [cursor=pointer]:
+                  - /url: /#products
+              - listitem [ref=f22e103]:
+                - link "Register" [ref=f22e104] [cursor=pointer]:
+                  - /url: /register
+      - generic [ref=f22e105]: Peptiva
+      - generic [ref=f22e108]:
+        - paragraph [ref=f22e109]: © 2026 Peptiva Labs. All rights reserved. For research use only.
+        - generic [ref=f22e110]:
+          - link "Privacy" [ref=f22e111] [cursor=pointer]:
+            - /url: /#contact
+          - link "Terms" [ref=f22e112] [cursor=pointer]:
+            - /url: /#contact
+          - link "Cookies" [ref=f22e113] [cursor=pointer]:
+            - /url: /#contact

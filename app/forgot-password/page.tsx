@@ -42,7 +42,7 @@ export default function ForgotPasswordPage() {
             <p className="text-[11px] uppercase tracking-label text-ink-muted">
               Peptiva Labs · Password reset
             </p>
-            <h1 className="mt-2 text-[clamp(36px,5vw,56px)] font-medium leading-[1] tracking-tight2 text-ink">
+            <h1 className="mt-2 text-[clamp(36px,5vw,56px)] font-medium leading-[1] tracking-tight2 text-blue-600">
               Forgot password
             </h1>
             <p className="mt-3 text-[14px] text-ink-secondary">

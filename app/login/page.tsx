@@ -63,50 +63,51 @@ function LoginInner() {
           }
         />
 
-        <div>
-          <div className="flex items-center justify-between">
-            <label
-              htmlFor="password"
-              className="text-[12px] font-medium text-ink"
-            >
-              Password
-            </label>
-            <Link
-              href="/forgot-password"
-              className="text-[12px] text-ink-secondary hover:text-ink"
-            >
-              Forgot?
-            </Link>
-          </div>
-          <div className="relative mt-1.5">
-            <span className="pointer-events-none absolute left-3.5 top-1/2 -translate-y-1/2 text-ink-muted">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
-                <rect x="4" y="10" width="16" height="10" rx="2" stroke="currentColor" strokeWidth="1.6" />
-                <path d="M8 10V7a4 4 0 1 1 8 0v3" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" />
-              </svg>
-            </span>
-            <input
-              id="password"
-              type={showPw ? "text" : "password"}
-              required
-              placeholder="••••••••"
-              value={password}
-              autoComplete="current-password"
-              onChange={(e) => setPassword(e.target.value)}
-              className="w-full rounded-xl border border-line bg-white pl-10 pr-16 py-3 text-[14px] text-ink outline-none transition-colors placeholder:text-ink-subtle focus:border-ink/30"
-            />
-            <button
-              type="button"
-              onClick={() => setShowPw((v) => !v)}
-              aria-pressed={showPw}
-              aria-label={showPw ? "Hide password" : "Show password"}
-              className="absolute right-2 top-1/2 -translate-y-1/2 rounded-md px-2 py-1 text-[11px] font-medium text-ink-secondary transition-colors hover:bg-canvas hover:text-ink"
-            >
-              {showPw ? "Hide" : "Show"}
-            </button>
-          </div>
-        </div>
-
+<div>
+  <div className="flex items-center justify-between">
+    <label
+      htmlFor="password"
+      className="text-[12px] font-medium text-ink"
+    >
+      Password
+    </label>
+  </div>
+  <div className="relative mt-1.5">
+    <span className="pointer-events-none absolute left-3.5 top-1/2 -translate-y-1/2 text-ink-muted">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+        <rect x="4" y="10" width="16" height="10" rx="2" stroke="currentColor" strokeWidth="1.6" />
+        <path d="M8 10V7a4 4 0 1 1 8 0v3" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" />
+      </svg>
+    </span>
+    <input
+      id="password"
+      type={showPw ? "text" : "password"}
+      required
+      placeholder="••••••••"
+      value={password}
+      autoComplete="current-password"
+      onChange={(e) => setPassword(e.target.value)}
+      className="w-full rounded-xl border border-line bg-white pl-10 pr-16 py-3 text-[14px] text-ink outline-none transition-colors placeholder:text-ink-subtle focus:border-ink/30"
+    />
+    <button
+      type="button"
+      onClick={() => setShowPw((v) => !v)}
+      aria-pressed={showPw}
+      aria-label={showPw ? "Hide password" : "Show password"}
+      className="absolute right-2 top-1/2 -translate-y-1/2 rounded-md px-2 py-1 text-[11px] font-medium text-ink-secondary transition-colors hover:bg-canvas hover:text-ink"
+    >
+      {showPw ? "Hide" : "Show"}
+    </button>
+  </div>
+  <div className="mt-1.5 flex justify-end">
+    <Link
+      href="/forgot-password"
+      className="text-[12px] text-blue-600 hover:text-blue-800"
+    >
+      Forgot password?
+    </Link>
+  </div>
+</div>
         <button
           type="submit"
           disabled={loading}
@@ -120,7 +121,7 @@ function LoginInner() {
         Don&rsquo;t have an account?{" "}
         <Link
           href={`/register${next !== "/account" ? `?next=${encodeURIComponent(next)}` : ""}`}
-          className="font-medium text-ink hover:opacity-70"
+          className="font-medium text-blue-600 hover:text-blue-800"
         >
           Create one →
         </Link>
@@ -154,7 +155,7 @@ export default function LoginPage() {
           <div className="relative flex h-full flex-col justify-between p-10 text-white xl:p-14">
             <Link
               href="/"
-              className="inline-flex items-center gap-2 text-[13px] font-medium tracking-tight text-white/90 hover:text-white"
+              className="inline-flex items-center gap-2 text-[13px] font-medium tracking-tight text-blue-400 hover:text-blue-300"
             >
               <span className="inline-flex h-8 w-8 items-center justify-center rounded-lg bg-white/10 backdrop-blur-sm">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none">
@@ -199,13 +200,13 @@ export default function LoginPage() {
         <section className="relative flex items-center justify-center px-5 py-14 sm:px-10">
           <Link
             href="/"
-            className="absolute left-5 top-6 inline-flex items-center gap-2 text-[13px] text-ink-secondary transition-colors hover:text-ink lg:hidden"
+            className="absolute left-5 top-6 inline-flex items-center gap-2 text-[13px] text-blue-600 transition-colors hover:text-blue-800 lg:hidden"
           >
             ← Back to home
           </Link>
           <Link
             href="/"
-            className="absolute right-5 top-6 text-[12px] text-ink-muted transition-colors hover:text-ink"
+            className="absolute right-5 top-6 text-[12px] text-blue-600 transition-colors hover:text-blue-800"
           >
             peptivalabs.com
           </Link>
